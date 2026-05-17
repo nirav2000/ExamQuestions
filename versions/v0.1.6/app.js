@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.7';
+const APP_VERSION = 'v0.1.6';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -71,8 +71,6 @@ const els = {
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
   commandGroove: document.querySelector('#commandGroove'),
-  commandGroovePill: document.querySelector('#commandGroovePill'),
-  commandGrooveList: document.querySelector('#commandGrooveList'),
   commandAnswerPattern: document.querySelector('#commandAnswerPattern'),
   versionSelect: document.querySelector('#versionSelect'),
   commandSetSelect: document.querySelector('#commandSetSelect'),
@@ -262,8 +260,6 @@ function renderCommandExplainer(q) {
   els.commandExplainerTitle.textContent = explainer.title || `${titleCase(key)} questions`;
   els.commandExplainerText.textContent = explainer.descriptor || explainer.text || '';
   els.commandGroove.innerHTML = explainer.groove ? `<strong>${escapeHtml(explainer.grooveTitle || 'Answer groove')}</strong>${explainer.groove.map(step => `<span>${escapeHtml(step)}</span>`).join('')}` : '';
-  if (els.commandGroovePill) els.commandGroovePill.textContent = explainer.grooveTitle || 'Answer groove';
-  if (els.commandGrooveList) els.commandGrooveList.innerHTML = (explainer.groove || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
   els.commandAnswerPattern.textContent = explainer.answerPattern || '';
   if (els.commandExplainerSteps) {
     els.commandExplainerSteps.innerHTML = (explainer.steps || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');

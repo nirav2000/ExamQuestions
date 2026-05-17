@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.7",
+    "label": "v0.1.7 - restore v0.1.2 explainer placement",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-17",
+    "notes": "Restores command-word explainer to the feedback area like v0.1.2 while keeping command answer groove guidance in the top-right coach panel."
+  },
+  {
     "version": "v0.1.6",
     "label": "v0.1.6 - rebuilt default pack startup",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.6/",
     "date": "2026-05-17",
     "notes": "Rebuilds default startup to auto-load bundled ZIP pack with cleaner fallback behavior, and keeps command groove guidance in the top coach panel with step bullets."
   },

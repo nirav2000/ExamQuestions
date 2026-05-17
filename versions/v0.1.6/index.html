@@ -40,15 +40,9 @@
           </div>
         </section>
         <aside class="coach-card" aria-label="Command word coach controls">
-          <span class="pill" id="commandGroovePill">Why answer groove</span>
+          <span class="pill">Command word pack</span>
           <h2 id="packTitle">Choose a command word</h2>
           <p id="packSummary">Load a JSON pack, then practise one command word at a time or all questions together.</p>
-          <ol id="commandGrooveList">
-            <li>Answer stem</li>
-            <li>Reason</li>
-            <li>Evidence or effect</li>
-            <li>Link back</li>
-          </ol>
           <p class="mini-copy" id="packStatus">Loading bundled command-word ZIP pack…</p>
           <label class="select-card" for="commandSetSelect">
             <span>Practice set</span>
@@ -56,6 +50,13 @@
               <option value="all">All loaded questions</option>
             </select>
           </label>
+          <hr>
+          <span class="pill">Command word groove</span>
+          <h3 id="commandExplainerTitle">Why questions</h3>
+          <p class="mini-copy" id="commandExplainerText"></p>
+          <div class="groove" id="commandGroove"></div>
+          <p class="answer-pattern" id="commandAnswerPattern"></p>
+          <ul id="commandExplainerSteps"></ul>
         </aside>
       </div>
     </header>
@@ -112,14 +113,6 @@
               <p class="coach-note" id="weakExplanation"></p>
             </article>
 
-            <article class="command-explainer">
-              <span class="small-label">Command word explainer</span>
-              <h3 id="commandExplainerTitle">Why questions</h3>
-              <p id="commandExplainerText"></p>
-              <div class="groove" id="commandGroove"></div>
-              <p class="answer-pattern" id="commandAnswerPattern"></p>
-              <ul id="commandExplainerSteps"></ul>
-            </article>
           </div>
 
           <article class="excellent stamped full-width" data-stamp="Full marks">
