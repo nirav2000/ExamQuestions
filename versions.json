@@ -4,7 +4,7 @@
     "label": "v0.1.7 - restore v0.1.2 explainer placement",
     "path": "/ExamQuestions/",
     "date": "2026-05-17",
-    "notes": "Restores command-word explainer to the feedback area like v0.1.2 while keeping command answer groove guidance in the top-right coach panel."
+    "notes": "Restores command-word explainer to the feedback area like v0.1.2 while keeping command answer groove guidance in the top-right coach panel and retaining default bundled pack startup loading."
   },
   {
     "version": "v0.1.6",

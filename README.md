@@ -16,9 +16,10 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 - Uses external command explainers where available, including groove, answer pattern, steps, and helpful words.
 - Displays richer question metadata such as skill focus, answer pattern, and teaching tip.
 - Keeps compatibility with the original uploadable JSON array format.
+- Rebuilds the default bundled-pack startup flow so the app first loads version history/explainers, then loads starter questions, then auto-loads the repository ZIP pack when available.
+- Keeps a safe fallback to built-in data + local manifest if the bundled ZIP is unavailable.
+- Keeps command-word groove guidance in the top-right coach panel.
 - Restores the command-word explainer block to the feedback area (as in v0.1.2 layout).
-- Keeps the command answer groove guidance in the top-right coach panel.
-- Retains default bundled ZIP loading with fallback behavior.
 - Updates the central `versions.json` history.
 
 ## Versioning
