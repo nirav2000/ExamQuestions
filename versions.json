@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.8",
+    "label": "v0.1.8 - restore full v0.1.2 explainer and groove card",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-17",
+    "notes": "Restores full v0.1.2-style command word explainer steps in feedback, restores full top-right groove card, keeps bundled ZIP auto-load by default, and fixes duplicate explainer IDs causing incorrect rendering."
+  },
+  {
     "version": "v0.1.7",
     "label": "v0.1.7 - restore v0.1.2 explainer placement",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.7/",
     "date": "2026-05-17",
     "notes": "Restores command-word explainer to the feedback area like v0.1.2 while keeping command answer groove guidance in the top-right coach panel and retaining default bundled pack startup loading."
   },
