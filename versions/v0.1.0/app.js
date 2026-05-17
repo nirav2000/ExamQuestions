@@ -1,6 +1,9 @@
+const APP_VERSION = 'v0.1.0';
+const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let questions = [];
 let currentIndex = 0;
+let versionHistory = [];
 
 const els = {
   list: document.querySelector('#questionList'),
@@ -20,10 +23,15 @@ const els = {
   upload: document.querySelector('#jsonUpload'),
   manualDialog: document.querySelector('#manualDialog'),
   manualForm: document.querySelector('#manualForm'),
-  canvas: document.querySelector('#drawCanvas')
+  canvas: document.querySelector('#drawCanvas'),
+  versionSelect: document.querySelector('#versionSelect')
 };
 
 const helpfulWords = ['because', 'so', 'this shows', 'this makes', 'this helps', 'evidence'];
+
+async function initialiseApp() {
+  await Promise.all([loadQuestions(), loadVersionHistory()]);
+}
 
 async function loadQuestions() {
   try {
@@ -34,6 +42,32 @@ async function loadQuestions() {
     questions = fallbackQuestions;
   }
   render();
+}
+
+async function loadVersionHistory() {
+  try {
+    const res = await fetch(VERSION_HISTORY_URL);
+    versionHistory = await res.json();
+    renderVersionSelect();
+  } catch (error) {
+    console.warn('Could not load versions.json.', error);
+  }
+}
+
+function renderVersionSelect() {
+  if (!els.versionSelect || !Array.isArray(versionHistory) || !versionHistory.length) return;
+  els.versionSelect.innerHTML = '';
+  versionHistory.forEach(entry => {
+    const option = document.createElement('option');
+    option.value = entry.version;
+    option.textContent = entry.version;
+    if (entry.version === APP_VERSION) option.selected = true;
+    els.versionSelect.appendChild(option);
+  });
+  els.versionSelect.addEventListener('change', event => {
+    const target = versionHistory.find(entry => entry.version === event.target.value);
+    if (target?.path) window.location.href = target.path;
+  });
 }
 
 function render() {
@@ -240,4 +274,4 @@ setupUpload();
 setupManualEntry();
 setupSpeech();
 setupCanvas();
-loadQuestions();
+initialiseApp();
