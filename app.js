@@ -1,4 +1,5 @@
 const APP_VERSION = 'v0.1.2';
+const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let questions = [];
 let currentIndex = 0;
@@ -73,7 +74,7 @@ async function loadQuestions() {
 
 async function loadVersionHistory() {
   try {
-    const res = await fetch('./versions.json');
+    const res = await fetch(VERSION_HISTORY_URL);
     versionHistory = await res.json();
   } catch (error) {
     console.warn('Could not load versions.json.', error);
