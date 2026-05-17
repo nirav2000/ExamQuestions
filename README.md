@@ -6,17 +6,31 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.1`
+`v0.1.2`
 
-## v0.1.1 changes
+## v0.1.2 changes
 
-- Styled coach feedback as a handwritten pen annotation so it stands out clearly.
-- Added diagonal `Low mark` and `Full marks` stamps to the weak and exceptional answer cards.
-- Added `Restating the question` / answer-stem segments to exceptional answers.
-- Added hover, focus and tap highlighting between breakdown boxes and the relevant part of the exceptional answer.
-- Fixed question 1 so the passage title, `The Lost Puppy`, appears in bold.
-- Enriched the JSON data with `answerParts`, `partIndex` mappings and optional `textHtml` for safe source-text formatting.
+- Moves the exceptional answer below the weak answer.
+- Uses the previous exceptional-answer space for a command-word explainer, starting with a `why` explainer.
+- Incorporates the `Why it works` breakdown into the full-marks exceptional answer box.
+- Makes the breakdown feel more like coach notes.
+- Removes visible labels such as `Restating the question` from the model answer itself so it reads naturally.
+- Corrects the coach-note font sizing so it is smaller than v0.1.1 but still readable.
+- Adds a central `versions.json` file for universal version history.
+- Adds a version selector in the app header.
 
 ## Versioning
 
-Going forward, every semantic release should be recorded under `versions/vX.Y.Z/` before the live app is changed. The original starting version has been recorded as `versions/v0.1.0/` with a manifest of the pre-release file SHAs.
+Version history is stored centrally in `versions.json`. This file is universal and should not be copied into each version archive.
+
+For every future semantic version:
+
+1. Archive the full current app into `versions/vX.Y.Z/` before changing the live root files.
+2. Include all app files in the archive: `index.html`, `styles.css`, `app.js`, `README.md`, and `data/questions.json`.
+3. Update the live root app files.
+4. Update `versions.json` with the new current version and the archive path for the previous version.
+
+Archived versions are available at paths such as:
+
+- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.1/`
+- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.0/`
