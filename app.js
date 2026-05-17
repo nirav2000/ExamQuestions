@@ -1,6 +1,7 @@
 const fallbackQuestions = [];
 let questions = [];
 let currentIndex = 0;
+let activePartIndex = null;
 
 const els = {
   list: document.querySelector('#questionList'),
@@ -24,6 +25,7 @@ const els = {
 };
 
 const helpfulWords = ['because', 'so', 'this shows', 'this makes', 'this helps', 'evidence'];
+const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
 
 async function loadQuestions() {
   try {
@@ -57,14 +59,20 @@ function renderList() {
 
 function renderQuestion() {
   const q = questions[currentIndex];
+  activePartIndex = null;
   els.commandBadge.textContent = (q.commandWord || firstWord(q.question)).toUpperCase();
   els.questionTitle.textContent = q.title || 'Practice question';
-  els.sourceText.textContent = q.text || '';
+  renderSource(q);
   els.questionText.textContent = q.question || '';
   els.answer.value = localStorage.getItem(answerKey(q)) || '';
   els.feedback.classList.add('hidden');
   updateChecks();
   clearCanvas();
+}
+
+function renderSource(q) {
+  const html = q.textHtml || escapeHtml(q.text || '').replace(/\n/g, '<br>');
+  els.sourceText.innerHTML = sanitizeSimpleHtml(html);
 }
 
 function selectQuestion(index) {
@@ -85,21 +93,53 @@ function answerKey(q) {
 function revealFeedback() {
   saveCurrentAnswer();
   const q = questions[currentIndex];
+  activePartIndex = null;
   els.weakAnswer.textContent = q.weakAnswer || 'No weak answer supplied.';
   els.weakExplanation.textContent = q.weakExplanation || '';
-  els.exceptionalAnswer.textContent = q.exceptionalAnswer || 'No exceptional answer supplied.';
+  renderExceptionalAnswer(q);
+  renderBreakdown(q);
+  els.feedback.classList.remove('hidden');
+  els.feedback.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderExceptionalAnswer(q) {
+  const parts = q.answerParts && q.answerParts.length ? q.answerParts : [{ label: 'Exceptional answer', text: q.exceptionalAnswer || 'No exceptional answer supplied.' }];
+  els.exceptionalAnswer.innerHTML = parts.map((part, index) => {
+    const label = part.label ? `<span class="answer-part-label">${escapeHtml(part.label)}</span>` : '';
+    const isOpening = /restating|answer stem|opening/i.test(part.label || '');
+    return `<span class="answer-part ${isOpening ? 'opening-part' : ''}" data-part-index="${index}">${label}${escapeHtml(part.text || '')}</span>`;
+  }).join(' ');
+}
+
+function renderBreakdown(q) {
   els.breakdown.innerHTML = '';
-  (q.breakdown || []).forEach(part => {
+  (q.breakdown || []).forEach((part, index) => {
     const item = document.createElement('article');
     item.className = 'break-item';
+    item.tabIndex = 0;
+    item.dataset.partIndex = String(part.partIndex ?? index);
     item.innerHTML = `
       <strong>${escapeHtml(part.label || 'Step')}</strong>
       <p>“${escapeHtml(part.text || '')}”<small>${escapeHtml(part.note || '')}</small></p>
     `;
+    item.addEventListener('mouseenter', () => setActivePart(item.dataset.partIndex));
+    item.addEventListener('focus', () => setActivePart(item.dataset.partIndex));
+    item.addEventListener('click', () => setActivePart(item.dataset.partIndex));
+    item.addEventListener('mouseleave', clearActivePart);
+    item.addEventListener('blur', clearActivePart);
     els.breakdown.appendChild(item);
   });
-  els.feedback.classList.remove('hidden');
-  els.feedback.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function setActivePart(index) {
+  activePartIndex = Number(index);
+  document.querySelectorAll('.answer-part, .break-item').forEach(node => {
+    node.classList.toggle('is-active', Number(node.dataset.partIndex) === activePartIndex);
+  });
+}
+
+function clearActivePart() {
+  document.querySelectorAll('.answer-part, .break-item').forEach(node => node.classList.remove('is-active'));
 }
 
 function updateChecks() {
@@ -116,6 +156,19 @@ function firstWord(text = '') {
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char]));
+}
+
+function sanitizeSimpleHtml(html) {
+  const template = document.createElement('template');
+  template.innerHTML = html;
+  template.content.querySelectorAll('*').forEach(node => {
+    if (!allowedSourceTags.has(node.tagName)) {
+      node.replaceWith(document.createTextNode(node.textContent || ''));
+      return;
+    }
+    [...node.attributes].forEach(attr => node.removeAttribute(attr.name));
+  });
+  return template.innerHTML;
 }
 
 function download(filename, text) {
@@ -153,9 +206,9 @@ function setupManualEntry() {
       .split('\n')
       .map(line => line.trim())
       .filter(Boolean)
-      .map(line => {
+      .map((line, index) => {
         const [label, text, note] = line.split('|').map(x => x?.trim());
-        return { label, text, note };
+        return { label, text, note, partIndex: index };
       });
     questions.push({
       id: `manual-${Date.now()}`,
@@ -166,6 +219,7 @@ function setupManualEntry() {
       weakAnswer: form.get('weakAnswer'),
       weakExplanation: form.get('weakExplanation'),
       exceptionalAnswer: form.get('exceptionalAnswer'),
+      answerParts: [{ label: 'Exceptional answer', text: form.get('exceptionalAnswer') }],
       breakdown
     });
     currentIndex = questions.length - 1;
