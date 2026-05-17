@@ -17,7 +17,7 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 - Displays richer question metadata such as skill focus, answer pattern, and teaching tip.
 - Keeps compatibility with the original uploadable JSON array format.
 - Restores the command-word explainer block to the feedback area (as in v0.1.2 layout).
-- Keeps the command answer groove guidance in the top-right coach panel, using a clean groove bullet list.
+- Keeps the command answer groove guidance in the top-right coach panel.
 - Retains default bundled ZIP loading with fallback behavior.
 - Updates the central `versions.json` history.
 

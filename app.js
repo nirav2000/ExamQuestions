@@ -70,6 +70,7 @@ const els = {
   commandExplainerTitle: document.querySelector('#commandExplainerTitle'),
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
+  grooveTitle: document.querySelector('#grooveTitle'),
   commandGroove: document.querySelector('#commandGroove'),
   commandGroovePill: document.querySelector('#commandGroovePill'),
   commandGrooveList: document.querySelector('#commandGrooveList'),
@@ -261,6 +262,9 @@ function renderCommandExplainer(q) {
   const explainer = commandExplainers[key] || commandExplainers.default;
   els.commandExplainerTitle.textContent = explainer.title || `${titleCase(key)} questions`;
   els.commandExplainerText.textContent = explainer.descriptor || explainer.text || '';
+  if (els.grooveTitle) {
+    els.grooveTitle.textContent = explainer.grooveTitle || 'Answer groove';
+  }
   els.commandGroove.innerHTML = explainer.groove ? `<strong>${escapeHtml(explainer.grooveTitle || 'Answer groove')}</strong>${explainer.groove.map(step => `<span>${escapeHtml(step)}</span>`).join('')}` : '';
   if (els.commandGroovePill) els.commandGroovePill.textContent = explainer.grooveTitle || 'Answer groove';
   if (els.commandGrooveList) els.commandGrooveList.innerHTML = (explainer.groove || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
