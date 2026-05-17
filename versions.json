@@ -2,21 +2,21 @@
   {
     "version": "v0.1.2",
     "label": "v0.1.2 - command explainer layout",
-    "path": "./",
+    "path": "/ExamQuestions/",
     "date": "2026-05-17",
     "notes": "Moves exceptional answer below weak answer, adds command-word explainer, folds why-it-works into the exceptional answer box, removes inline labels from the model answer, and adds version switching."
   },
   {
     "version": "v0.1.1",
     "label": "v0.1.1 - interactive coach feedback",
-    "path": "./versions/v0.1.1/",
+    "path": "/ExamQuestions/versions/v0.1.1/",
     "date": "2026-05-17",
     "notes": "Adds handwritten coach feedback, low/full marks stamps, safe bold source text, answer parts, and breakdown-to-answer highlighting."
   },
   {
     "version": "v0.1.0",
     "label": "v0.1.0 - first prototype",
-    "path": "./versions/v0.1.0/",
+    "path": "/ExamQuestions/versions/v0.1.0/",
     "date": "2026-05-17",
     "notes": "Initial plain HTML, CSS and JavaScript prototype with the first 10 why-question practice items."
   }
