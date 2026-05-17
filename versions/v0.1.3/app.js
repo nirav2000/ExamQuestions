@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.4';
+const APP_VERSION = 'v0.1.3';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -369,14 +369,6 @@ async function handleZipUpload(file) {
   render();
 }
 
-async function loadBundledPack() {
-  const res = await fetch('./command-set/command-word-coach-json-pack.zip');
-  if (!res.ok) throw new Error('Bundled ZIP pack was not found in command-set/.');
-  const blob = await res.blob();
-  const file = new File([blob], 'command-word-coach-json-pack.zip', { type: 'application/zip' });
-  await handleZipUpload(file);
-}
-
 function setupUpload() {
   els.upload.addEventListener('change', async event => {
     const file = event.target.files?.[0];
@@ -474,13 +466,5 @@ document.querySelector('#nextBtn').addEventListener('click', () => selectQuestio
 document.querySelector('#prevBtn').addEventListener('click', () => selectQuestion(currentIndex - 1 < 0 ? questions.length - 1 : currentIndex - 1));
 document.querySelector('#startBtn').addEventListener('click', () => document.querySelector('#practice').scrollIntoView({ behavior: 'smooth' }));
 document.querySelector('#downloadJsonBtn').addEventListener('click', () => download('command-word-coach-questions.json', JSON.stringify(questions, null, 2)));
-document.querySelector('#loadBundledPackBtn').addEventListener('click', async () => {
-  try {
-    await loadBundledPack();
-    els.packStatus.textContent = 'Loaded bundled ZIP pack from command-set/.';
-  } catch (error) {
-    alert(`Could not load bundled pack: ${error.message}`);
-  }
-});
 document.querySelector('#clearCanvasBtn').addEventListener('click', clearCanvas);
 setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); initialiseApp();
