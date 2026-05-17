@@ -1,7 +1,9 @@
+const APP_VERSION = 'v0.1.2';
 const fallbackQuestions = [];
 let questions = [];
 let currentIndex = 0;
 let activePartIndex = null;
+let versionHistory = [];
 
 const els = {
   list: document.querySelector('#questionList'),
@@ -21,11 +23,42 @@ const els = {
   upload: document.querySelector('#jsonUpload'),
   manualDialog: document.querySelector('#manualDialog'),
   manualForm: document.querySelector('#manualForm'),
-  canvas: document.querySelector('#drawCanvas')
+  canvas: document.querySelector('#drawCanvas'),
+  commandExplainerTitle: document.querySelector('#commandExplainerTitle'),
+  commandExplainerText: document.querySelector('#commandExplainerText'),
+  commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
+  versionSelect: document.querySelector('#versionSelect')
 };
 
 const helpfulWords = ['because', 'so', 'this shows', 'this makes', 'this helps', 'evidence'];
 const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
+
+const commandExplainers = {
+  why: {
+    title: 'Why questions',
+    text: 'A why question asks for the reason something happens or the purpose behind a writer’s choice. A strong answer should not stop at what happened: it should explain because, effect and proof.',
+    steps: ['Start by turning the question into an answer stem.', 'Give the reason using because or to.', 'Add evidence or effect from the text.', 'Link back to the action, reader, purpose or question.']
+  },
+  explain: {
+    title: 'Explain questions',
+    text: 'An explain question asks you to make something clear by giving reasons, evidence and how the parts connect.',
+    steps: ['Make your point clearly.', 'Add evidence or an example.', 'Explain how the evidence proves your point.']
+  },
+  describe: {
+    title: 'Describe questions',
+    text: 'A describe question asks you to say what something is like using clear details from the text.',
+    steps: ['Identify the thing you are describing.', 'Choose precise details.', 'Use evidence from the text where possible.']
+  },
+  default: {
+    title: 'Command word',
+    text: 'The command word tells you what the answer must do. Use it as a checklist before you submit.',
+    steps: ['Spot the command word.', 'Turn the question into an answer stem.', 'Check that your answer does what the command word asks.']
+  }
+};
+
+async function initialiseApp() {
+  await Promise.all([loadQuestions(), loadVersionHistory()]);
+}
 
 async function loadQuestions() {
   try {
@@ -36,6 +69,30 @@ async function loadQuestions() {
     questions = fallbackQuestions;
   }
   render();
+}
+
+async function loadVersionHistory() {
+  try {
+    const res = await fetch('./versions.json');
+    versionHistory = await res.json();
+  } catch (error) {
+    console.warn('Could not load versions.json.', error);
+    versionHistory = [{ version: APP_VERSION, label: APP_VERSION, path: './' }];
+  }
+  renderVersionSwitcher();
+}
+
+function renderVersionSwitcher() {
+  if (!els.versionSelect) return;
+  els.versionSelect.innerHTML = '';
+  versionHistory.forEach(item => {
+    const option = document.createElement('option');
+    option.value = item.version;
+    option.textContent = item.label || item.version;
+    option.dataset.path = item.path || './';
+    option.selected = item.version === APP_VERSION;
+    els.versionSelect.appendChild(option);
+  });
 }
 
 function render() {
@@ -63,6 +120,7 @@ function renderQuestion() {
   els.commandBadge.textContent = (q.commandWord || firstWord(q.question)).toUpperCase();
   els.questionTitle.textContent = q.title || 'Practice question';
   renderSource(q);
+  renderCommandExplainer(q);
   els.questionText.textContent = q.question || '';
   els.answer.value = localStorage.getItem(answerKey(q)) || '';
   els.feedback.classList.add('hidden');
@@ -73,6 +131,14 @@ function renderQuestion() {
 function renderSource(q) {
   const html = q.textHtml || escapeHtml(q.text || '').replace(/\n/g, '<br>');
   els.sourceText.innerHTML = sanitizeSimpleHtml(html);
+}
+
+function renderCommandExplainer(q) {
+  const key = (q.commandWord || firstWord(q.question)).toLowerCase();
+  const explainer = commandExplainers[key] || commandExplainers.default;
+  els.commandExplainerTitle.textContent = explainer.title;
+  els.commandExplainerText.textContent = explainer.text;
+  els.commandExplainerSteps.innerHTML = explainer.steps.map(step => `<li>${escapeHtml(step)}</li>`).join('');
 }
 
 function selectQuestion(index) {
@@ -103,11 +169,10 @@ function revealFeedback() {
 }
 
 function renderExceptionalAnswer(q) {
-  const parts = q.answerParts && q.answerParts.length ? q.answerParts : [{ label: 'Exceptional answer', text: q.exceptionalAnswer || 'No exceptional answer supplied.' }];
+  const parts = q.answerParts && q.answerParts.length ? q.answerParts : [{ text: q.exceptionalAnswer || 'No exceptional answer supplied.' }];
   els.exceptionalAnswer.innerHTML = parts.map((part, index) => {
-    const label = part.label ? `<span class="answer-part-label">${escapeHtml(part.label)}</span>` : '';
     const isOpening = /restating|answer stem|opening/i.test(part.label || '');
-    return `<span class="answer-part ${isOpening ? 'opening-part' : ''}" data-part-index="${index}">${label}${escapeHtml(part.text || '')}</span>`;
+    return `<span class="answer-part ${isOpening ? 'opening-part' : ''}" data-part-index="${index}">${escapeHtml(part.text || '')}</span>`;
   }).join(' ');
 }
 
@@ -115,7 +180,7 @@ function renderBreakdown(q) {
   els.breakdown.innerHTML = '';
   (q.breakdown || []).forEach((part, index) => {
     const item = document.createElement('article');
-    item.className = 'break-item';
+    item.className = 'break-item coach-break-item';
     item.tabIndex = 0;
     item.dataset.partIndex = String(part.partIndex ?? index);
     item.innerHTML = `
@@ -219,7 +284,7 @@ function setupManualEntry() {
       weakAnswer: form.get('weakAnswer'),
       weakExplanation: form.get('weakExplanation'),
       exceptionalAnswer: form.get('exceptionalAnswer'),
-      answerParts: [{ label: 'Exceptional answer', text: form.get('exceptionalAnswer') }],
+      answerParts: [{ text: form.get('exceptionalAnswer') }],
       breakdown
     });
     currentIndex = questions.length - 1;
@@ -275,6 +340,15 @@ function setupCanvas() {
   ['mouseup', 'mouseleave', 'touchend'].forEach(e => els.canvas.addEventListener(e, end));
 }
 
+function setupVersionSwitcher() {
+  if (!els.versionSelect) return;
+  els.versionSelect.addEventListener('change', event => {
+    const option = event.target.selectedOptions[0];
+    const path = option?.dataset.path;
+    if (path) window.location.href = path;
+  });
+}
+
 function clearCanvas() {
   const ctx = els.canvas.getContext('2d');
   ctx.clearRect(0, 0, els.canvas.width, els.canvas.height);
@@ -294,4 +368,5 @@ setupUpload();
 setupManualEntry();
 setupSpeech();
 setupCanvas();
-loadQuestions();
+setupVersionSwitcher();
+initialiseApp();
