@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.6';
+const APP_VERSION = 'v0.1.5';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -82,14 +82,12 @@ const els = {
 const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
 
 async function initialiseApp() {
-  await Promise.all([loadExternalExplainers(), loadVersionHistory()]);
-  await loadQuestions();
+  await Promise.all([loadQuestions(), loadExternalExplainers(), loadExternalManifest(), loadVersionHistory()]);
   try {
     await loadBundledPack();
     els.packStatus.textContent = 'Loaded bundled ZIP pack from command-set/.';
   } catch (error) {
     console.info('Bundled ZIP pack could not be loaded. Using built-in data.', error);
-    await loadExternalManifest();
   }
   renderCommandSetSelect();
 }
