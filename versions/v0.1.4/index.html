@@ -37,25 +37,20 @@
           <div class="hero-ctas">
             <button class="primary" id="startBtn">Start practice</button>
             <button class="secondary" id="downloadJsonBtn">Download current questions</button>
+            <button class="secondary" id="loadBundledPackBtn">Load bundled ZIP pack</button>
           </div>
         </section>
         <aside class="coach-card" aria-label="Command word coach controls">
           <span class="pill">Command word pack</span>
           <h2 id="packTitle">Choose a command word</h2>
           <p id="packSummary">Load a JSON pack, then practise one command word at a time or all questions together.</p>
-          <p class="mini-copy" id="packStatus">Loading bundled command-word ZIP pack…</p>
           <label class="select-card" for="commandSetSelect">
             <span>Practice set</span>
             <select id="commandSetSelect" aria-label="Choose command word practice set">
               <option value="all">All loaded questions</option>
             </select>
           </label>
-          <hr>
-          <span class="pill">Command word groove</span>
-          <h3 id="commandExplainerTitle">Why questions</h3>
-          <p class="mini-copy" id="commandExplainerText"></p>
-          <div class="groove" id="commandGroove"></div>
-          <p class="answer-pattern" id="commandAnswerPattern"></p>
+          <p class="mini-copy" id="packStatus">Using the built-in starter set.</p>
         </aside>
       </div>
     </header>
@@ -112,6 +107,14 @@
               <p class="coach-note" id="weakExplanation"></p>
             </article>
 
+            <article class="command-explainer">
+              <span class="small-label">Command word explainer</span>
+              <h3 id="commandExplainerTitle">Why questions</h3>
+              <p id="commandExplainerText"></p>
+              <div class="groove" id="commandGroove"></div>
+              <p class="answer-pattern" id="commandAnswerPattern"></p>
+              <ul id="commandExplainerSteps"></ul>
+            </article>
           </div>
 
           <article class="excellent stamped full-width" data-stamp="Full marks">

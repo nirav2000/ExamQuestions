@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.5';
+const APP_VERSION = 'v0.1.4';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -83,12 +83,6 @@ const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
 
 async function initialiseApp() {
   await Promise.all([loadQuestions(), loadExternalExplainers(), loadExternalManifest(), loadVersionHistory()]);
-  try {
-    await loadBundledPack();
-    els.packStatus.textContent = 'Loaded bundled ZIP pack from command-set/.';
-  } catch (error) {
-    console.info('Bundled ZIP pack could not be loaded. Using built-in data.', error);
-  }
   renderCommandSetSelect();
 }
 
@@ -259,9 +253,7 @@ function renderCommandExplainer(q) {
   els.commandExplainerText.textContent = explainer.descriptor || explainer.text || '';
   els.commandGroove.innerHTML = explainer.groove ? `<strong>${escapeHtml(explainer.grooveTitle || 'Answer groove')}</strong>${explainer.groove.map(step => `<span>${escapeHtml(step)}</span>`).join('')}` : '';
   els.commandAnswerPattern.textContent = explainer.answerPattern || '';
-  if (els.commandExplainerSteps) {
-    els.commandExplainerSteps.innerHTML = (explainer.steps || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
-  }
+  els.commandExplainerSteps.innerHTML = (explainer.steps || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
 }
 
 function selectQuestion(index) {
@@ -482,5 +474,13 @@ document.querySelector('#nextBtn').addEventListener('click', () => selectQuestio
 document.querySelector('#prevBtn').addEventListener('click', () => selectQuestion(currentIndex - 1 < 0 ? questions.length - 1 : currentIndex - 1));
 document.querySelector('#startBtn').addEventListener('click', () => document.querySelector('#practice').scrollIntoView({ behavior: 'smooth' }));
 document.querySelector('#downloadJsonBtn').addEventListener('click', () => download('command-word-coach-questions.json', JSON.stringify(questions, null, 2)));
+document.querySelector('#loadBundledPackBtn').addEventListener('click', async () => {
+  try {
+    await loadBundledPack();
+    els.packStatus.textContent = 'Loaded bundled ZIP pack from command-set/.';
+  } catch (error) {
+    alert(`Could not load bundled pack: ${error.message}`);
+  }
+});
 document.querySelector('#clearCanvasBtn').addEventListener('click', clearCanvas);
 setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); initialiseApp();

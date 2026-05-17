@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.5",
+    "label": "v0.1.5 - default bundled pack and panel groove",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-17",
+    "notes": "Loads the repository-hosted command-word ZIP pack by default on startup and moves command-word groove guidance into the top coach panel."
+  },
+  {
     "version": "v0.1.4",
     "label": "v0.1.4 - bundled ZIP pack loader",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.4/",
     "date": "2026-05-17",
     "notes": "Adds one-click loading of the repository-hosted command-word ZIP pack from command-set/ while keeping upload-based pack support."
   },

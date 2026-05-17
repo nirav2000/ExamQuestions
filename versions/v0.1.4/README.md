@@ -6,9 +6,9 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.5`
+`v0.1.4`
 
-## v0.1.5 changes
+## v0.1.4 changes
 
 - Adds support for uploading the full command-word JSON ZIP pack.
 - Supports pack contents with `manifest.json`, `command-explainers.json`, `all-command-word-questions.json`, and `command-sets/*.json`.
@@ -16,8 +16,7 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 - Uses external command explainers where available, including groove, answer pattern, steps, and helpful words.
 - Displays richer question metadata such as skill focus, answer pattern, and teaching tip.
 - Keeps compatibility with the original uploadable JSON array format.
-- Loads `command-set/command-word-coach-json-pack.zip` by default when the app starts.
-- Moves command-word groove information into the top coach panel for faster reference while practising.
+- Adds a one-click **Load bundled ZIP pack** button that loads `command-set/command-word-coach-json-pack.zip` directly from the repository.
 - Updates the central `versions.json` history.
 
 ## Versioning
@@ -35,7 +34,6 @@ Archived versions are available at paths such as:
 
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.2/`
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.3/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.4/`
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.1/`
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.0/`
 
