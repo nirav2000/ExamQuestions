@@ -18,7 +18,12 @@
           <span>Command Word Coach</span>
         </a>
         <div class="top-actions">
-          <span class="version-pill">v0.1.1</span>
+          <label class="version-control" for="versionSelect">
+            <span>Version</span>
+            <select id="versionSelect" aria-label="Switch app version">
+              <option value="v0.1.2">v0.1.2</option>
+            </select>
+          </label>
           <button class="ghost" id="openManualBtn">Add question</button>
           <label class="ghost file-label" for="jsonUpload">Upload JSON</label>
           <input id="jsonUpload" type="file" accept="application/json,.json" hidden />
@@ -90,20 +95,32 @@
             <span class="pill success">Coach feedback</span>
             <button class="ghost" id="tryAgainBtn">Hide feedback</button>
           </div>
-          <div class="compare-grid">
+
+          <div class="feedback-grid">
             <article class="weak stamped" data-stamp="Low mark">
               <h3>Weak answer</h3>
               <p id="weakAnswer"></p>
               <p class="coach-note" id="weakExplanation"></p>
             </article>
-            <article class="excellent stamped" data-stamp="Full marks">
-              <h3>Exceptional answer</h3>
-              <p id="exceptionalAnswer"></p>
+
+            <article class="command-explainer">
+              <span class="small-label">Command word explainer</span>
+              <h3 id="commandExplainerTitle">Why questions</h3>
+              <p id="commandExplainerText"></p>
+              <ul id="commandExplainerSteps"></ul>
             </article>
           </div>
-          <h3 class="breakdown-heading">Why it works</h3>
-          <p class="hover-hint">Hover over or tap a breakdown box to highlight the matching part of the exceptional answer.</p>
-          <div class="breakdown" id="breakdown"></div>
+
+          <article class="excellent stamped full-width" data-stamp="Full marks">
+            <h3>Exceptional answer</h3>
+            <p id="exceptionalAnswer"></p>
+            <div class="coach-breakdown">
+              <h3>Why it works</h3>
+              <p class="coach-note compact">Hover over or tap a coach note below to highlight the matching part of the exceptional answer.</p>
+              <div class="breakdown" id="breakdown"></div>
+            </div>
+          </article>
+
           <div class="next-row">
             <button class="secondary" id="prevBtn">Previous</button>
             <button class="primary" id="nextBtn">Next question</button>
