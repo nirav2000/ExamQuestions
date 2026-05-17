@@ -6,7 +6,7 @@
   <title>Command Word Coach</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,6 +18,7 @@
           <span>Command Word Coach</span>
         </a>
         <div class="top-actions">
+          <span class="version-pill">v0.1.1</span>
           <button class="ghost" id="openManualBtn">Add question</button>
           <label class="ghost file-label" for="jsonUpload">Upload JSON</label>
           <input id="jsonUpload" type="file" accept="application/json,.json" hidden />
@@ -62,7 +63,7 @@
             <span class="command-badge" id="commandBadge">WHY</span>
             <span id="questionTitle">Bold title</span>
           </div>
-          <pre class="source-text" id="sourceText"></pre>
+          <div class="source-text" id="sourceText"></div>
           <h2 id="questionText"></h2>
         </div>
 
@@ -90,17 +91,18 @@
             <button class="ghost" id="tryAgainBtn">Hide feedback</button>
           </div>
           <div class="compare-grid">
-            <article class="weak">
+            <article class="weak stamped" data-stamp="Low mark">
               <h3>Weak answer</h3>
               <p id="weakAnswer"></p>
-              <small id="weakExplanation"></small>
+              <p class="coach-note" id="weakExplanation"></p>
             </article>
-            <article class="excellent">
+            <article class="excellent stamped" data-stamp="Full marks">
               <h3>Exceptional answer</h3>
               <p id="exceptionalAnswer"></p>
             </article>
           </div>
           <h3 class="breakdown-heading">Why it works</h3>
+          <p class="hover-hint">Hover over or tap a breakdown box to highlight the matching part of the exceptional answer.</p>
           <div class="breakdown" id="breakdown"></div>
           <div class="next-row">
             <button class="secondary" id="prevBtn">Previous</button>
