@@ -6,18 +6,17 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.2`
+`v0.1.3`
 
-## v0.1.2 changes
+## v0.1.3 changes
 
-- Moves the exceptional answer below the weak answer.
-- Uses the previous exceptional-answer space for a command-word explainer, starting with a `why` explainer.
-- Incorporates the `Why it works` breakdown into the full-marks exceptional answer box.
-- Makes the breakdown feel more like coach notes.
-- Removes visible labels such as `Restating the question` from the model answer itself so it reads naturally.
-- Corrects the coach-note font sizing so it is smaller than v0.1.1 but still readable.
-- Adds a central `versions.json` file for universal version history.
-- Adds a version selector in the app header.
+- Adds support for uploading the full command-word JSON ZIP pack.
+- Supports pack contents with `manifest.json`, `command-explainers.json`, `all-command-word-questions.json`, and `command-sets/*.json`.
+- Adds a command-word practice-set selector so learners can practise one command word at a time.
+- Uses external command explainers where available, including groove, answer pattern, steps, and helpful words.
+- Displays richer question metadata such as skill focus, answer pattern, and teaching tip.
+- Keeps compatibility with the original uploadable JSON array format.
+- Updates the central `versions.json` history.
 
 ## Versioning
 
@@ -32,5 +31,10 @@ For every future semantic version:
 
 Archived versions are available at paths such as:
 
+- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.2/`
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.1/`
 - `https://nirav2000.github.io/ExamQuestions/versions/v0.1.0/`
+
+## Loading a command-word pack
+
+Use **Upload JSON / ZIP pack** and choose the full command-word JSON pack ZIP. The app reads the manifest, explainers, all-in-one question file, and separate command-set files directly in the browser.
