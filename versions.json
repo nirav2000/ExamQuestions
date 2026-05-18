@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.11",
+    "label": "v0.1.11 - manual dialog close fix, compact version switcher, default KS2 zip",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Fixes manual dialog close button behavior, reduces width footprint of the top version selector, and defaults bundled load to ks2_command_word_json_files.zip."
+  },
+  {
     "version": "v0.1.10",
     "label": "v0.1.10 - split pack controls from groove panel",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.10/",
     "date": "2026-05-18",
     "notes": "Splits the command-word pack controls into a separate panel while leaving the why groove card in the original v0.1.2 style."
   },
