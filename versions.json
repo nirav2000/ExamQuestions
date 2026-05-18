@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.15",
+    "label": "v0.1.15 - normalize groove content for all command words",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Fixes groove card content so each command word (including infer) shows its own heading/intro/steps from KS2 explainers instead of defaulting to why phrasing."
+  },
+  {
     "version": "v0.1.14",
     "label": "v0.1.14 - dynamic groove card by selected command",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.14/",
     "date": "2026-05-18",
     "notes": "Updates the top answer groove card dynamically based on the selected command word/question."
   },

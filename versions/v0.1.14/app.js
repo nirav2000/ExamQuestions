@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.15';
+const APP_VERSION = 'v0.1.14';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -37,17 +37,6 @@ let commandExplainers = {
     answerPattern: 'Say what it is like → add precise details → use evidence',
     steps: ['Identify the thing you are describing.', 'Choose precise details.', 'Use evidence from the text where possible.'],
     helpfulWords: ['is', 'has', 'looks', 'sounds', 'feels']
-  },
-  infer: {
-    title: 'Infer questions',
-    descriptor: 'An infer question asks you to work something out from clues in the text, even if it is not stated directly.',
-    grooveTitle: 'Inference answer groove',
-    grooveHeading: 'Clue → Inference → Explain',
-    grooveIntro: 'Use clue words like <strong>suggests</strong>, <strong>implies</strong>, and <strong>this makes me think</strong>.',
-    groove: ['Answer stem', 'Inference', 'Evidence or clue', 'Explanation of the clue'],
-    answerPattern: 'Inference → clue → explain how the clue proves it',
-    steps: ['Say what you infer.', 'Quote or refer to a clue.', 'Explain how the clue supports your inference.', 'Avoid guesses that are not supported.'],
-    helpfulWords: ['suggests', 'implies', 'this makes me think', 'inference', 'clue']
   },
   default: {
     title: 'Command word',
@@ -135,7 +124,7 @@ async function loadExternalExplainers() {
   try {
     const res = await fetch('./data/command-explainers.json');
     if (!res.ok) throw new Error('No external explainers');
-    commandExplainers = mergeExternalExplainers(commandExplainers, await res.json());
+    commandExplainers = { ...commandExplainers, ...(await res.json()) };
   } catch (error) {
     console.info('Using built-in command explainers.');
   }
@@ -415,7 +404,7 @@ async function handleUpload(file) {
   } else if (data.manifest && data.questions) {
     packManifest = data.manifest;
     allQuestions = data.questions;
-    commandExplainers = mergeExternalExplainers(commandExplainers, (data.commandExplainers || {}));
+    commandExplainers = { ...commandExplainers, ...(data.commandExplainers || {}) };
   } else {
     throw new Error('JSON must be an array of questions or a pack object with manifest and questions.');
   }
@@ -441,7 +430,7 @@ async function handleZipUpload(file) {
     const rel = normalisePackPath(entry.name.split('/command-sets/').pop());
     packFiles.set(`command-sets/${rel}`, JSON.parse(await entry.async('string')));
   }
-  if (explainers) commandExplainers = mergeExternalExplainers(commandExplainers, explainers);
+  if (explainers) commandExplainers = { ...commandExplainers, ...explainers };
   if (manifest) packManifest = manifest.map(item => ({ ...item, source: currentSource }));
 
   if (!all && !manifest && packFiles.size === 0) {
@@ -462,8 +451,8 @@ async function handleZipUpload(file) {
         const commandWord = (data.questions[0]?.commandWord || base).toLowerCase();
         parsedSets.push({ commandWord, base, data: data.questions });
         packFiles.set(`command-sets/${base}.json`, data.questions);
-        if (data.commandExplainer) {
-          commandExplainers[commandWord] = normalizeExplainer(data.commandExplainer, commandWord);
+        if (data.commandExplainer && !commandExplainers[commandWord]) {
+          commandExplainers[commandWord] = data.commandExplainer;
         }
         continue;
       }
@@ -614,26 +603,6 @@ function clearCanvas() { const ctx = els.canvas.getContext('2d'); ctx.clearRect(
 function normalisePackPath(path) { return path.replace(/^.*command-sets\//, 'command-sets/').replace(/^\/+/, ''); }
 function titleCase(value = '') { return value.replace(/[-_]/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
 function firstWord(text = '') { return (text.trim().split(/\s+/)[0] || '').replace(/[^a-z]/gi, '') || 'command'; }
-function normalizeExplainer(explainer = {}, key = 'command') {
-  return {
-    title: explainer.title || `${titleCase(key)} questions`,
-    descriptor: explainer.descriptor || explainer.text || explainer.childFriendlyMeaning || explainer.whatTheQuestionIsReallyAsking || '',
-    grooveTitle: explainer.grooveTitle || explainer.answerGrooveTitle || `${titleCase(key)} answer groove`,
-    grooveHeading: explainer.grooveHeading || 'Reason → Effect → Link',
-    grooveIntro: explainer.grooveIntro || 'Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.',
-    groove: explainer.groove || explainer.answerGrooveSteps || [],
-    answerPattern: explainer.answerPattern || '',
-    steps: explainer.steps || explainer.miniChecklist || [],
-    helpfulWords: explainer.helpfulWords || explainer.usefulSentenceStarters || commandExplainers.default.helpfulWords
-  };
-}
-function mergeExternalExplainers(base, external = {}) {
-  const merged = { ...base };
-  for (const [key, explainer] of Object.entries(external || {})) {
-    merged[key] = normalizeExplainer(explainer, key);
-  }
-  return merged;
-}
 function escapeHtml(value) { return String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char])); }
 function sanitizeSimpleHtml(html) {
   const template = document.createElement('template');
