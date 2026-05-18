@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.13';
+const APP_VERSION = 'v0.1.12';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -434,33 +434,11 @@ async function handleZipUpload(file) {
     const parsedSets = [];
     for (const entry of jsonEntries) {
       const data = JSON.parse(await entry.async('string'));
+      if (!Array.isArray(data) || !data.length) continue;
       const base = entry.name.split('/').pop().replace(/\.json$/i, '');
-
-      if (Array.isArray(data) && data.length) {
-        const commandWord = (data[0]?.commandWord || base).toLowerCase();
-        parsedSets.push({ commandWord, base, data });
-        packFiles.set(`command-sets/${base}.json`, data);
-        continue;
-      }
-
-      if (data && Array.isArray(data.questions) && data.questions.length) {
-        const commandWord = (data.questions[0]?.commandWord || base).toLowerCase();
-        parsedSets.push({ commandWord, base, data: data.questions });
-        packFiles.set(`command-sets/${base}.json`, data.questions);
-        if (data.commandExplainer && !commandExplainers[commandWord]) {
-          commandExplainers[commandWord] = data.commandExplainer;
-        }
-        continue;
-      }
-
-      if (data && typeof data === 'object' && !Array.isArray(data)) {
-        for (const [word, questionsForWord] of Object.entries(data)) {
-          if (!Array.isArray(questionsForWord) || !questionsForWord.length) continue;
-          const commandWord = (questionsForWord[0]?.commandWord || word).toLowerCase();
-          parsedSets.push({ commandWord, base: commandWord, data: questionsForWord });
-          packFiles.set(`command-sets/${commandWord}.json`, questionsForWord);
-        }
-      }
+      const commandWord = (data[0]?.commandWord || base).toLowerCase();
+      parsedSets.push({ commandWord, base, data });
+      packFiles.set(`command-sets/${base}.json`, data);
     }
     allQuestions = parsedSets.flatMap(item => item.data);
     packManifest = parsedSets.map(item => ({
