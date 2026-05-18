@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.10",
+    "label": "v0.1.10 - split pack controls from groove panel",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Splits the command-word pack controls into a separate panel while leaving the why groove card in the original v0.1.2 style."
+  },
+  {
     "version": "v0.1.9",
     "label": "v0.1.9 - restore v0.1.2 explainer/groove wording and all set-selection modes",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.9/",
     "date": "2026-05-17",
     "notes": "Restores v0.1.2 why explainer and groove wording, implements tabs/dropdown/cards/checklist+apply plus source selector and search chips, and fixes filtering behavior so question text updates correctly."
   },
