@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.17';
+const APP_VERSION = 'v0.1.15';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];

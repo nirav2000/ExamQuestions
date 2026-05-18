@@ -1,10 +1,17 @@
 [
   {
-    "version": "v0.1.16",
-    "label": "v0.1.16 - neutral command-groove fallback",
+    "version": "v0.1.17",
+    "label": "v0.1.17 - add canonical pack files and zip manifest bundle",
     "path": "/ExamQuestions/",
     "date": "2026-05-18",
-    "notes": "Replaces the global why-specific Reason → Effect → Link default with neutral command-word strategy wording; keeps Reason → Effect → Link only for why questions."
+    "notes": "Adds missing manifest/explainer/command-set files and rebuilds ks2 zip with canonical structure for consistent default loading."
+  },
+  {
+    "version": "v0.1.16",
+    "label": "v0.1.16 - neutral command-groove fallback",
+    "path": "/ExamQuestions/versions/v0.1.16/",
+    "date": "2026-05-18",
+    "notes": "Replaces the global why-specific Reason \u2192 Effect \u2192 Link default with neutral command-word strategy wording; keeps Reason \u2192 Effect \u2192 Link only for why questions."
   },
   {
     "version": "v0.1.15",
