@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.12",
+    "label": "v0.1.12 - support default KS2 zip schema",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Fixes default bundled loading by supporting flat KS2 zip layouts without manifest/command-sets folders."
+  },
+  {
     "version": "v0.1.11",
     "label": "v0.1.11 - manual dialog close fix, compact version switcher, default KS2 zip",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.11/",
     "date": "2026-05-18",
     "notes": "Fixes manual dialog close button behavior, reduces width footprint of the top version selector, and defaults bundled load to ks2_command_word_json_files.zip."
   },

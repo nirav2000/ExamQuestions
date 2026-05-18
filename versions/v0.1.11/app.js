@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.12';
+const APP_VERSION = 'v0.1.11';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -428,30 +428,7 @@ async function handleZipUpload(file) {
   }
   if (explainers) commandExplainers = { ...commandExplainers, ...explainers };
   if (manifest) packManifest = manifest.map(item => ({ ...item, source: currentSource }));
-
-  if (!all && !manifest && packFiles.size === 0) {
-    const jsonEntries = entries.filter(item => item.name.endsWith('.json'));
-    const parsedSets = [];
-    for (const entry of jsonEntries) {
-      const data = JSON.parse(await entry.async('string'));
-      if (!Array.isArray(data) || !data.length) continue;
-      const base = entry.name.split('/').pop().replace(/\.json$/i, '');
-      const commandWord = (data[0]?.commandWord || base).toLowerCase();
-      parsedSets.push({ commandWord, base, data });
-      packFiles.set(`command-sets/${base}.json`, data);
-    }
-    allQuestions = parsedSets.flatMap(item => item.data);
-    packManifest = parsedSets.map(item => ({
-      commandWord: item.commandWord,
-      title: `${titleCase(item.commandWord)} questions`,
-      count: item.data.length,
-      path: `command-sets/${item.base}.json`,
-      source: currentSource
-    }));
-  } else {
-    allQuestions = all || [...packFiles.values()].flat();
-  }
-
+  allQuestions = all || [...packFiles.values()].flat();
   questions = allQuestions;
   currentIndex = 0;
   els.packStatus.textContent = `Loaded ${allQuestions.length} questions from ${file.name}.`;

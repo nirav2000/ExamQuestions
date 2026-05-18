@@ -6,9 +6,9 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.12`
+`v0.1.11`
 
-## v0.1.12 changes
+## v0.1.11 changes
 
 - Adds support for uploading the full command-word JSON ZIP pack.
 - Supports pack contents with `manifest.json`, `command-explainers.json`, `all-command-word-questions.json`, and `command-sets/*.json`.
