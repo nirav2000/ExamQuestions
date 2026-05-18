@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.16",
+    "label": "v0.1.16 - neutral command-groove fallback",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Replaces the global why-specific Reason → Effect → Link default with neutral command-word strategy wording; keeps Reason → Effect → Link only for why questions."
+  },
+  {
     "version": "v0.1.15",
     "label": "v0.1.15 - normalize groove content for all command words",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.15/",
     "date": "2026-05-18",
     "notes": "Fixes groove card content so each command word (including infer) shows its own heading/intro/steps from KS2 explainers instead of defaulting to why phrasing."
   },
