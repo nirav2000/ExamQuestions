@@ -1,4 +1,4 @@
-// v0.1.16: keep command-groove defaults neutral.
+// v0.1.16: keep command-groove defaults neutral and keep the header version on v0.1.16.
 // This patch avoids showing the why-specific "Reason -> Effect -> Link" pattern for every command word.
 (function () {
   const VERSION = 'v0.1.16';
@@ -22,20 +22,31 @@
   function setVersionLabel() {
     const select = document.querySelector('#versionSelect');
     if (!select) return;
-    [...select.options].forEach(option => {
-      if (option.value === 'v0.1.15') {
-        option.value = VERSION;
-        option.textContent = option.textContent.replace('v0.1.15', VERSION);
-      }
-    });
-    if (![...select.options].some(option => option.value === VERSION)) {
-      const option = document.createElement('option');
-      option.value = VERSION;
-      option.textContent = VERSION;
-      option.selected = true;
-      select.prepend(option);
+
+    let currentOption = [...select.options].find(option => option.value === VERSION);
+    if (!currentOption) {
+      currentOption = document.createElement('option');
+      currentOption.value = VERSION;
+      currentOption.textContent = VERSION;
+      currentOption.dataset.path = '/ExamQuestions/';
+      select.prepend(currentOption);
     }
+
+    [...select.options].forEach(option => {
+      if (option.value === 'v0.1.15' && option.dataset.path === '/ExamQuestions/') {
+        option.dataset.path = '/ExamQuestions/versions/v0.1.15/';
+      }
+      option.selected = option.value === VERSION;
+    });
+
     select.value = VERSION;
+  }
+
+  function watchVersionChanges() {
+    const select = document.querySelector('#versionSelect');
+    if (!select) return;
+    const observer = new MutationObserver(() => setVersionLabel());
+    observer.observe(select, { childList: true, subtree: true, attributes: true, attributeFilter: ['selected'] });
   }
 
   function neutraliseWhyFallbacks() {
@@ -79,8 +90,18 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     setVersionLabel();
+    watchVersionChanges();
     neutraliseWhyFallbacks();
     watchQuestionChanges();
+
+    // app.js renders version history asynchronously, so repeat briefly after startup.
+    [0, 50, 150, 300, 600, 1000, 1500].forEach(delay => {
+      setTimeout(() => {
+        setVersionLabel();
+        neutraliseWhyFallbacks();
+      }, delay);
+    });
+
     document.addEventListener('click', () => setTimeout(neutraliseWhyFallbacks, 0), true);
     document.addEventListener('change', () => setTimeout(() => {
       setVersionLabel();
