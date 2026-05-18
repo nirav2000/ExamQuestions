@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.14';
+const APP_VERSION = 'v0.1.13';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -74,8 +74,6 @@ const els = {
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
   commandGroovePill: document.querySelector('#commandGroovePill'),
-  commandGrooveHeading: document.querySelector('#commandGrooveHeading'),
-  commandGrooveIntro: document.querySelector('#commandGrooveIntro'),
   commandGrooveList: document.querySelector('#commandGrooveList'),
   commandAnswerPattern: document.querySelector('#commandAnswerPattern'),
   versionSelect: document.querySelector('#versionSelect'),
@@ -319,8 +317,6 @@ function renderCommandExplainer(q) {
   els.commandExplainerTitle.textContent = explainer.title || `${titleCase(key)} questions`;
   els.commandExplainerText.textContent = explainer.descriptor || explainer.text || '';
   if (els.commandGroovePill) els.commandGroovePill.textContent = explainer.grooveTitle || 'Answer groove';
-  if (els.commandGrooveHeading) els.commandGrooveHeading.textContent = explainer.grooveHeading || 'Reason → Effect → Link';
-  if (els.commandGrooveIntro) els.commandGrooveIntro.innerHTML = sanitizeSimpleHtml(explainer.grooveIntro || 'Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.');
   if (els.commandGrooveList) els.commandGrooveList.innerHTML = (explainer.groove || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
   els.commandAnswerPattern.textContent = explainer.answerPattern || '';
   if (els.commandExplainerSteps) {

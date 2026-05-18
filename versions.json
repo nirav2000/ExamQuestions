@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.14",
+    "label": "v0.1.14 - dynamic groove card by selected command",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-18",
+    "notes": "Updates the top answer groove card dynamically based on the selected command word/question."
+  },
+  {
     "version": "v0.1.13",
     "label": "v0.1.13 - fix KS2 zip question parsing",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.13/",
     "date": "2026-05-18",
     "notes": "Fixes default bundled KS2 ZIP parsing for object-based files (questions arrays and combined command-word maps), so questions load on startup."
   },
