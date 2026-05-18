@@ -51,6 +51,8 @@ h1 { font-size: clamp(2.45rem, 6vw, 5.8rem); line-height: .95; letter-spacing: -
 .coach-card { padding: 30px; transform: rotate(1.2deg); }
 .coach-card h2 { font-size: 2rem; margin: 16px 0 8px; letter-spacing: -.04em; }
 .coach-card li { margin: 12px 0; }
+.pack-panel { margin: 0 clamp(18px, 4vw, 64px) 24px; padding: 24px; background: rgba(255,253,248,.86); border: 1px solid rgba(223,232,227,.9); border-radius: 24px; box-shadow: var(--shadow); }
+.pack-panel h2 { margin: 0 0 8px; }
 .pill { display: inline-flex; align-items: center; gap: 6px; background: var(--yellow); border-radius: 999px; padding: 8px 12px; font-size: .8rem; font-weight: 800; }
 .pill.success { background: #d9fff4; color: var(--mint-dark); }
 .select-card { display: grid; gap: 8px; margin-top: 16px; font-weight: 900; }

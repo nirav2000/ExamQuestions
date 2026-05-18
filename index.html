@@ -39,55 +39,30 @@
             <button class="secondary" id="downloadJsonBtn">Download current questions</button>
           </div>
         </section>
-        <aside class="coach-card" aria-label="Command word coach controls">
-          <span class="pill" id="commandGroovePill">Why answer groove</span>
-          <h2 id="commandGrooveTitle">Reason → Effect → Link</h2>
-          <p id="commandGrooveIntro">Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.</p>
-          <ol id="commandGrooveList">
+        <aside class="coach-card" aria-label="Why answer pattern">
+          <span class="pill">Why answer groove</span>
+          <h2>Reason → Effect → Link</h2>
+          <p>Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.</p>
+          <ol>
             <li>What happened?</li>
             <li>Why did it happen?</li>
             <li>What proof do I have?</li>
           </ol>
-          <p class="answer-pattern" id="commandAnswerPattern">Use the question words → because/to → proof/effect → so/this shows</p>
-          <h3 id="packTitle">Choose a command word</h3>
-          <p id="packSummary">Load a JSON pack, then practise one command word at a time or all questions together.</p>
-          <p class="mini-copy" id="packStatus">Loading bundled command-word ZIP pack…</p>
-          <label class="select-card" for="selectionMode">
-            <span>Set view</span>
-            <select id="selectionMode" aria-label="Choose practice-set selector style">
-              <option value="dropdown">Dropdown</option>
-              <option value="tabs">Tabs</option>
-              <option value="cards">Cards</option>
-              <option value="checklist">Checklist + Apply</option>
-            </select>
-          </label>
-          <label class="select-card" for="packSourceSelect">
-            <span>Step 1: Source</span>
-            <select id="packSourceSelect" aria-label="Choose pack source">
-              <option value="all">All sources</option>
-              <option value="bundled">Bundled pack</option>
-              <option value="uploaded">Uploaded pack</option>
-              <option value="starter">Starter set</option>
-            </select>
-          </label>
-          <label class="select-card" for="packSearchInput">
-            <span>Search command word/tag</span>
-            <input id="packSearchInput" type="search" placeholder="e.g. why, evidence, inference" />
-          </label>
-          <div class="filter-chips" id="packFilterChips"></div>
-          <div class="set-tabs" id="commandSetTabs" hidden></div>
-          <div class="set-cards" id="commandSetCards" hidden></div>
-          <div class="set-checklist" id="commandSetChecklist" hidden></div>
-          <button class="secondary wide" id="applyChecklistBtn" hidden>Apply selected command words</button>
-          <label class="select-card" for="commandSetSelect">
-            <span>Practice set</span>
-            <select id="commandSetSelect" aria-label="Choose command word practice set">
-              <option value="all">All loaded questions</option>
-            </select>
-          </label>
         </aside>
       </div>
     </header>
+
+    <section class="pack-panel" aria-label="Pack loader and command-word selection">
+      <h2 id="packTitle">Choose a command word</h2>
+      <p id="packSummary">Load a JSON pack, then practise one command word at a time or all questions together.</p>
+      <p class="mini-copy" id="packStatus">Loading bundled command-word ZIP pack…</p>
+      <label class="select-card" for="commandSetSelect">
+        <span>Practice set</span>
+        <select id="commandSetSelect" aria-label="Choose command word practice set">
+          <option value="all">All loaded questions</option>
+        </select>
+      </label>
+    </section>
 
     <main class="app" id="practice">
       <aside class="side-panel">
@@ -140,10 +115,13 @@
               <p id="weakAnswer"></p>
               <p class="coach-note" id="weakExplanation"></p>
             </article>
+
             <article class="command-explainer">
               <span class="small-label">Command word explainer</span>
               <h3 id="commandExplainerTitle">Why questions</h3>
               <p id="commandExplainerText"></p>
+              <div class="groove" id="commandGroove"></div>
+              <p class="answer-pattern" id="commandAnswerPattern"></p>
               <ul id="commandExplainerSteps"></ul>
             </article>
           </div>
