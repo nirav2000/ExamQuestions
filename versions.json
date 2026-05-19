@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.18",
+    "label": "v0.1.18 - groove carousel + collapsible pack sidebar",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-19",
+    "notes": "Adds swipe/caret carousel to cycle command grooves and moves pack controls into a collapsible sidebar to keep the UI clean and minimal."
+  },
+  {
     "version": "v0.1.17",
     "label": "v0.1.17 - add canonical pack files and zip manifest bundle",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.17/",
     "date": "2026-05-18",
     "notes": "Adds missing manifest/explainer/command-set files and rebuilds ks2 zip with canonical structure for consistent default loading."
   },
