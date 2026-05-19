@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.21",
+    "label": "v0.1.21 - version display/source-of-truth repair across all archives",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-19",
+    "notes": "Fixes APP_VERSION mismatches in archived app.js files and aligns selector display with runtime version to ensure correct dropdown label and navigation."
+  },
+  {
     "version": "v0.1.20",
     "label": "v0.1.20 - single-source version display and selector loading fix",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.20/",
     "date": "2026-05-19",
     "notes": "Version selector now initializes from APP_VERSION/script logic instead of hardcoded HTML text, ensuring dropdown labels and navigation reflect correct version on load."
   },

@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.16';
+const APP_VERSION = 'v0.1.20';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -85,6 +85,9 @@ const els = {
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
   commandGroovePill: document.querySelector('#commandGroovePill'),
+  commandGrooveCard: document.querySelector('#commandGrooveCard'),
+  groovePrevBtn: document.querySelector('#groovePrevBtn'),
+  grooveNextBtn: document.querySelector('#grooveNextBtn'),
   commandGrooveHeading: document.querySelector('#commandGrooveHeading'),
   commandGrooveIntro: document.querySelector('#commandGrooveIntro'),
   commandGrooveList: document.querySelector('#commandGrooveList'),
@@ -101,7 +104,9 @@ const els = {
   applyChecklistBtn: document.querySelector('#applyChecklistBtn'),
   packTitle: document.querySelector('#packTitle'),
   packSummary: document.querySelector('#packSummary'),
-  packStatus: document.querySelector('#packStatus')
+  packStatus: document.querySelector('#packStatus'),
+  togglePackPanelBtn: document.querySelector('#togglePackPanelBtn'),
+  packPanelBody: document.querySelector('#packPanelBody')
 };
 
 const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
@@ -133,7 +138,7 @@ async function loadQuestions() {
 
 async function loadExternalExplainers() {
   try {
-    const res = await fetch('./data/command-explainers.json');
+    const res = await fetch('./data/command-explainers.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('No external explainers');
     commandExplainers = mergeExternalExplainers(commandExplainers, await res.json());
   } catch (error) {
@@ -143,7 +148,7 @@ async function loadExternalExplainers() {
 
 async function loadExternalManifest() {
   try {
-    const res = await fetch('./data/manifest.json');
+    const res = await fetch('./data/manifest.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('No manifest');
     packManifest = await res.json();
     els.packStatus.textContent = 'Loaded command-word manifest from data folder.';
@@ -154,7 +159,7 @@ async function loadExternalManifest() {
 
 async function loadVersionHistory() {
   try {
-    const res = await fetch(VERSION_HISTORY_URL);
+    const res = await fetch(VERSION_HISTORY_URL, { cache: 'no-store' });
     versionHistory = await res.json();
   } catch (error) {
     console.warn('Could not load versions.json.', error);
@@ -263,7 +268,11 @@ async function selectCommandSet(value) {
 function renderVersionSwitcher() {
   if (!els.versionSelect) return;
   els.versionSelect.innerHTML = '';
-  versionHistory.forEach(item => {
+  const hasCurrent = versionHistory.some(item => item.version === APP_VERSION);
+  const safeHistory = hasCurrent
+    ? versionHistory
+    : [{ version: APP_VERSION, label: APP_VERSION, path: './' }, ...versionHistory];
+  safeHistory.forEach(item => {
     const option = document.createElement('option');
     option.value = item.version;
     option.textContent = item.label || item.version;
@@ -500,7 +509,7 @@ async function handleZipUpload(file) {
 
 async function loadBundledPack() {
   currentSource = 'bundled';
-  const res = await fetch('./command-set/ks2_command_word_json_files.zip');
+  const res = await fetch('./command-set/ks2_command_word_json_files.zip', { cache: 'no-store' });
   if (!res.ok) throw new Error('Bundled ZIP pack was not found in command-set/.');
   const blob = await res.blob();
   const file = new File([blob], 'ks2_command_word_json_files.zip', { type: 'application/zip' });
@@ -610,6 +619,38 @@ function setupCommandSetSwitcher() {
     render();
   });
 }
+function cycleCommandWord(direction = 1) {
+  const words = packManifest.map(item => item.commandWord);
+  if (!words.length) return;
+  const currentWord = (questions[currentIndex]?.commandWord || '').toLowerCase();
+  let idx = words.indexOf(currentWord);
+  if (idx < 0) idx = 0;
+  const nextWord = words[(idx + direction + words.length) % words.length];
+  selectCommandSet(nextWord);
+  if (els.commandSetSelect) els.commandSetSelect.value = nextWord;
+}
+function setupGrooveCarousel() {
+  if (els.groovePrevBtn) els.groovePrevBtn.addEventListener('click', () => cycleCommandWord(-1));
+  if (els.grooveNextBtn) els.grooveNextBtn.addEventListener('click', () => cycleCommandWord(1));
+  if (els.commandGrooveCard) {
+    let startX = null;
+    els.commandGrooveCard.addEventListener('touchstart', e => { startX = e.touches[0]?.clientX ?? null; }, { passive: true });
+    els.commandGrooveCard.addEventListener('touchend', e => {
+      if (startX == null) return;
+      const endX = e.changedTouches[0]?.clientX ?? startX;
+      const dx = endX - startX;
+      if (Math.abs(dx) > 45) cycleCommandWord(dx > 0 ? -1 : 1);
+      startX = null;
+    }, { passive: true });
+  }
+}
+function setupPackPanelToggle() {
+  if (!els.togglePackPanelBtn || !els.packPanelBody) return;
+  els.togglePackPanelBtn.addEventListener('click', () => {
+    const hidden = els.packPanelBody.classList.toggle('hidden');
+    els.togglePackPanelBtn.setAttribute('aria-expanded', String(!hidden));
+  });
+}
 function clearCanvas() { const ctx = els.canvas.getContext('2d'); ctx.clearRect(0, 0, els.canvas.width, els.canvas.height); }
 function normalisePackPath(path) { return path.replace(/^.*command-sets\//, 'command-sets/').replace(/^\/+/, ''); }
 function titleCase(value = '') { return value.replace(/[-_]/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
@@ -655,4 +696,4 @@ document.querySelector('#prevBtn').addEventListener('click', () => selectQuestio
 document.querySelector('#startBtn').addEventListener('click', () => document.querySelector('#practice').scrollIntoView({ behavior: 'smooth' }));
 document.querySelector('#downloadJsonBtn').addEventListener('click', () => download('command-word-coach-questions.json', JSON.stringify(questions, null, 2)));
 document.querySelector('#clearCanvasBtn').addEventListener('click', clearCanvas);
-setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); initialiseApp();
+setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); setupGrooveCarousel(); setupPackPanelToggle(); initialiseApp();
