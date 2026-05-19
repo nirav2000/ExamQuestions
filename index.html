@@ -18,10 +18,20 @@
           <span>Command Word Coach</span>
         </a>
         <div class="top-actions">
+          <details class="menu-shell">
+            <summary class="ghost">Menu</summary>
+            <div class="menu-pop">
+              <button class="ghost" type="button">Parent dashboard</button>
+              <button class="ghost" type="button">Teacher dashboard</button>
+              <button class="ghost" type="button">User stats</button>
+              <button class="ghost" type="button">Settings</button>
+              <button class="ghost" type="button">Subscription</button>
+            </div>
+          </details>
           <label class="version-control" for="versionSelect">
             <span>Version</span>
             <select id="versionSelect" aria-label="Switch app version">
-              <option value="v0.1.16">v0.1.16</option>
+              <option value="v0.1.19">v0.1.19</option>
             </select>
           </label>
           <button class="ghost" id="openManualBtn">Add question</button>
@@ -51,6 +61,7 @@
             <li>Check your answer does what the question asks.</li>
           </ol>
         </aside>
+        <div class="groove-stack-hint" aria-hidden="true"></div>
       </div>
     </header>
 
@@ -168,7 +179,7 @@
   </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-  <script src="app.js"></script>
-  <script src="command-groove-fallback-fix.js"></script>
+  <script src="app.js?v=0.1.19"></script>
+  <script src="command-groove-fallback-fix.js?v=0.1.19"></script>
 </body>
 </html>

@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.19",
+    "label": "v0.1.19 - groove stack carousel polish + collapsible pack menu",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-19",
+    "notes": "Adds softer carousel caret controls and stack hint, adds top menu scaffolding, makes pack panel collapsible, and hardens no-cache fetches so latest page loads on refresh."
+  },
+  {
     "version": "v0.1.18",
     "label": "v0.1.18 - groove carousel + collapsible pack sidebar",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.18/",
     "date": "2026-05-19",
     "notes": "Adds swipe/caret carousel to cycle command grooves and moves pack controls into a collapsible sidebar to keep the UI clean and minimal."
   },
