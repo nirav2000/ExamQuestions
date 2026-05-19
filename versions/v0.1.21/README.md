@@ -6,9 +6,9 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.22`
+`v0.1.21`
 
-## v0.1.22 changes
+## v0.1.21 changes
 
 - Replaces the global hardcoded `Reason → Effect → Link` default with neutral command-word strategy wording.
 - Keeps `Reason → Effect → Link` as a `why`-specific pattern rather than a universal command-word pattern.

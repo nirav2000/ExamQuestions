@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.22",
+    "label": "v0.1.22 - refactor app utilities into helpers module",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-19",
+    "notes": "Refactors shared helper logic out of app.js into app-helpers.js for readability/maintainability while keeping behavior unchanged."
+  },
+  {
     "version": "v0.1.21",
     "label": "v0.1.21 - version display/source-of-truth repair across all archives",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.21/",
     "date": "2026-05-19",
     "notes": "Fixes APP_VERSION mismatches in archived app.js files and aligns selector display with runtime version to ensure correct dropdown label and navigation."
   },
