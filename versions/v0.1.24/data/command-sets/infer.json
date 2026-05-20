@@ -1,0 +1,602 @@
+[
+  {
+    "id": "infer-001",
+    "title": "The unopened letter",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "A white envelope lay on the kitchen table. Mum walked past it twice without touching it. When Dad asked if she had opened it, she shook her head and began wiping an already clean worktop.",
+    "textHtml": "A white envelope lay on the kitchen table. Mum walked past it twice without touching it. When Dad asked if she had opened it, she shook her head and began wiping an already clean worktop.",
+    "question": "What can you infer about Mum's feelings towards the letter?",
+    "weakAnswer": "Mum has a letter.",
+    "weakExplanation": "This only states what is directly in the text; it does not infer her feelings.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is on the kitchen table?",
+    "exceptionalAnswer": "I can infer that Mum feels nervous about the letter. She walks past it twice without touching it and wipes an already clean worktop, which suggests she is avoiding the letter and trying to distract herself.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Mum feels nervous about the letter."
+      },
+      {
+        "label": "Clue",
+        "text": "She walks past it twice without touching it and wipes an already clean worktop,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is avoiding the letter and trying to distract herself."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Mum feels nervous about the letter.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She walks past it twice without touching it and wipes an already clean worktop,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is avoiding the letter and trying to distract herself.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-002",
+    "title": "The muddy trainers",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Noah crept through the back door carrying his trainers in one hand. Mud dripped from the laces onto the tiles. \"Were you playing near the pond?\" asked Grandma. Noah looked down at his socks.",
+    "textHtml": "Noah crept through the back door carrying his trainers in one hand. Mud dripped from the laces onto the tiles. \"Were you playing near the pond?\" asked Grandma. Noah looked down at his socks.",
+    "question": "What can you infer about where Noah has been?",
+    "weakAnswer": "Noah has muddy trainers.",
+    "weakExplanation": "This gives a clue, but it does not say what you can work out from it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is Noah carrying?",
+    "exceptionalAnswer": "I can infer that Noah has probably been playing near the pond or somewhere very muddy. His trainers are dripping mud, and Grandma asks if he was near the pond, which suggests the mud gives away where he has been.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Noah has probably been playing near the pond or somewhere very muddy."
+      },
+      {
+        "label": "Clue",
+        "text": "His trainers are dripping mud, and Grandma asks if he was near the pond,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests the mud gives away where he has been."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Noah has probably been playing near the pond or somewhere very muddy.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "His trainers are dripping mud, and Grandma asks if he was near the pond,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests the mud gives away where he has been.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-003",
+    "title": "The spelling test",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Amelia folded the test paper and slid it under her book. When her friend asked her score, Amelia shrugged and said, \"It doesn't matter.\" Her eyes stayed fixed on the desk.",
+    "textHtml": "Amelia folded the test paper and slid it under her book. When her friend asked her score, Amelia shrugged and said, \"It doesn't matter.\" Her eyes stayed fixed on the desk.",
+    "question": "What can you infer about Amelia's test result?",
+    "weakAnswer": "Amelia says it doesn't matter.",
+    "weakExplanation": "This repeats what Amelia says, but it does not infer what her behaviour suggests.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Amelia say?",
+    "exceptionalAnswer": "I can infer that Amelia is disappointed with her test result. She hides the paper, avoids looking at her friend and says it does not matter, which suggests she may be embarrassed or upset about her score.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Amelia is disappointed with her test result."
+      },
+      {
+        "label": "Clue",
+        "text": "She hides the paper, avoids looking at her friend and says it does not matter,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she may be embarrassed or upset about her score."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Amelia is disappointed with her test result.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She hides the paper, avoids looking at her friend and says it does not matter,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she may be embarrassed or upset about her score.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-004",
+    "title": "The empty stage",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The curtains were still closed, but Malik could hear chairs scraping and programmes rustling beyond them. He rubbed his hands on his trousers and took three slow breaths.",
+    "textHtml": "The curtains were still closed, but Malik could hear chairs scraping and programmes rustling beyond them. He rubbed his hands on his trousers and took three slow breaths.",
+    "question": "What can you infer about Malik?",
+    "weakAnswer": "Malik is behind curtains.",
+    "weakExplanation": "This says where Malik is, but it does not work out how he feels.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Malik?",
+    "exceptionalAnswer": "I can infer that Malik is about to perform and feels nervous. He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths, which suggests he is trying to calm himself.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Malik is about to perform and feels nervous."
+      },
+      {
+        "label": "Clue",
+        "text": "He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is trying to calm himself."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Malik is about to perform and feels nervous.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is trying to calm himself.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-005",
+    "title": "The broken vase",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The vase lay in pieces beside the sofa. The cat slept peacefully upstairs, but a foam football rested under the coffee table. Daniel stood with his hands behind his back.",
+    "textHtml": "The vase lay in pieces beside the sofa. The cat slept peacefully upstairs, but a foam football rested under the coffee table. Daniel stood with his hands behind his back.",
+    "question": "What can you infer about how the vase broke?",
+    "weakAnswer": "The vase is in pieces.",
+    "weakExplanation": "This notices the result, but it does not infer the likely cause.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What happened to the vase?",
+    "exceptionalAnswer": "I can infer that the vase was probably broken by the football, not by the cat. The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands, which suggests he may have kicked or thrown it indoors.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "the vase was probably broken by the football, not by the cat."
+      },
+      {
+        "label": "Clue",
+        "text": "The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he may have kicked or thrown it indoors."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "the vase was probably broken by the football, not by the cat.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he may have kicked or thrown it indoors.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-006",
+    "title": "The secret recipe",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Auntie Priya closed the notebook as soon as Sam entered the kitchen. Flour dusted her sleeves, and the smell of cinnamon filled the room. \"Nothing to see yet,\" she said, smiling.",
+    "textHtml": "Auntie Priya closed the notebook as soon as Sam entered the kitchen. Flour dusted her sleeves, and the smell of cinnamon filled the room. \"Nothing to see yet,\" she said, smiling.",
+    "question": "What can you infer Auntie Priya is doing?",
+    "weakAnswer": "She is in the kitchen.",
+    "weakExplanation": "This is directly stated, but it does not infer her activity from the clues.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Auntie Priya?",
+    "exceptionalAnswer": "I can infer that Auntie Priya is baking something as a surprise. Flour is on her sleeves, the room smells of cinnamon and she hides the notebook, which suggests she is using a recipe and does not want Sam to know yet.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Auntie Priya is baking something as a surprise."
+      },
+      {
+        "label": "Clue",
+        "text": "Flour is on her sleeves, the room smells of cinnamon and she hides the notebook,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is using a recipe and does not want Sam to know yet."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Auntie Priya is baking something as a surprise.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "Flour is on her sleeves, the room smells of cinnamon and she hides the notebook,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is using a recipe and does not want Sam to know yet.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-007",
+    "title": "The late bus",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Ellie stood at the bus stop long after the other pupils had left. She kept checking the road, then the timetable, then her phone. Her shoulders dropped when another red car turned the corner instead of the bus.",
+    "textHtml": "Ellie stood at the bus stop long after the other pupils had left. She kept checking the road, then the timetable, then her phone. Her shoulders dropped when another red car turned the corner instead of the bus.",
+    "question": "What can you infer about Ellie's journey?",
+    "weakAnswer": "Ellie is at a bus stop.",
+    "weakExplanation": "This gives the setting, but it does not infer what is happening with her journey.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ellie?",
+    "exceptionalAnswer": "I can infer that Ellie's bus is late and she is becoming disappointed. She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive, which suggests she has been waiting anxiously.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Ellie's bus is late and she is becoming disappointed."
+      },
+      {
+        "label": "Clue",
+        "text": "She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she has been waiting anxiously."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Ellie's bus is late and she is becoming disappointed.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she has been waiting anxiously.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-008",
+    "title": "The new shoes",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Ravi walked across the playground without running, even when his friends called him to join the game. He looked down every few steps at his bright white trainers and stepped around the muddy puddles.",
+    "textHtml": "Ravi walked across the playground without running, even when his friends called him to join the game. He looked down every few steps at his bright white trainers and stepped around the muddy puddles.",
+    "question": "What can you infer about Ravi's new trainers?",
+    "weakAnswer": "Ravi has white trainers.",
+    "weakExplanation": "This gives a detail, but it does not explain what Ravi's behaviour suggests about them.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour are Ravi's trainers?",
+    "exceptionalAnswer": "I can infer that Ravi wants to keep his new trainers clean. He keeps looking at them and steps around the muddy puddles, which suggests he is proud of them and does not want them to get dirty.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Ravi wants to keep his new trainers clean."
+      },
+      {
+        "label": "Clue",
+        "text": "He keeps looking at them and steps around the muddy puddles,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is proud of them and does not want them to get dirty."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Ravi wants to keep his new trainers clean.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "He keeps looking at them and steps around the muddy puddles,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is proud of them and does not want them to get dirty.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-009",
+    "title": "The quiet birthday",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "There were no balloons in the hallway and no cake on the table. Still, Leila noticed Dad whispering into his phone and her brother carrying a large box upstairs under his jumper.",
+    "textHtml": "There were no balloons in the hallway and no cake on the table. Still, Leila noticed Dad whispering into his phone and her brother carrying a large box upstairs under his jumper.",
+    "question": "What can you infer is happening?",
+    "weakAnswer": "There are no balloons.",
+    "weakExplanation": "This notices one detail, but it misses the clues that something is being hidden.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is not in the hallway?",
+    "exceptionalAnswer": "I can infer that Leila's family is secretly preparing a birthday surprise. Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box, which suggests they are keeping the preparations hidden.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Leila's family is secretly preparing a birthday surprise."
+      },
+      {
+        "label": "Clue",
+        "text": "Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are keeping the preparations hidden."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Leila's family is secretly preparing a birthday surprise.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are keeping the preparations hidden.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-010",
+    "title": "The match report",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The classroom door opened and the football team came in silently. Their shirts were splashed with rain, and the captain placed the silver runners-up medal on the teacher's desk without speaking.",
+    "textHtml": "The classroom door opened and the football team came in silently. Their shirts were splashed with rain, and the captain placed the silver runners-up medal on the teacher's desk without speaking.",
+    "question": "What can you infer about the football match?",
+    "weakAnswer": "The team played football.",
+    "weakExplanation": "This is obvious from the passage, but it does not infer the result or mood.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sport did the team play?",
+    "exceptionalAnswer": "I can infer that the team lost the final or came second and feels disappointed. The captain places a runners-up medal on the desk without speaking, and the team enters silently, which suggests they are unhappy with the result.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "the team lost the final or came second and feels disappointed."
+      },
+      {
+        "label": "Clue",
+        "text": "The captain places a runners-up medal on the desk without speaking, and the team enters silently,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are unhappy with the result."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "the team lost the final or came second and feels disappointed.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "The captain places a runners-up medal on the desk without speaking, and the team enters silently,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are unhappy with the result.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  }
+]

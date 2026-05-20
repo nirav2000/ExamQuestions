@@ -1,0 +1,602 @@
+[
+  {
+    "id": "why-001",
+    "title": "The locked gate",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Mara stopped at the playground gate and frowned. A bright notice had been tied to the bars: Wet Paint. She slipped the football back under her arm and walked towards the field instead.",
+    "textHtml": "Mara stopped at the playground gate and frowned. A bright notice had been tied to the bars: Wet Paint. She slipped the football back under her arm and walked towards the field instead.",
+    "question": "Why does Mara walk towards the field instead of going into the playground?",
+    "weakAnswer": "Mara goes to the field.",
+    "weakExplanation": "This says what Mara does, but it does not explain why she chooses the field.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where does Mara go next?",
+    "exceptionalAnswer": "Mara walks towards the field because the playground gate has a Wet Paint notice on it. The sign tells her that the playground equipment may have fresh paint on it, so she avoids going in and chooses somewhere else to play.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mara walks towards the field"
+      },
+      {
+        "label": "Reason",
+        "text": "because the playground gate has a Wet Paint notice on it."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign tells her that the playground equipment may have fresh paint on it,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she avoids going in and chooses somewhere else to play."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mara walks towards the field",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the playground gate has a Wet Paint notice on it.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign tells her that the playground equipment may have fresh paint on it,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she avoids going in and chooses somewhere else to play.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-002",
+    "title": "The careful tray",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Ben carried the tray with both hands and moved slowly down the corridor. On the tray was a model volcano made from card, glue and carefully painted paper. His class had spent all week building it for the science display.",
+    "textHtml": "Ben carried the tray with both hands and moved slowly down the corridor. On the tray was a model volcano made from card, glue and carefully painted paper. His class had spent all week building it for the science display.",
+    "question": "Why does Ben carry the tray slowly?",
+    "weakAnswer": "Because he is in the corridor.",
+    "weakExplanation": "This gives the place, but it does not explain the reason for his careful movement.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ben carrying the tray?",
+    "exceptionalAnswer": "Ben carries the tray slowly because the model volcano is fragile and important to his class. The text says it is made from card, glue and carefully painted paper, so moving too quickly might damage something they have worked hard to make.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ben carries the tray slowly"
+      },
+      {
+        "label": "Reason",
+        "text": "because the model volcano is fragile and important to his class."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says it is made from card, glue and carefully painted paper,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so moving too quickly might damage something they have worked hard to make."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ben carries the tray slowly",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the model volcano is fragile and important to his class.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says it is made from card, glue and carefully painted paper,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so moving too quickly might damage something they have worked hard to make.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-003",
+    "title": "The red envelope",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "When the post arrived, Dad picked up a red envelope and smiled before he even opened it. Every birthday, Auntie Jo sent the same bright envelope with a tiny star drawn beside the stamp.",
+    "textHtml": "When the post arrived, Dad picked up a red envelope and smiled before he even opened it. Every birthday, Auntie Jo sent the same bright envelope with a tiny star drawn beside the stamp.",
+    "question": "Why does Dad think the envelope is from Auntie Jo?",
+    "weakAnswer": "Because he smiled at it.",
+    "weakExplanation": "This notices Dad's reaction, but it does not explain the clue that tells him who sent it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How does Dad react to the envelope?",
+    "exceptionalAnswer": "Dad thinks the envelope is from Auntie Jo because he recognises her usual birthday envelope. The text says she sends the same bright envelope with a tiny star beside the stamp, so those details help him identify it before opening it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Dad thinks the envelope is from Auntie Jo"
+      },
+      {
+        "label": "Reason",
+        "text": "because he recognises her usual birthday envelope."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says she sends the same bright envelope with a tiny star beside the stamp,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so those details help him identify it before opening it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Dad thinks the envelope is from Auntie Jo",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because he recognises her usual birthday envelope.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says she sends the same bright envelope with a tiny star beside the stamp,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so those details help him identify it before opening it.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-004",
+    "title": "The empty bird table",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Lina filled the bird table every morning. Today, she found the seeds untouched and the garden strangely still. Then she spotted a neighbour's cat crouching beneath the hedge, its tail flicking.",
+    "textHtml": "Lina filled the bird table every morning. Today, she found the seeds untouched and the garden strangely still. Then she spotted a neighbour's cat crouching beneath the hedge, its tail flicking.",
+    "question": "Why are the seeds on the bird table untouched?",
+    "weakAnswer": "The garden is still.",
+    "weakExplanation": "This is a detail from the passage, but it does not explain why the birds have not eaten the seeds.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the garden like today?",
+    "exceptionalAnswer": "The seeds are untouched because the birds are probably staying away from the cat. Lina sees the neighbour's cat crouching beneath the hedge, so the birds may feel unsafe and avoid the bird table.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The seeds are untouched"
+      },
+      {
+        "label": "Reason",
+        "text": "because the birds are probably staying away from the cat."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Lina sees the neighbour's cat crouching beneath the hedge,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so the birds may feel unsafe and avoid the bird table."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The seeds are untouched",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the birds are probably staying away from the cat.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Lina sees the neighbour's cat crouching beneath the hedge,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so the birds may feel unsafe and avoid the bird table.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-005",
+    "title": "The library card",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Owen patted his pockets and tipped his school bag onto the carpet. Books, pencils and a crushed cereal bar fell out, but not his library card. He glanced at the clock and groaned.",
+    "textHtml": "Owen patted his pockets and tipped his school bag onto the carpet. Books, pencils and a crushed cereal bar fell out, but not his library card. He glanced at the clock and groaned.",
+    "question": "Why does Owen groan?",
+    "weakAnswer": "He has lots of things in his bag.",
+    "weakExplanation": "This describes what falls out of the bag, but it does not explain Owen's groan.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is in Owen's bag?",
+    "exceptionalAnswer": "Owen groans because he cannot find his library card and he is running out of time. He searches his pockets and bag, but the card is missing, and glancing at the clock suggests he needs it soon.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Owen groans"
+      },
+      {
+        "label": "Reason",
+        "text": "because he cannot find his library card and he is running out of time."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "He searches his pockets and bag, but the card is missing,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "and glancing at the clock suggests he needs it soon."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Owen groans",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because he cannot find his library card and he is running out of time.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "He searches his pockets and bag, but the card is missing,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "and glancing at the clock suggests he needs it soon.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-006",
+    "title": "The leaking roof",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Drops of water landed in a bucket beside the whiteboard. Mrs Iqbal moved the reading corner to the other side of the room and put a towel over the damp carpet.",
+    "textHtml": "Drops of water landed in a bucket beside the whiteboard. Mrs Iqbal moved the reading corner to the other side of the room and put a towel over the damp carpet.",
+    "question": "Why does Mrs Iqbal move the reading corner?",
+    "weakAnswer": "There is a bucket in the classroom.",
+    "weakExplanation": "This spots an object, but it does not explain why the reading corner is moved.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What object is beside the whiteboard?",
+    "exceptionalAnswer": "Mrs Iqbal moves the reading corner because part of the classroom is wet from a leak. Drops of water are landing in a bucket and the carpet is damp, so she moves the children away from that uncomfortable area.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Iqbal moves the reading corner"
+      },
+      {
+        "label": "Reason",
+        "text": "because part of the classroom is wet from a leak."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Drops of water are landing in a bucket and the carpet is damp,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she moves the children away from that uncomfortable area."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Iqbal moves the reading corner",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because part of the classroom is wet from a leak.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Drops of water are landing in a bucket and the carpet is damp,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she moves the children away from that uncomfortable area.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-007",
+    "title": "The missing medal",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "At the finish line, Ruby checked the ribbon around her neck and then searched the grass beside her trainers. The medal had been there a moment ago. She asked everyone nearby to stand still.",
+    "textHtml": "At the finish line, Ruby checked the ribbon around her neck and then searched the grass beside her trainers. The medal had been there a moment ago. She asked everyone nearby to stand still.",
+    "question": "Why does Ruby ask everyone nearby to stand still?",
+    "weakAnswer": "Ruby is at the finish line.",
+    "weakExplanation": "This tells us where Ruby is, but it does not explain why she wants everyone to stop moving.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ruby?",
+    "exceptionalAnswer": "Ruby asks everyone to stand still because her medal is missing and she does not want it to be kicked or trodden on. She searches the grass beside her trainers, so keeping people still gives her a better chance of finding it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby asks everyone to stand still"
+      },
+      {
+        "label": "Reason",
+        "text": "because her medal is missing and she does not want it to be kicked or trodden on."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "She searches the grass beside her trainers,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so keeping people still gives her a better chance of finding it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby asks everyone to stand still",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because her medal is missing and she does not want it to be kicked or trodden on.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "She searches the grass beside her trainers,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so keeping people still gives her a better chance of finding it.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-008",
+    "title": "The cracked mug",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "A tiny crack ran down the side of Mum's favourite mug. Leo placed it at the back of the shelf and chose a different cup for her tea. He knew the blue mug had belonged to Grandma.",
+    "textHtml": "A tiny crack ran down the side of Mum's favourite mug. Leo placed it at the back of the shelf and chose a different cup for her tea. He knew the blue mug had belonged to Grandma.",
+    "question": "Why does Leo choose a different cup for Mum's tea?",
+    "weakAnswer": "Because the mug is blue.",
+    "weakExplanation": "This gives a detail about the mug, but it does not explain why Leo avoids using it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour is the mug?",
+    "exceptionalAnswer": "Leo chooses a different cup because Mum's favourite mug has a crack in it. Since the mug belonged to Grandma, it is special, so Leo probably wants to stop it breaking further.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Leo chooses a different cup"
+      },
+      {
+        "label": "Reason",
+        "text": "because Mum's favourite mug has a crack in it."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Since the mug belonged to Grandma, it is special,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so Leo probably wants to stop it breaking further."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Leo chooses a different cup",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because Mum's favourite mug has a crack in it.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Since the mug belonged to Grandma, it is special,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so Leo probably wants to stop it breaking further.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-009",
+    "title": "The dark bakery",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "The bakery window was dark, although it was usually glowing by seven o'clock. A handwritten sign said: Oven broken. Fresh bread tomorrow. The queue outside slowly disappeared.",
+    "textHtml": "The bakery window was dark, although it was usually glowing by seven o'clock. A handwritten sign said: Oven broken. Fresh bread tomorrow. The queue outside slowly disappeared.",
+    "question": "Why does the queue outside the bakery disappear?",
+    "weakAnswer": "The bakery has a sign.",
+    "weakExplanation": "This says there is a sign, but it does not explain why the people leave.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is in the bakery window?",
+    "exceptionalAnswer": "The queue disappears because the bakery cannot sell fresh bread today. The sign says the oven is broken and fresh bread will be available tomorrow, so customers realise there is no point waiting.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The queue disappears"
+      },
+      {
+        "label": "Reason",
+        "text": "because the bakery cannot sell fresh bread today."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign says the oven is broken and fresh bread will be available tomorrow,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so customers realise there is no point waiting."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The queue disappears",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the bakery cannot sell fresh bread today.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign says the oven is broken and fresh bread will be available tomorrow,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so customers realise there is no point waiting.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-010",
+    "title": "The whispered plan",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Sofia lowered her voice when she saw her brother coming down the stairs. On the table were balloons, wrapping paper and a chocolate cake with candles hidden behind a cereal box.",
+    "textHtml": "Sofia lowered her voice when she saw her brother coming down the stairs. On the table were balloons, wrapping paper and a chocolate cake with candles hidden behind a cereal box.",
+    "question": "Why does Sofia lower her voice?",
+    "weakAnswer": "Her brother is coming downstairs.",
+    "weakExplanation": "This is partly relevant, but it does not explain why his arrival makes her speak quietly.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Who is coming downstairs?",
+    "exceptionalAnswer": "Sofia lowers her voice because she is trying to keep a birthday surprise secret from her brother. The balloons, wrapping paper and hidden cake show that a celebration is being prepared, so she does not want him to hear the plan.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Sofia lowers her voice"
+      },
+      {
+        "label": "Reason",
+        "text": "because she is trying to keep a birthday surprise secret from her brother."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The balloons, wrapping paper and hidden cake show that a celebration is being prepared,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she does not want him to hear the plan."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Sofia lowers her voice",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because she is trying to keep a birthday surprise secret from her brother.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The balloons, wrapping paper and hidden cake show that a celebration is being prepared,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she does not want him to hear the plan.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  }
+]

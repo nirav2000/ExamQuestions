@@ -1,0 +1,652 @@
+[
+  {
+    "id": "explain-001",
+    "title": "The missing lunchbox",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Hassan opened his tray and stared at the empty space where his lunchbox should have been. He checked under his coat, then inside his bag for the third time. When the bell rang for lunch, he stayed at his desk and pressed his lips together.",
+    "textHtml": "Hassan opened his tray and stared at the empty space where his lunchbox should have been. He checked under his coat, then inside his bag for the third time. When the bell rang for lunch, he stayed at his desk and pressed his lips together.",
+    "question": "Explain how you know Hassan is worried.",
+    "weakAnswer": "Hassan is worried because his lunchbox is gone.",
+    "weakExplanation": "This gives a basic reason, but it does not explain how the reader knows Hassan is worried from the details in the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Why might Hassan be worried?",
+    "exceptionalAnswer": "Hassan is worried because he keeps searching for his lunchbox and does not go to lunch when the bell rings. The text says he checks under his coat and inside his bag for the third time, which shows he is anxious and trying hard to find it. Pressing his lips together also suggests he is upset but trying not to show it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Hassan is worried"
+      },
+      {
+        "label": "Point",
+        "text": "because he keeps searching for his lunchbox and does not go to lunch when the bell rings."
+      },
+      {
+        "label": "Evidence",
+        "text": "The text says he checks under his coat and inside his bag for the third time,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which shows he is anxious and trying hard to find it."
+      },
+      {
+        "label": "Link back",
+        "text": "Pressing his lips together also suggests he is upset but trying not to show it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Hassan is worried",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because he keeps searching for his lunchbox and does not go to lunch when the bell rings.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The text says he checks under his coat and inside his bag for the third time,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which shows he is anxious and trying hard to find it.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "Pressing his lips together also suggests he is upset but trying not to show it.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-002",
+    "title": "The playground bench",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "At the start of break, Nia sat alone on the bench and watched the football game from a distance. Then Ruby waved her over and shouted, \"You can be on our team!\" Nia jumped up so quickly that her water bottle rolled onto the grass.",
+    "textHtml": "At the start of break, Nia sat alone on the bench and watched the football game from a distance. Then Ruby waved her over and shouted, \"You can be on our team!\" Nia jumped up so quickly that her water bottle rolled onto the grass.",
+    "question": "Explain how Ruby's invitation changes Nia's mood.",
+    "weakAnswer": "Ruby lets Nia play football.",
+    "weakExplanation": "This says what Ruby does, but it does not explain how Nia's mood changes or which details show the change.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Ruby invite Nia to do?",
+    "exceptionalAnswer": "Ruby's invitation changes Nia's mood from lonely to excited. At first, Nia sits alone and watches the game from a distance, which suggests she feels left out. When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby's invitation changes Nia's mood"
+      },
+      {
+        "label": "Point",
+        "text": "from lonely to excited."
+      },
+      {
+        "label": "Evidence",
+        "text": "At first, Nia sits alone and watches the game from a distance,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she feels left out."
+      },
+      {
+        "label": "Link back",
+        "text": "When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby's invitation changes Nia's mood",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "from lonely to excited.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "At first, Nia sits alone and watches the game from a distance,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she feels left out.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-003",
+    "title": "Grandad's watch",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Grandad placed the watch in Lily's palm as carefully as if it were made of glass. \"This kept ticking all through my first job at the railway,\" he said. The leather strap was cracked, and the face was scratched, but Lily closed her fingers around it and smiled.",
+    "textHtml": "Grandad placed the watch in Lily's palm as carefully as if it were made of glass. \"This kept ticking all through my first job at the railway,\" he said. The leather strap was cracked, and the face was scratched, but Lily closed her fingers around it and smiled.",
+    "question": "Explain why the watch is important to Grandad.",
+    "weakAnswer": "The watch is old and scratched.",
+    "weakExplanation": "This describes the watch, but it does not explain why it matters to Grandad.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does the watch look like?",
+    "exceptionalAnswer": "The watch is important to Grandad because it is connected to a special memory from his past. He says it kept ticking all through his first job at the railway, so it reminds him of an important time in his life. The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The watch is important to Grandad"
+      },
+      {
+        "label": "Point",
+        "text": "because it is connected to a special memory from his past."
+      },
+      {
+        "label": "Evidence",
+        "text": "He says it kept ticking all through his first job at the railway,"
+      },
+      {
+        "label": "Explanation",
+        "text": "so it reminds him of an important time in his life."
+      },
+      {
+        "label": "Link back",
+        "text": "The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The watch is important to Grandad",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because it is connected to a special memory from his past.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "He says it kept ticking all through his first job at the railway,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "so it reminds him of an important time in his life.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-004",
+    "title": "The river clean-up",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Before the clean-up, plastic bags clung to the reeds and no one sat near the riverbank. By the end of Saturday, the volunteers had filled twelve sacks with rubbish. On Monday, two ducks returned to the water, and families spread picnic blankets under the willow trees.",
+    "textHtml": "Before the clean-up, plastic bags clung to the reeds and no one sat near the riverbank. By the end of Saturday, the volunteers had filled twelve sacks with rubbish. On Monday, two ducks returned to the water, and families spread picnic blankets under the willow trees.",
+    "question": "Explain how the clean-up improves the riverbank.",
+    "weakAnswer": "The volunteers filled twelve sacks.",
+    "weakExplanation": "This gives one detail from the text, but it does not explain how the riverbank improves.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How much rubbish did the volunteers collect?",
+    "exceptionalAnswer": "The clean-up improves the riverbank by making it cleaner, safer and more pleasant for people and wildlife. Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there. This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The clean-up improves the riverbank"
+      },
+      {
+        "label": "Point",
+        "text": "by making it cleaner, safer and more pleasant for people and wildlife."
+      },
+      {
+        "label": "Evidence",
+        "text": "Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there."
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The clean-up improves the riverbank",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by making it cleaner, safer and more pleasant for people and wildlife.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-005",
+    "title": "The lighthouse",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The lighthouse beam swept across the black water again and again. Below it, waves smashed against the rocks with a sound like breaking plates. Mara gripped the rail and waited for the tiny fishing boat to reappear.",
+    "textHtml": "The lighthouse beam swept across the black water again and again. Below it, waves smashed against the rocks with a sound like breaking plates. Mara gripped the rail and waited for the tiny fishing boat to reappear.",
+    "question": "Explain how the writer creates a sense of danger.",
+    "weakAnswer": "The sea is dangerous.",
+    "weakExplanation": "This gives a general idea, but it does not explain how the writer creates the sense of danger.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the sea like in this passage?",
+    "exceptionalAnswer": "The writer creates a sense of danger by describing the sea as violent and the boat as vulnerable. The waves smash against the rocks with a sound like breaking plates, which makes the setting seem harsh and threatening. The fishing boat is described as tiny, so it seems weak compared with the powerful sea.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The writer creates a sense of danger"
+      },
+      {
+        "label": "Point",
+        "text": "by describing the sea as violent and the boat as vulnerable."
+      },
+      {
+        "label": "Evidence",
+        "text": "The waves smash against the rocks with a sound like breaking plates,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which makes the setting seem harsh and threatening."
+      },
+      {
+        "label": "Link back",
+        "text": "The fishing boat is described as tiny, so it seems weak compared with the powerful sea."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The writer creates a sense of danger",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by describing the sea as violent and the boat as vulnerable.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The waves smash against the rocks with a sound like breaking plates,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which makes the setting seem harsh and threatening.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "The fishing boat is described as tiny, so it seems weak compared with the powerful sea.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-006",
+    "title": "The broken greenhouse",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "A crack ran across the greenhouse window. Beneath it, soil had spilled from a plant pot, and a tennis ball lay half-hidden under the bench. Max stood at the gate with his racket behind his back.",
+    "textHtml": "A crack ran across the greenhouse window. Beneath it, soil had spilled from a plant pot, and a tennis ball lay half-hidden under the bench. Max stood at the gate with his racket behind his back.",
+    "question": "Explain why Max probably knows what happened to the greenhouse window.",
+    "weakAnswer": "The greenhouse window is cracked.",
+    "weakExplanation": "This notices the damage, but it does not explain why Max probably knows what happened.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What has happened to the greenhouse window?",
+    "exceptionalAnswer": "Max probably knows what happened to the greenhouse window because the clues suggest he has been playing tennis nearby. A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back. This suggests he may have hit the ball through the window and is trying to hide his involvement.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Max probably knows what happened to the greenhouse window"
+      },
+      {
+        "label": "Point",
+        "text": "because the clues suggest he has been playing tennis nearby."
+      },
+      {
+        "label": "Evidence",
+        "text": "A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back."
+      },
+      {
+        "label": "Explanation",
+        "text": "This suggests he may have hit the ball through the window and is trying to hide his involvement."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Max probably knows what happened to the greenhouse window",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because the clues suggest he has been playing tennis nearby.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This suggests he may have hit the ball through the window and is trying to hide his involvement.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-007",
+    "title": "The class plant",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The class plant drooped over the edge of its pot. Its soil was pale and cracked, and two leaves had turned yellow. Mrs Grant asked the children to move it away from the radiator and give it water.",
+    "textHtml": "The class plant drooped over the edge of its pot. Its soil was pale and cracked, and two leaves had turned yellow. Mrs Grant asked the children to move it away from the radiator and give it water.",
+    "question": "Explain why Mrs Grant wants the plant moved and watered.",
+    "weakAnswer": "The plant has yellow leaves.",
+    "weakExplanation": "This gives one clue, but it does not fully explain what the plant needs or why.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour are two leaves?",
+    "exceptionalAnswer": "Mrs Grant wants the plant moved and watered because it looks dry and overheated. The soil is pale and cracked, and the plant is near the radiator, which suggests it has not had enough water and may be too warm. Moving it and watering it should help it recover.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Grant wants the plant moved and watered"
+      },
+      {
+        "label": "Point",
+        "text": "because it looks dry and overheated."
+      },
+      {
+        "label": "Evidence",
+        "text": "The soil is pale and cracked, and the plant is near the radiator,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests it has not had enough water and may be too warm."
+      },
+      {
+        "label": "Link back",
+        "text": "Moving it and watering it should help it recover."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Grant wants the plant moved and watered",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because it looks dry and overheated.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The soil is pale and cracked, and the plant is near the radiator,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests it has not had enough water and may be too warm.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "Moving it and watering it should help it recover.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-008",
+    "title": "The new captain",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Before the match, Asha checked that everyone had boots, reminded the goalkeeper to warm up and gave the nervous new player a smile. When the whistle blew, her team ran onto the pitch together.",
+    "textHtml": "Before the match, Asha checked that everyone had boots, reminded the goalkeeper to warm up and gave the nervous new player a smile. When the whistle blew, her team ran onto the pitch together.",
+    "question": "Explain how Asha shows she is a good captain.",
+    "weakAnswer": "Asha plays football.",
+    "weakExplanation": "This is true, but it does not explain the qualities that make her a good captain.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sport does Asha play?",
+    "exceptionalAnswer": "Asha shows she is a good captain by looking after the team before the match. She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile. These actions show that she is organised, responsible and caring.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Asha shows she is a good captain"
+      },
+      {
+        "label": "Point",
+        "text": "by looking after the team before the match."
+      },
+      {
+        "label": "Evidence",
+        "text": "She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile."
+      },
+      {
+        "label": "Explanation",
+        "text": "These actions show that she is organised, responsible and caring."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Asha shows she is a good captain",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by looking after the team before the match.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "These actions show that she is organised, responsible and caring.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-009",
+    "title": "The blackout",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The lights clicked off just as the class began reading. For a moment, everyone froze. Then Mr Lee opened the curtains, handed out torches and told the pupils to continue in pairs near the windows.",
+    "textHtml": "The lights clicked off just as the class began reading. For a moment, everyone froze. Then Mr Lee opened the curtains, handed out torches and told the pupils to continue in pairs near the windows.",
+    "question": "Explain how Mr Lee helps the class stay calm.",
+    "weakAnswer": "Mr Lee opens the curtains.",
+    "weakExplanation": "This gives one action, but it does not explain how his actions help the class stay calm.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Mr Lee open?",
+    "exceptionalAnswer": "Mr Lee helps the class stay calm by acting quickly and giving the pupils a clear plan. He opens the curtains, hands out torches and tells them to read in pairs near the windows. Because he stays practical and organised, the blackout seems less frightening.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mr Lee helps the class stay calm"
+      },
+      {
+        "label": "Point",
+        "text": "by acting quickly and giving the pupils a clear plan."
+      },
+      {
+        "label": "Evidence",
+        "text": "He opens the curtains, hands out torches and tells them to read in pairs near the windows."
+      },
+      {
+        "label": "Explanation",
+        "text": "Because he stays practical and organised, the blackout seems less frightening."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mr Lee helps the class stay calm",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by acting quickly and giving the pupils a clear plan.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "He opens the curtains, hands out torches and tells them to read in pairs near the windows.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "Because he stays practical and organised, the blackout seems less frightening.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-010",
+    "title": "The crowded platform",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The train was late, and the platform filled with people. A toddler began to cry as the crowd pressed closer. Without being asked, Freya stepped back and offered the child's mother her seat.",
+    "textHtml": "The train was late, and the platform filled with people. A toddler began to cry as the crowd pressed closer. Without being asked, Freya stepped back and offered the child's mother her seat.",
+    "question": "Explain what Freya's actions show about her character.",
+    "weakAnswer": "Freya gives someone a seat.",
+    "weakExplanation": "This says what Freya does, but it does not explain what that action shows about her character.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Freya do?",
+    "exceptionalAnswer": "Freya's actions show that she is thoughtful and considerate. She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked. This shows she thinks about other people's needs rather than only her own comfort.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Freya's actions show"
+      },
+      {
+        "label": "Point",
+        "text": "that she is thoughtful and considerate."
+      },
+      {
+        "label": "Evidence",
+        "text": "She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked."
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows she thinks about other people's needs rather than only her own comfort."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Freya's actions show",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "that she is thoughtful and considerate.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows she thinks about other people's needs rather than only her own comfort.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  }
+]

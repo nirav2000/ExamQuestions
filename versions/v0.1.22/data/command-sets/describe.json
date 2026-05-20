@@ -1,0 +1,602 @@
+[
+  {
+    "id": "describe-001",
+    "title": "The cave pool",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The cave opened into a round chamber. Drops of water glittered on the walls, and a dark pool lay in the centre like a piece of black glass. Every footstep echoed back twice.",
+    "textHtml": "The cave opened into a round chamber. Drops of water glittered on the walls, and a dark pool lay in the centre like a piece of black glass. Every footstep echoed back twice.",
+    "question": "Describe the cave chamber.",
+    "weakAnswer": "The cave is scary.",
+    "weakExplanation": "This gives a feeling, but it does not describe the chamber using details from the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How might the cave make someone feel?",
+    "exceptionalAnswer": "The cave chamber is dark, wet and echoing. Drops of water glitter on the walls, and a dark pool lies in the centre like black glass. Overall, the chamber seems mysterious and slightly frightening.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The cave chamber is dark, wet and echoing."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Drops of water glitter on the walls,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a dark pool lies in the centre like black glass."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the chamber seems mysterious and slightly frightening."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The cave chamber is dark, wet and echoing.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Drops of water glitter on the walls,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a dark pool lies in the centre like black glass.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the chamber seems mysterious and slightly frightening.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-002",
+    "title": "The winter market",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Lanterns hung above the market stalls, glowing through the cold evening air. Steam curled from pans of roasted chestnuts, and shoppers tucked their hands into their sleeves as they hurried past baskets of oranges.",
+    "textHtml": "Lanterns hung above the market stalls, glowing through the cold evening air. Steam curled from pans of roasted chestnuts, and shoppers tucked their hands into their sleeves as they hurried past baskets of oranges.",
+    "question": "Describe the winter market.",
+    "weakAnswer": "It has food.",
+    "weakExplanation": "This is too vague and only gives one simple detail.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What can be bought at the market?",
+    "exceptionalAnswer": "The winter market is bright, cold and busy. Lanterns glow above the stalls, steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves. Overall, it feels lively but chilly.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The winter market is bright, cold and busy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Lanterns glow above the stalls,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels lively but chilly."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The winter market is bright, cold and busy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Lanterns glow above the stalls,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels lively but chilly.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-003",
+    "title": "The abandoned classroom",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Dust lay thickly across the desks. On the board, yesterday's sums had faded into grey smudges, and a single chair stood upside down beside the teacher's table.",
+    "textHtml": "Dust lay thickly across the desks. On the board, yesterday's sums had faded into grey smudges, and a single chair stood upside down beside the teacher's table.",
+    "question": "Describe the abandoned classroom.",
+    "weakAnswer": "The classroom is old.",
+    "weakExplanation": "This is a general description, but it misses the specific details that create the image.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sort of place is it?",
+    "exceptionalAnswer": "The abandoned classroom is dusty, still and untidy. Dust covers the desks, the sums on the board have faded into grey smudges, and one chair is upside down. Overall, it seems as if the room has been left suddenly and forgotten.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The abandoned classroom is dusty, still and untidy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Dust covers the desks,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "the sums on the board have faded into grey smudges, and one chair is upside down."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems as if the room has been left suddenly and forgotten."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The abandoned classroom is dusty, still and untidy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Dust covers the desks,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "the sums on the board have faded into grey smudges, and one chair is upside down.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems as if the room has been left suddenly and forgotten.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-004",
+    "title": "The rescue dog",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The dog was small, with one folded ear and paws too large for its body. Its fur stuck out in uneven tufts, but its tail wagged whenever anyone came close.",
+    "textHtml": "The dog was small, with one folded ear and paws too large for its body. Its fur stuck out in uneven tufts, but its tail wagged whenever anyone came close.",
+    "question": "Describe the rescue dog.",
+    "weakAnswer": "The dog is cute.",
+    "weakExplanation": "This gives an opinion, but it does not describe the dog clearly.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What do you think of the dog?",
+    "exceptionalAnswer": "The rescue dog is small, scruffy and friendly. It has one folded ear, large paws and uneven tufts of fur. Overall, it seems a little untidy but gentle and eager for attention.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The rescue dog is small, scruffy and friendly."
+      },
+      {
+        "label": "Detail 1",
+        "text": "It has one folded ear, large paws and uneven tufts of fur."
+      },
+      {
+        "label": "Detail 2",
+        "text": "Its tail wagged whenever anyone came close."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems a little untidy but gentle and eager for attention."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The rescue dog is small, scruffy and friendly.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "It has one folded ear, large paws and uneven tufts of fur.",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "Its tail wagged whenever anyone came close.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems a little untidy but gentle and eager for attention.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-005",
+    "title": "The stormy beach",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The beach had almost vanished beneath the waves. Grey water crashed over the stones, and the wind dragged lines of foam across the sand. Gulls hung in the air, barely moving their wings.",
+    "textHtml": "The beach had almost vanished beneath the waves. Grey water crashed over the stones, and the wind dragged lines of foam across the sand. Gulls hung in the air, barely moving their wings.",
+    "question": "Describe the beach during the storm.",
+    "weakAnswer": "The beach has waves.",
+    "weakExplanation": "This gives one detail, but it does not describe the stormy scene fully.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is on the beach?",
+    "exceptionalAnswer": "The beach during the storm is wild and windswept. Grey water crashes over the stones, foam is dragged across the sand, and gulls struggle in the air. Overall, the beach seems powerful and unsafe.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The beach during the storm is wild and windswept."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Grey water crashes over the stones,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "foam is dragged across the sand, and gulls struggle in the air."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the beach seems powerful and unsafe."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The beach during the storm is wild and windswept.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Grey water crashes over the stones,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "foam is dragged across the sand, and gulls struggle in the air.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the beach seems powerful and unsafe.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-006",
+    "title": "The sweet shop",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Glass jars lined the shelves from floor to ceiling. Stripes of red, yellow and green sweets shone under the lights, and the air smelled of sugar, mint and chocolate.",
+    "textHtml": "Glass jars lined the shelves from floor to ceiling. Stripes of red, yellow and green sweets shone under the lights, and the air smelled of sugar, mint and chocolate.",
+    "question": "Describe the sweet shop.",
+    "weakAnswer": "It is colourful.",
+    "weakExplanation": "This is partly true, but it needs more details from the passage.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is one thing about the sweet shop?",
+    "exceptionalAnswer": "The sweet shop is colourful, crowded and full of sweet smells. Glass jars line the shelves, bright sweets shine under the lights, and the air smells of sugar, mint and chocolate. Overall, it seems exciting and tempting.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The sweet shop is colourful, crowded and full of sweet smells."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Glass jars line the shelves,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "bright sweets shine under the lights, and the air smells of sugar, mint and chocolate."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems exciting and tempting."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The sweet shop is colourful, crowded and full of sweet smells.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Glass jars line the shelves,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "bright sweets shine under the lights, and the air smells of sugar, mint and chocolate.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems exciting and tempting.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-007",
+    "title": "The old oak tree",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The oak tree spread its branches across half the field. Its trunk was twisted and wide, with deep cracks in the bark. Beneath it, the grass was cool and shadowy.",
+    "textHtml": "The oak tree spread its branches across half the field. Its trunk was twisted and wide, with deep cracks in the bark. Beneath it, the grass was cool and shadowy.",
+    "question": "Describe the old oak tree.",
+    "weakAnswer": "It is big.",
+    "weakExplanation": "This is true but too simple; it does not use the rich details in the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How large is the tree?",
+    "exceptionalAnswer": "The old oak tree is huge, twisted and sheltering. Its branches spread across half the field, and its wide trunk has deep cracks in the bark. Overall, it seems ancient and strong.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The old oak tree is huge, twisted and sheltering."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Its branches spread across half the field,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and its wide trunk has deep cracks in the bark."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems ancient and strong."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The old oak tree is huge, twisted and sheltering.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Its branches spread across half the field,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and its wide trunk has deep cracks in the bark.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems ancient and strong.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-008",
+    "title": "The morning kitchen",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The kitchen window was misted with steam. Toast popped from the toaster, milk splashed into bowls, and Mum searched for a missing shoe while the clock ticked loudly.",
+    "textHtml": "The kitchen window was misted with steam. Toast popped from the toaster, milk splashed into bowls, and Mum searched for a missing shoe while the clock ticked loudly.",
+    "question": "Describe the kitchen in the morning.",
+    "weakAnswer": "The kitchen is messy.",
+    "weakExplanation": "This gives one possible idea, but it does not describe the busy morning atmosphere.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is wrong with the kitchen?",
+    "exceptionalAnswer": "The kitchen in the morning is warm, noisy and busy. The window is misted with steam, toast pops up, milk splashes into bowls and Mum searches for a missing shoe. Overall, it feels rushed but ordinary and lively.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The kitchen in the morning is warm, noisy and busy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "The window is misted with steam, toast pops up,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "milk splashes into bowls and Mum searches for a missing shoe."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels rushed but ordinary and lively."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The kitchen in the morning is warm, noisy and busy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "The window is misted with steam, toast pops up,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "milk splashes into bowls and Mum searches for a missing shoe.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels rushed but ordinary and lively.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-009",
+    "title": "The toy workshop",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Tiny wheels, wooden arms and painted buttons covered the workbench. A half-finished puppet lay under a lamp, its face smiling although it had no strings yet.",
+    "textHtml": "Tiny wheels, wooden arms and painted buttons covered the workbench. A half-finished puppet lay under a lamp, its face smiling although it had no strings yet.",
+    "question": "Describe the toy workshop.",
+    "weakAnswer": "There is a puppet.",
+    "weakExplanation": "This identifies one object, but it does not describe the workshop as a whole.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What object is on the bench?",
+    "exceptionalAnswer": "The toy workshop is cluttered, creative and full of small parts. Tiny wheels, wooden arms and painted buttons cover the workbench, and a half-finished puppet lies under a lamp. Overall, it seems like a place where careful, imaginative work happens.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The toy workshop is cluttered, creative and full of small parts."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Tiny wheels, wooden arms and painted buttons cover the workbench,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a half-finished puppet lies under a lamp."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems like a place where careful, imaginative work happens."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The toy workshop is cluttered, creative and full of small parts.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Tiny wheels, wooden arms and painted buttons cover the workbench,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a half-finished puppet lies under a lamp.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems like a place where careful, imaginative work happens.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-010",
+    "title": "The mountain path",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The path curled along the mountain like a thin ribbon. Loose stones slid underfoot, and far below, the river flashed silver between the trees.",
+    "textHtml": "The path curled along the mountain like a thin ribbon. Loose stones slid underfoot, and far below, the river flashed silver between the trees.",
+    "question": "Describe the mountain path.",
+    "weakAnswer": "It is on a mountain.",
+    "weakExplanation": "This tells us where the path is, but it does not describe what it is like.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is the path?",
+    "exceptionalAnswer": "The mountain path is narrow, high and difficult to walk on. It curls along the mountain like a thin ribbon, loose stones slide underfoot, and the river is far below. Overall, it seems beautiful but dangerous.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The mountain path is narrow, high and difficult to walk on."
+      },
+      {
+        "label": "Detail 1",
+        "text": "It curls along the mountain like a thin ribbon,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "loose stones slide underfoot, and the river is far below."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems beautiful but dangerous."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The mountain path is narrow, high and difficult to walk on.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "It curls along the mountain like a thin ribbon,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "loose stones slide underfoot, and the river is far below.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems beautiful but dangerous.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  }
+]

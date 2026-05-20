@@ -300,3 +300,9 @@ Future target:
 - To change command-word learning content: currently use `app.js` built-in explainers or `data/command-explainers.json`; future home should be `src/command-explainers.js`.
 - To change startup/data loading: currently use `app.js`; future home should be `src/data-loader.js`.
 - To change version dropdown fixes or neutral fallback guard: use `app-maintenance.js`.
+
+## Archive policy
+- Archives in `versions/vX.Y.Z/` must be runnable static snapshots.
+- Keep universal `versions.json` at root.
+- Verify using `node scripts/verify-archives.js`.
+- Semantic versioning: MAJOR breaking, MINOR features, PATCH fixes/maintenance.

@@ -6,9 +6,9 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.25`
+`v0.1.24`
 
-## v0.1.25 changes
+## v0.1.24 changes
 
 This is a maintainability/refactor-only release. It keeps the existing UI and practice behaviour, while making visual styling easier to edit safely.
 
@@ -53,9 +53,3 @@ For every future semantic version:
 ## Loading a command-word pack
 
 Use **Upload JSON / ZIP pack** and choose the full command-word JSON pack ZIP. The app reads the manifest, explainers, all-in-one question file, and separate command-set files directly in the browser.
-
-
-- Archives are full runnable static copies under `versions/vX.Y.Z/`.
-- `versions.json` is universal at repo root and is not copied per archive.
-- Run `node scripts/verify-archives.js` to validate archive integrity.
-- Semantic versioning policy: MAJOR=breaking/incompatible, MINOR=new backwards-compatible feature, PATCH/FIX=backwards-compatible fixes/maintenance/archive repair.

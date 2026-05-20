@@ -1,0 +1,502 @@
+[
+  {
+    "id": "retrieve-001",
+    "title": "The school trip note",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "The Year 5 trip will take place on Thursday 14 March. Pupils should bring a packed lunch, a waterproof coat and a pencil. The coach will leave school at 9:15 a.m.",
+    "textHtml": "The Year 5 trip will take place on Thursday 14 March. Pupils should bring a packed lunch, a waterproof coat and a pencil. The coach will leave school at 9:15 a.m.",
+    "question": "What time will the coach leave school?",
+    "weakAnswer": "On Thursday.",
+    "weakExplanation": "This answers when the trip takes place, not what time the coach leaves.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What day is the trip?",
+    "exceptionalAnswer": "The coach will leave school at 9:15 a.m. This is the exact time given in the text, so it answers the question directly.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The coach will leave school at 9:15 a.m."
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact time given in the text,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers the question directly."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The coach will leave school at 9:15 a.m.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact time given in the text,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers the question directly.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-002",
+    "title": "The lost poster",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Lost: grey rabbit called Pepper. Last seen near Oak Lane playground on Monday afternoon. Pepper has one white paw and a blue collar. Please call 07900 111222 if found.",
+    "textHtml": "Lost: grey rabbit called Pepper. Last seen near Oak Lane playground on Monday afternoon. Pepper has one white paw and a blue collar. Please call 07900 111222 if found.",
+    "question": "What is the rabbit called?",
+    "weakAnswer": "It has a blue collar.",
+    "weakExplanation": "This gives a detail about the rabbit, but not its name.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the rabbit wearing?",
+    "exceptionalAnswer": "The rabbit is called Pepper. The poster says, \"grey rabbit called Pepper,\" so Pepper is the exact name asked for.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The rabbit is called Pepper."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The poster says, \"grey rabbit called Pepper,\""
+      },
+      {
+        "label": "Check",
+        "text": "so Pepper is the exact name asked for."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The rabbit is called Pepper.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The poster says, \"grey rabbit called Pepper,\"",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so Pepper is the exact name asked for.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-003",
+    "title": "The museum label",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Roman coin, about 1,800 years old. Found in a field near Bath by a metal detectorist in 2019. The coin is made of bronze and shows the head of an emperor.",
+    "textHtml": "Roman coin, about 1,800 years old. Found in a field near Bath by a metal detectorist in 2019. The coin is made of bronze and shows the head of an emperor.",
+    "question": "What is the coin made of?",
+    "weakAnswer": "It is Roman.",
+    "weakExplanation": "This tells us what type of coin it is, not the material.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What type of coin is it?",
+    "exceptionalAnswer": "The coin is made of bronze. The museum label states that the coin is made of bronze, which directly answers the question.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The coin is made of bronze."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The museum label states that the coin is made of bronze,"
+      },
+      {
+        "label": "Check",
+        "text": "which directly answers the question."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The coin is made of bronze.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The museum label states that the coin is made of bronze,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "which directly answers the question.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-004",
+    "title": "The swimming notice",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Swimming club meets every Tuesday after school in the small pool. Beginners should bring goggles and a towel. The session finishes at 4:30 p.m.",
+    "textHtml": "Swimming club meets every Tuesday after school in the small pool. Beginners should bring goggles and a towel. The session finishes at 4:30 p.m.",
+    "question": "Where does swimming club meet?",
+    "weakAnswer": "After school.",
+    "weakExplanation": "This gives the time, but the question asks for the place.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does swimming club meet?",
+    "exceptionalAnswer": "Swimming club meets in the small pool. The notice says it meets every Tuesday after school in the small pool, so that is the place.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Swimming club meets in the small pool."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The notice says it meets every Tuesday after school in the small pool,"
+      },
+      {
+        "label": "Check",
+        "text": "so that is the place."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Swimming club meets in the small pool.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The notice says it meets every Tuesday after school in the small pool,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that is the place.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-005",
+    "title": "The recipe card",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Apple crumble: slice four apples and place them in a dish. Mix flour, butter and sugar until crumbly. Bake for 25 minutes until the top is golden.",
+    "textHtml": "Apple crumble: slice four apples and place them in a dish. Mix flour, butter and sugar until crumbly. Bake for 25 minutes until the top is golden.",
+    "question": "How many apples are needed?",
+    "weakAnswer": "You bake it for 25 minutes.",
+    "weakExplanation": "This gives the baking time, but the question asks for the number of apples.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How long do you bake it for?",
+    "exceptionalAnswer": "Four apples are needed. The recipe says to slice four apples, so the exact number is four.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Four apples are needed."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The recipe says to slice four apples,"
+      },
+      {
+        "label": "Check",
+        "text": "so the exact number is four."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Four apples are needed.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The recipe says to slice four apples,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so the exact number is four.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-006",
+    "title": "The park sign",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Welcome to Greenhill Park. The playground closes at 6 p.m. Dogs must be kept on leads near the pond. The cafe is beside the rose garden.",
+    "textHtml": "Welcome to Greenhill Park. The playground closes at 6 p.m. Dogs must be kept on leads near the pond. The cafe is beside the rose garden.",
+    "question": "What must dogs do near the pond?",
+    "weakAnswer": "The playground closes at 6 p.m.",
+    "weakExplanation": "This gives a rule about the playground, but the question asks about dogs near the pond.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does the playground close?",
+    "exceptionalAnswer": "Dogs must be kept on leads near the pond. This is the exact rule stated on the park sign, so it answers what dogs must do.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Dogs must be kept on leads near the pond."
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact rule stated on the park sign,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers what dogs must do."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Dogs must be kept on leads near the pond.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact rule stated on the park sign,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers what dogs must do.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-007",
+    "title": "The weather report",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Tomorrow will begin cloudy, with light rain before lunch. The afternoon should be brighter, but strong winds are expected by evening. Temperatures will reach 12\u00b0C.",
+    "textHtml": "Tomorrow will begin cloudy, with light rain before lunch. The afternoon should be brighter, but strong winds are expected by evening. Temperatures will reach 12\u00b0C.",
+    "question": "What weather is expected before lunch?",
+    "weakAnswer": "Strong winds.",
+    "weakExplanation": "This is expected by evening, not before lunch.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What weather is expected by evening?",
+    "exceptionalAnswer": "Light rain is expected before lunch. The report says there will be light rain before lunch, so that is the correct detail.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Light rain is expected before lunch."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The report says there will be light rain before lunch,"
+      },
+      {
+        "label": "Check",
+        "text": "so that is the correct detail."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Light rain is expected before lunch.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The report says there will be light rain before lunch,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that is the correct detail.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-008",
+    "title": "The club email",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Chess club starts next Monday in Room 8. It is open to Years 4, 5 and 6. Please bring a pencil so you can record your moves.",
+    "textHtml": "Chess club starts next Monday in Room 8. It is open to Years 4, 5 and 6. Please bring a pencil so you can record your moves.",
+    "question": "Which room will chess club be in?",
+    "weakAnswer": "It starts next Monday.",
+    "weakExplanation": "This gives the start date, but the question asks for the room.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does chess club start?",
+    "exceptionalAnswer": "Chess club will be in Room 8. The email says it starts next Monday in Room 8, so Room 8 is the exact answer.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Chess club will be in Room 8."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The email says it starts next Monday in Room 8,"
+      },
+      {
+        "label": "Check",
+        "text": "so Room 8 is the exact answer."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Chess club will be in Room 8.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The email says it starts next Monday in Room 8,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so Room 8 is the exact answer.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-009",
+    "title": "The animal fact file",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "A red fox usually hunts at night. It eats insects, birds, small mammals and fruit. Foxes use their bushy tails to help them balance and keep warm.",
+    "textHtml": "A red fox usually hunts at night. It eats insects, birds, small mammals and fruit. Foxes use their bushy tails to help them balance and keep warm.",
+    "question": "When does a red fox usually hunt?",
+    "weakAnswer": "It eats fruit.",
+    "weakExplanation": "This gives something the fox eats, not when it hunts.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does a red fox eat?",
+    "exceptionalAnswer": "A red fox usually hunts at night. The fact file states this directly in the first sentence, so it answers when the fox hunts.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "A red fox usually hunts at night."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The fact file states this directly in the first sentence,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers when the fox hunts."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "A red fox usually hunts at night.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The fact file states this directly in the first sentence,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers when the fox hunts.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-010",
+    "title": "The library message",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Please return all borrowed books by Friday 7 June. The library will be closed for painting the following week. New books can be borrowed again from Monday 17 June.",
+    "textHtml": "Please return all borrowed books by Friday 7 June. The library will be closed for painting the following week. New books can be borrowed again from Monday 17 June.",
+    "question": "Why will the library be closed the following week?",
+    "weakAnswer": "Books can be borrowed on Monday 17 June.",
+    "weakExplanation": "This gives when books can be borrowed again, but not why the library is closed.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When can new books be borrowed again?",
+    "exceptionalAnswer": "The library will be closed for painting. The message says it will be closed for painting the following week, so that gives the reason.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The library will be closed for painting."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The message says it will be closed for painting the following week,"
+      },
+      {
+        "label": "Check",
+        "text": "so that gives the reason."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The library will be closed for painting.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The message says it will be closed for painting the following week,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that gives the reason.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  }
+]

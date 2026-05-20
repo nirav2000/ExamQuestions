@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.25';
+const APP_VERSION = 'v0.1.15';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -10,7 +10,6 @@ let packManifest = [];
 let packFiles = new Map();
 let currentSource = 'starter';
 let currentSelectionMode = 'dropdown';
-const { normalisePackPath, titleCase, firstWord, escapeHtml, sanitizeSimpleHtml, normalizeExplainer, mergeExternalExplainers, download } = window.AppHelpers;
 let commandExplainers = {
   why: {
     title: 'Why questions',
@@ -86,9 +85,6 @@ const els = {
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
   commandGroovePill: document.querySelector('#commandGroovePill'),
-  commandGrooveCard: document.querySelector('#commandGrooveCard'),
-  groovePrevBtn: document.querySelector('#groovePrevBtn'),
-  grooveNextBtn: document.querySelector('#grooveNextBtn'),
   commandGrooveHeading: document.querySelector('#commandGrooveHeading'),
   commandGrooveIntro: document.querySelector('#commandGrooveIntro'),
   commandGrooveList: document.querySelector('#commandGrooveList'),
@@ -105,10 +101,10 @@ const els = {
   applyChecklistBtn: document.querySelector('#applyChecklistBtn'),
   packTitle: document.querySelector('#packTitle'),
   packSummary: document.querySelector('#packSummary'),
-  packStatus: document.querySelector('#packStatus'),
-  togglePackPanelBtn: document.querySelector('#togglePackPanelBtn'),
-  packPanelBody: document.querySelector('#packPanelBody')
+  packStatus: document.querySelector('#packStatus')
 };
+
+const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
 
 async function initialiseApp() {
   await Promise.all([loadExternalExplainers(), loadVersionHistory()]);
@@ -137,7 +133,7 @@ async function loadQuestions() {
 
 async function loadExternalExplainers() {
   try {
-    const res = await fetch('./data/command-explainers.json', { cache: 'no-store' });
+    const res = await fetch('./data/command-explainers.json');
     if (!res.ok) throw new Error('No external explainers');
     commandExplainers = mergeExternalExplainers(commandExplainers, await res.json());
   } catch (error) {
@@ -147,7 +143,7 @@ async function loadExternalExplainers() {
 
 async function loadExternalManifest() {
   try {
-    const res = await fetch('./data/manifest.json', { cache: 'no-store' });
+    const res = await fetch('./data/manifest.json');
     if (!res.ok) throw new Error('No manifest');
     packManifest = await res.json();
     els.packStatus.textContent = 'Loaded command-word manifest from data folder.';
@@ -158,7 +154,7 @@ async function loadExternalManifest() {
 
 async function loadVersionHistory() {
   try {
-    const res = await fetch(VERSION_HISTORY_URL, { cache: 'no-store' });
+    const res = await fetch(VERSION_HISTORY_URL);
     versionHistory = await res.json();
   } catch (error) {
     console.warn('Could not load versions.json.', error);
@@ -267,11 +263,7 @@ async function selectCommandSet(value) {
 function renderVersionSwitcher() {
   if (!els.versionSelect) return;
   els.versionSelect.innerHTML = '';
-  const hasCurrent = versionHistory.some(item => item.version === APP_VERSION);
-  const safeHistory = hasCurrent
-    ? versionHistory
-    : [{ version: APP_VERSION, label: APP_VERSION, path: './' }, ...versionHistory];
-  safeHistory.forEach(item => {
+  versionHistory.forEach(item => {
     const option = document.createElement('option');
     option.value = item.version;
     option.textContent = item.label || item.version;
@@ -508,7 +500,7 @@ async function handleZipUpload(file) {
 
 async function loadBundledPack() {
   currentSource = 'bundled';
-  const res = await fetch('./command-set/ks2_command_word_json_files.zip', { cache: 'no-store' });
+  const res = await fetch('./command-set/ks2_command_word_json_files.zip');
   if (!res.ok) throw new Error('Bundled ZIP pack was not found in command-set/.');
   const blob = await res.blob();
   const file = new File([blob], 'ks2_command_word_json_files.zip', { type: 'application/zip' });
@@ -618,39 +610,42 @@ function setupCommandSetSwitcher() {
     render();
   });
 }
-function cycleCommandWord(direction = 1) {
-  const words = packManifest.map(item => item.commandWord);
-  if (!words.length) return;
-  const currentWord = (questions[currentIndex]?.commandWord || '').toLowerCase();
-  let idx = words.indexOf(currentWord);
-  if (idx < 0) idx = 0;
-  const nextWord = words[(idx + direction + words.length) % words.length];
-  selectCommandSet(nextWord);
-  if (els.commandSetSelect) els.commandSetSelect.value = nextWord;
-}
-function setupGrooveCarousel() {
-  if (els.groovePrevBtn) els.groovePrevBtn.addEventListener('click', () => cycleCommandWord(-1));
-  if (els.grooveNextBtn) els.grooveNextBtn.addEventListener('click', () => cycleCommandWord(1));
-  if (els.commandGrooveCard) {
-    let startX = null;
-    els.commandGrooveCard.addEventListener('touchstart', e => { startX = e.touches[0]?.clientX ?? null; }, { passive: true });
-    els.commandGrooveCard.addEventListener('touchend', e => {
-      if (startX == null) return;
-      const endX = e.changedTouches[0]?.clientX ?? startX;
-      const dx = endX - startX;
-      if (Math.abs(dx) > 45) cycleCommandWord(dx > 0 ? -1 : 1);
-      startX = null;
-    }, { passive: true });
-  }
-}
-function setupPackPanelToggle() {
-  if (!els.togglePackPanelBtn || !els.packPanelBody) return;
-  els.togglePackPanelBtn.addEventListener('click', () => {
-    const hidden = els.packPanelBody.classList.toggle('hidden');
-    els.togglePackPanelBtn.setAttribute('aria-expanded', String(!hidden));
-  });
-}
 function clearCanvas() { const ctx = els.canvas.getContext('2d'); ctx.clearRect(0, 0, els.canvas.width, els.canvas.height); }
+function normalisePackPath(path) { return path.replace(/^.*command-sets\//, 'command-sets/').replace(/^\/+/, ''); }
+function titleCase(value = '') { return value.replace(/[-_]/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
+function firstWord(text = '') { return (text.trim().split(/\s+/)[0] || '').replace(/[^a-z]/gi, '') || 'command'; }
+function normalizeExplainer(explainer = {}, key = 'command') {
+  return {
+    title: explainer.title || `${titleCase(key)} questions`,
+    descriptor: explainer.descriptor || explainer.text || explainer.childFriendlyMeaning || explainer.whatTheQuestionIsReallyAsking || '',
+    grooveTitle: explainer.grooveTitle || explainer.answerGrooveTitle || `${titleCase(key)} answer groove`,
+    grooveHeading: explainer.grooveHeading || 'Reason → Effect → Link',
+    grooveIntro: explainer.grooveIntro || 'Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.',
+    groove: explainer.groove || explainer.answerGrooveSteps || [],
+    answerPattern: explainer.answerPattern || '',
+    steps: explainer.steps || explainer.miniChecklist || [],
+    helpfulWords: explainer.helpfulWords || explainer.usefulSentenceStarters || commandExplainers.default.helpfulWords
+  };
+}
+function mergeExternalExplainers(base, external = {}) {
+  const merged = { ...base };
+  for (const [key, explainer] of Object.entries(external || {})) {
+    merged[key] = normalizeExplainer(explainer, key);
+  }
+  return merged;
+}
+function escapeHtml(value) { return String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char])); }
+function sanitizeSimpleHtml(html) {
+  const template = document.createElement('template');
+  template.innerHTML = html;
+  template.content.querySelectorAll('*').forEach(node => {
+    if (!allowedSourceTags.has(node.tagName)) { node.replaceWith(document.createTextNode(node.textContent || '')); return; }
+    [...node.attributes].forEach(attr => node.removeAttribute(attr.name));
+  });
+  return template.innerHTML;
+}
+function download(filename, text) { const blob = new Blob([text], { type: 'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = filename; a.click(); URL.revokeObjectURL(url); }
+
 els.answer.addEventListener('input', updateChecks);
 document.querySelector('#submitBtn').addEventListener('click', revealFeedback);
 document.querySelector('#tryAgainBtn').addEventListener('click', () => els.feedback.classList.add('hidden'));
@@ -660,4 +655,4 @@ document.querySelector('#prevBtn').addEventListener('click', () => selectQuestio
 document.querySelector('#startBtn').addEventListener('click', () => document.querySelector('#practice').scrollIntoView({ behavior: 'smooth' }));
 document.querySelector('#downloadJsonBtn').addEventListener('click', () => download('command-word-coach-questions.json', JSON.stringify(questions, null, 2)));
 document.querySelector('#clearCanvasBtn').addEventListener('click', clearCanvas);
-setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); setupGrooveCarousel(); setupPackPanelToggle(); initialiseApp();
+setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); initialiseApp();

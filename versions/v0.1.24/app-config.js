@@ -1,6 +1,6 @@
 (() => {
   window.AppConfig = {
-    APP_VERSION: 'v0.1.25',
+    APP_VERSION: 'v0.1.24',
     VERSION_HISTORY_URL: '/ExamQuestions/versions.json',
     STARTER_QUESTIONS_URL: './data/questions.json',
     EXPLAINERS_URL: './data/command-explainers.json',

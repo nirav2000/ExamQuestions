@@ -1,0 +1,223 @@
+[
+  {
+    "id": "q1-bold-title",
+    "title": "Bold title",
+    "commandWord": "why",
+    "text": "The Lost Puppy\n\nMaya heard a tiny whimper coming from behind the bins. She pulled back a cardboard box and saw a small brown puppy shivering in the cold. Around its neck was a red collar with a silver tag.",
+    "textHtml": "<strong>The Lost Puppy</strong><br><br>Maya heard a tiny whimper coming from behind the bins. She pulled back a cardboard box and saw a small brown puppy shivering in the cold. Around its neck was a red collar with a silver tag.",
+    "question": "Why is “The Lost Puppy” written in bold?",
+    "weakAnswer": "It is the title.",
+    "weakExplanation": "That is true, but it does not fully explain why it is bold.",
+    "exceptionalAnswer": "“The Lost Puppy” is written in bold because it is the title of the story. This makes it stand out so the reader notices it first and understands what the story will be about.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "“The Lost Puppy” is written in bold"},
+      {"label": "Reason", "text": "because it is the title of the story."},
+      {"label": "Effect", "text": "This makes it stand out"},
+      {"label": "Link", "text": "so the reader notices it first and understands what the story will be about."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "“The Lost Puppy” is written in bold", "note": "Use the question to start your answer and turn it into an answer stem.", "partIndex": 0},
+      {"label": "Reason", "text": "because it is the title of the story", "note": "This answers the basic why.", "partIndex": 1},
+      {"label": "Effect", "text": "This makes it stand out", "note": "This explains what the bold writing does.", "partIndex": 2},
+      {"label": "Link back to the reader/text", "text": "so the reader notices it first and understands what the story will be about", "note": "This explains why that matters.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q2-character-action",
+    "title": "Character action",
+    "commandWord": "why",
+    "text": "Tom tiptoed across the hallway, holding his shoes in one hand. He did not switch on the light. His baby sister was asleep in the room next door, and even the smallest noise could wake her.",
+    "question": "Why did Tom tiptoe across the hallway?",
+    "weakAnswer": "Tom was walking in the hallway.",
+    "weakExplanation": "That tells us what he was doing, but not why.",
+    "exceptionalAnswer": "Tom tiptoed across the hallway because he did not want to wake his baby sister. The text says she was asleep nearby and even a small noise could wake her, so Tom was trying to be quiet.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Tom tiptoed across the hallway"},
+      {"label": "Reason", "text": "because he did not want to wake his baby sister."},
+      {"label": "Evidence", "text": "The text says she was asleep nearby and even a small noise could wake her,"},
+      {"label": "Link", "text": "so Tom was trying to be quiet."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Tom tiptoed across the hallway", "note": "Use the wording from the question to open the answer clearly.", "partIndex": 0},
+      {"label": "Reason", "text": "because he did not want to wake his baby sister", "note": "This directly answers why he tiptoed.", "partIndex": 1},
+      {"label": "Evidence from the text", "text": "The text says she was asleep nearby and even a small noise could wake her", "note": "This proves the answer.", "partIndex": 2},
+      {"label": "Link back to the action", "text": "so Tom was trying to be quiet", "note": "This connects the reason to the action.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q3-exclamation-mark",
+    "title": "Exclamation mark",
+    "commandWord": "why",
+    "text": "“Watch out!” shouted Aisha, grabbing Leo’s sleeve. A football flew past his face and bounced off the wall behind him.",
+    "question": "Why does Aisha shout, “Watch out!”?",
+    "weakAnswer": "She shouted, “Watch out!”",
+    "weakExplanation": "That repeats the question but does not explain the reason.",
+    "exceptionalAnswer": "Aisha shouts “Watch out!” because a football is flying towards Leo and she wants to warn him. She grabs his sleeve to stop him getting hurt.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Aisha shouts “Watch out!”"},
+      {"label": "Reason", "text": "because a football is flying towards Leo"},
+      {"label": "Purpose", "text": "and she wants to warn him."},
+      {"label": "Evidence/action", "text": "She grabs his sleeve to stop him getting hurt."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Aisha shouts “Watch out!”", "note": "Turn the question into the opening of the answer.", "partIndex": 0},
+      {"label": "Reason", "text": "because a football is flying towards Leo", "note": "This gives the danger.", "partIndex": 1},
+      {"label": "Purpose", "text": "and she wants to warn him", "note": "This explains why she shouts.", "partIndex": 2},
+      {"label": "Evidence/action", "text": "She grabs his sleeve", "note": "This shows she is trying to protect him.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q4-weather",
+    "title": "Description of weather",
+    "commandWord": "why",
+    "text": "Dark clouds rolled over the playground. The wind pushed crisp packets across the concrete, and the first drops of rain splashed onto the climbing frame. Everyone rushed towards the classroom door.",
+    "question": "Why did everyone rush towards the classroom door?",
+    "weakAnswer": "Everyone went to the door.",
+    "weakExplanation": "That says what happened, not why.",
+    "exceptionalAnswer": "Everyone rushed towards the classroom door because the weather was getting bad and it had started to rain. They wanted to get inside before they became wet.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Everyone rushed towards the classroom door"},
+      {"label": "Reason", "text": "because the weather was getting bad and it had started to rain."},
+      {"label": "Effect", "text": "They wanted to get inside"},
+      {"label": "Link", "text": "before they became wet."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Everyone rushed towards the classroom door", "note": "This starts by answering the exact question.", "partIndex": 0},
+      {"label": "Reason", "text": "because the weather was getting bad and it had started to rain", "note": "This explains why they moved.", "partIndex": 1},
+      {"label": "Effect", "text": "They wanted to get inside", "note": "This shows what the rain made them do.", "partIndex": 2},
+      {"label": "Link back", "text": "before they became wet", "note": "This explains the purpose of rushing.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q5-nervous",
+    "title": "A character feeling nervous",
+    "commandWord": "why",
+    "text": "Ella stood outside the music room, holding her violin tightly. Her hands felt sweaty, and her stomach twisted like a knot. Inside, she could hear the judges whispering.",
+    "question": "Why is Ella holding her violin tightly?",
+    "weakAnswer": "She has a violin.",
+    "weakExplanation": "That is true, but it does not explain why she is holding it tightly.",
+    "exceptionalAnswer": "Ella is holding her violin tightly because she is nervous about performing. The text says her hands are sweaty and her stomach feels like a knot, which shows she is worried or anxious.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Ella is holding her violin tightly"},
+      {"label": "Reason", "text": "because she is nervous about performing."},
+      {"label": "Evidence", "text": "The text says her hands are sweaty and her stomach feels like a knot,"},
+      {"label": "Explanation", "text": "which shows she is worried or anxious."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Ella is holding her violin tightly", "note": "This turns the question into an answer stem.", "partIndex": 0},
+      {"label": "Reason", "text": "because she is nervous about performing", "note": "This answers the why.", "partIndex": 1},
+      {"label": "Evidence", "text": "her hands are sweaty and her stomach feels like a knot", "note": "This proves the feeling.", "partIndex": 2},
+      {"label": "Explanation", "text": "which shows she is worried or anxious", "note": "This explains what the clues mean.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q6-repeated-word",
+    "title": "Repeated word",
+    "commandWord": "why",
+    "text": "Run. Run. Run.\n\nBen could hear the footsteps behind him getting closer. He did not look back. He just kept moving, faster and faster, until he reached the gate.",
+    "question": "Why has the writer repeated the word “Run”?",
+    "weakAnswer": "The writer says “Run” three times.",
+    "weakExplanation": "That notices the repetition, but does not explain why it is used.",
+    "exceptionalAnswer": "The writer repeats the word “Run” to make the moment feel urgent and frightening. The short repeated word makes it sound as if Ben is panicking and needs to escape quickly.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "The writer repeats the word “Run”"},
+      {"label": "Purpose", "text": "to make the moment feel urgent and frightening."},
+      {"label": "Effect", "text": "The short repeated word makes it sound as if Ben is panicking"},
+      {"label": "Link", "text": "and needs to escape quickly."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "The writer repeats the word “Run”", "note": "This uses the question wording to begin the answer.", "partIndex": 0},
+      {"label": "Reason/purpose", "text": "to make the moment feel urgent and frightening", "note": "This explains why the writer uses repetition.", "partIndex": 1},
+      {"label": "Effect", "text": "makes it sound as if Ben is panicking", "note": "This explains what the repetition suggests.", "partIndex": 2},
+      {"label": "Link back to the story", "text": "and needs to escape quickly", "note": "This connects the technique to what is happening.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q7-sign",
+    "title": "A sign",
+    "commandWord": "why",
+    "text": "A large red sign stood beside the lake. It said:\nDANGER: THIN ICE\nSeveral children stopped at the edge and stepped backwards.",
+    "question": "Why is the sign large and red?",
+    "weakAnswer": "It is a red sign.",
+    "weakExplanation": "That describes the sign, but does not explain the reason for the colour or size.",
+    "exceptionalAnswer": "The sign is large and red because it needs to warn people about danger quickly. The bright colour and big letters make it easy to notice, so people do not walk onto the thin ice.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "The sign is large and red"},
+      {"label": "Reason", "text": "because it needs to warn people about danger quickly."},
+      {"label": "Effect", "text": "The bright colour and big letters make it easy to notice,"},
+      {"label": "Link", "text": "so people do not walk onto the thin ice."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "The sign is large and red", "note": "This turns the question into a clear answer stem.", "partIndex": 0},
+      {"label": "Reason", "text": "because it needs to warn people about danger quickly", "note": "This explains why the sign looks that way.", "partIndex": 1},
+      {"label": "Effect", "text": "make it easy to notice", "note": "This explains what large and red do.", "partIndex": 2},
+      {"label": "Link back to safety", "text": "so people do not walk onto the thin ice", "note": "This explains why noticing it matters.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q8-lies",
+    "title": "A character lies",
+    "commandWord": "why",
+    "text": "“Did you eat the last biscuit?” asked Dad.\n“No,” said Sam, wiping crumbs from his jumper. He pushed the empty packet under the cushion with his foot.",
+    "question": "Why does Sam push the empty packet under the cushion?",
+    "weakAnswer": "He pushes the packet under the cushion.",
+    "weakExplanation": "That repeats the action, but not the reason.",
+    "exceptionalAnswer": "Sam pushes the empty packet under the cushion because he is trying to hide the evidence that he ate the last biscuit. The crumbs on his jumper suggest he is lying.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Sam pushes the empty packet under the cushion"},
+      {"label": "Reason", "text": "because he is trying to hide the evidence that he ate the last biscuit."},
+      {"label": "Evidence", "text": "The crumbs on his jumper"},
+      {"label": "Explanation", "text": "suggest he is lying."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Sam pushes the empty packet under the cushion", "note": "This begins by directly answering the action in the question.", "partIndex": 0},
+      {"label": "Reason", "text": "because he is trying to hide the evidence", "note": "This answers why he hides the packet.", "partIndex": 1},
+      {"label": "Evidence", "text": "The crumbs on his jumper", "note": "This proves he probably ate the biscuit.", "partIndex": 2},
+      {"label": "Explanation", "text": "suggest he is lying", "note": "This explains what the evidence means.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q9-library",
+    "title": "A setting description",
+    "commandWord": "why",
+    "text": "The library was silent except for the ticking clock. Rows of books towered over the tables, and a sign near the door read, Please whisper. Nina lowered her voice before asking for help.",
+    "question": "Why did Nina lower her voice?",
+    "weakAnswer": "Nina spoke quietly.",
+    "weakExplanation": "That says what she did, but not why.",
+    "exceptionalAnswer": "Nina lowered her voice because she was in a quiet library where people were expected to whisper. The sign says “Please whisper”, so she changed her voice to follow the rule and avoid disturbing others.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "Nina lowered her voice"},
+      {"label": "Reason", "text": "because she was in a quiet library where people were expected to whisper."},
+      {"label": "Evidence", "text": "The sign says “Please whisper”,"},
+      {"label": "Purpose", "text": "so she changed her voice to follow the rule and avoid disturbing others."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "Nina lowered her voice", "note": "This opens with the action from the question.", "partIndex": 0},
+      {"label": "Reason", "text": "because she was in a quiet library", "note": "This explains the situation.", "partIndex": 1},
+      {"label": "Evidence", "text": "The sign says ‘Please whisper’", "note": "This uses proof from the text.", "partIndex": 2},
+      {"label": "Effect/purpose", "text": "to follow the rule and avoid disturbing others", "note": "This explains why lowering her voice was sensible.", "partIndex": 3}
+    ]
+  },
+  {
+    "id": "q10-mars-title",
+    "title": "A question as a title",
+    "commandWord": "why",
+    "text": "Could You Survive on Mars?\n\nMars is cold, dusty and dry. There is no air for humans to breathe, and temperatures can drop far below freezing. Scientists are trying to discover how people might one day live there.",
+    "question": "Why is the title written as a question?",
+    "weakAnswer": "The title is a question.",
+    "weakExplanation": "That is true, but it does not explain why the writer chose a question.",
+    "exceptionalAnswer": "The title is written as a question because it makes the reader curious and encourages them to think about the answer. It also introduces the main topic of the text, which is whether humans could live on Mars.",
+    "answerParts": [
+      {"label": "Restating the question", "text": "The title is written as a question"},
+      {"label": "Purpose", "text": "because it makes the reader curious"},
+      {"label": "Effect on reader", "text": "and encourages them to think about the answer."},
+      {"label": "Link", "text": "It also introduces the main topic of the text, which is whether humans could live on Mars."}
+    ],
+    "breakdown": [
+      {"label": "Restating the question", "text": "The title is written as a question", "note": "This turns the question into the answer opening.", "partIndex": 0},
+      {"label": "Reason/purpose", "text": "because it makes the reader curious", "note": "This explains why the writer used a question.", "partIndex": 1},
+      {"label": "Effect on reader", "text": "encourages them to think about the answer", "note": "This explains how the question affects the reader.", "partIndex": 2},
+      {"label": "Link back to the text", "text": "whether humans could live on Mars", "note": "This connects the title to the paragraph.", "partIndex": 3}
+    ]
+  }
+]
