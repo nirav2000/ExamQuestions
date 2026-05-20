@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.23",
+    "label": "v0.1.23 - separate config, maintenance glue, and code map",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-20",
+    "notes": "Adds app-config.js for version/URL constants, app-maintenance.js for runtime version/groove safety, updates helper defaults to neutral command-word guidance, and adds CODEMAP.md to document feature ownership."
+  },
+  {
     "version": "v0.1.22",
     "label": "v0.1.22 - refactor app utilities into helpers module",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.22/",
     "date": "2026-05-19",
     "notes": "Refactors shared helper logic out of app.js into app-helpers.js for readability/maintainability while keeping behavior unchanged."
   },
@@ -46,7 +53,7 @@
     "label": "v0.1.16 - neutral command-groove fallback",
     "path": "/ExamQuestions/versions/v0.1.16/",
     "date": "2026-05-18",
-    "notes": "Replaces the global why-specific Reason \u2192 Effect \u2192 Link default with neutral command-word strategy wording; keeps Reason \u2192 Effect \u2192 Link only for why questions."
+    "notes": "Replaces the global why-specific Reason → Effect → Link default with neutral command-word strategy wording; keeps Reason → Effect → Link only for why questions."
   },
   {
     "version": "v0.1.15",
