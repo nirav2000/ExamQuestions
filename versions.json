@@ -1,8 +1,15 @@
 [
   {
+    "version": "v0.1.24",
+    "label": "v0.1.24 - split CSS by feature area",
+    "path": "/ExamQuestions/",
+    "date": "2026-05-20",
+    "notes": "Splits the monolithic styles.css into labelled files under styles/ with styles/main.css as the entrypoint, while keeping selectors and visual behaviour unchanged."
+  },
+  {
     "version": "v0.1.23",
     "label": "v0.1.23 - separate config, maintenance glue, and code map",
-    "path": "/ExamQuestions/",
+    "path": "/ExamQuestions/versions/v0.1.23/",
     "date": "2026-05-20",
     "notes": "Adds app-config.js for version/URL constants, app-maintenance.js for runtime version/groove safety, updates helper defaults to neutral command-word guidance, and adds CODEMAP.md to document feature ownership."
   },
