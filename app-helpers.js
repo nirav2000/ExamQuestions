@@ -1,5 +1,15 @@
 (() => {
   const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
+  const neutralGroove = window.AppConfig?.NEUTRAL_GROOVE || {
+    title: 'Command word strategy',
+    heading: 'Match the command word',
+    intro: 'Look at the command word, then use the answer pattern that fits that type of question.',
+    steps: [
+      'Spot the command word.',
+      'Use the matching answer pattern.',
+      'Check your answer does what the question asks.'
+    ]
+  };
 
   function normalisePackPath(path) { return path.replace(/^.*command-sets\//, 'command-sets/').replace(/^\/+/, ''); }
   function titleCase(value = '') { return value.replace(/[-_]/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
@@ -21,9 +31,9 @@
       title: explainer.title || `${titleCase(key)} questions`,
       descriptor: explainer.descriptor || explainer.text || explainer.childFriendlyMeaning || explainer.whatTheQuestionIsReallyAsking || '',
       grooveTitle: explainer.grooveTitle || explainer.answerGrooveTitle || `${titleCase(key)} answer groove`,
-      grooveHeading: explainer.grooveHeading || 'Reason → Effect → Link',
-      grooveIntro: explainer.grooveIntro || 'Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.',
-      groove: explainer.groove || explainer.answerGrooveSteps || [],
+      grooveHeading: explainer.grooveHeading || neutralGroove.heading,
+      grooveIntro: explainer.grooveIntro || neutralGroove.intro,
+      groove: explainer.groove || explainer.answerGrooveSteps || neutralGroove.steps,
       answerPattern: explainer.answerPattern || '',
       steps: explainer.steps || explainer.miniChecklist || [],
       helpfulWords: explainer.helpfulWords || explainer.usefulSentenceStarters || defaultHelpfulWords
