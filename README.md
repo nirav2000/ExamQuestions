@@ -6,15 +6,32 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v0.1.22`
+`v0.1.23`
 
-## v0.1.22 changes
+## v0.1.23 changes
 
-- Replaces the global hardcoded `Reason → Effect → Link` default with neutral command-word strategy wording.
-- Keeps `Reason → Effect → Link` as a `why`-specific pattern rather than a universal command-word pattern.
-- Updates the hero copy and answer placeholder so they no longer imply all command words use the same structure.
-- Adds a small fallback patch script that neutralises any old why-specific fallback content if an explainer lacks its own heading or intro.
+This is a maintainability/refactor-only release. It keeps the existing UI and practice behaviour, while making the codebase easier to work on safely.
+
+- Adds `app-config.js` for app version, data URLs and neutral command-groove defaults.
+- Adds `app-maintenance.js` for runtime version display and neutral command-groove safety.
+- Updates `app-helpers.js` so generic command-word fallback content is neutral, not `why`-specific.
+- Removes the need to keep extending the old `command-groove-fallback-fix.js` workaround.
+- Adds `CODEMAP.md`, which explains where each feature currently lives and where it should move during future modularisation.
 - Updates the central `versions.json` history.
+
+## Code map
+
+Start with [`CODEMAP.md`](./CODEMAP.md) when changing a feature. It explains the current files, functional areas, and future target modules.
+
+Current important files:
+
+- `index.html` — app shell and DOM structure.
+- `styles.css` — all current styling.
+- `app-config.js` — app version, data URLs, neutral command-groove defaults.
+- `app-helpers.js` — reusable helper functions.
+- `app.js` — main app behaviour; still monolithic and the next refactor target.
+- `app-maintenance.js` — version display and neutral groove runtime guard.
+- `versions.json` — universal version history.
 
 ## Versioning
 
@@ -26,25 +43,6 @@ For every future semantic version:
 2. Include all app files in the archive: `index.html`, `styles.css`, `app.js`, `README.md`, and `data/questions.json`.
 3. Update the live root app files.
 4. Update `versions.json` with the new current version and the archive path for the previous version.
-
-Archived versions are available at paths such as:
-
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.15/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.14/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.13/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.12/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.11/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.10/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.9/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.8/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.7/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.6/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.5/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.4/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.3/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.2/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.1/`
-- `https://nirav2000.github.io/ExamQuestions/versions/v0.1.0/`
 
 ## Loading a command-word pack
 
