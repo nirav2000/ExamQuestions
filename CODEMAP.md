@@ -7,7 +7,13 @@ This file explains where each feature area currently lives and where future refa
 | File | Owns | Notes |
 | --- | --- | --- |
 | `index.html` | App shell and DOM structure | Keep IDs stable because `app.js` reads them through the `els` registry. |
-| `styles.css` | All styling | Still monolithic. Next CSS refactor should split this into labelled files under `styles/`. |
+| `styles/main.css` | CSS entrypoint | Imports the feature-specific CSS files under `styles/`. |
+| `styles/tokens-base.css` | Design tokens, base styles and shared utilities | Colours, common buttons, common cards, utility classes. |
+| `styles/header-groove.css` | Header, menu, hero and command-groove card | Edit this for top navigation, hero copy layout and groove carousel visuals. |
+| `styles/pack-practice.css` | Pack panel, command-set selectors, question list and question card | Edit this for the pack sidebar/filter UI or practice workspace layout. |
+| `styles/answer-feedback.css` | Answer entry, drawing pad, feedback cards and model-answer breakdown | Edit this for coach notes, stamps, weak/full-mark boxes and breakdown highlighting. |
+| `styles/forms-responsive.css` | Manual-entry dialog and responsive rules | Edit this for modal form layout or mobile breakpoints. |
+| `styles.css` | Legacy monolithic CSS reference | Kept temporarily for compatibility/reference. New styling edits should use `styles/`. |
 | `app-config.js` | Version, URL constants, neutral command-groove defaults | Single place for app version and fetch paths. |
 | `app-helpers.js` | Generic utilities | Safe HTML, title casing, path normalisation, explainer normalisation, downloads. Avoid feature-specific UI logic here. |
 | `app.js` | Main app behaviour | Still monolithic. Contains state, loading, rendering, selection, feedback, input tools, and UI controls. |
@@ -46,7 +52,24 @@ Rules:
 - Do not put feature rendering or business flow here.
 - Command-word teaching defaults can be normalised here only if they come from `app-config.js` or a future `command-explainers.js`.
 
-### 3. App state
+### 3. Styling
+
+Current files:
+
+- `styles/main.css`
+- `styles/tokens-base.css`
+- `styles/header-groove.css`
+- `styles/pack-practice.css`
+- `styles/answer-feedback.css`
+- `styles/forms-responsive.css`
+
+Rule:
+
+- New visual edits should go into the matching feature file under `styles/`.
+- Keep `styles/main.css` as the only CSS file linked from `index.html`.
+- Keep `styles.css` unchanged unless intentionally updating/removing the legacy reference.
+
+### 4. App state
 
 Current file:
 
@@ -68,7 +91,7 @@ Future target:
 
 - `src/state.js`
 
-### 4. DOM registry
+### 5. DOM registry
 
 Current file:
 
@@ -82,7 +105,7 @@ Rule:
 
 - Only one file should query the DOM. Other modules should import/use the registry.
 
-### 5. Data loading and pack import
+### 6. Data loading and pack import
 
 Current file:
 
@@ -102,7 +125,7 @@ Future target:
 
 - `src/data-loader.js`
 
-### 6. Command-word teaching logic
+### 7. Command-word teaching logic
 
 Current files:
 
@@ -120,7 +143,7 @@ Rule:
 - `why` can use `Reason → Effect → Link`.
 - Generic/default command-word fallback must stay neutral: `Match the command word`.
 
-### 7. Pack and command-set selector
+### 8. Pack and command-set selector
 
 Current file:
 
@@ -142,7 +165,7 @@ Future target:
 
 - `src/command-set-selector.js`
 
-### 8. Question display
+### 9. Question display
 
 Current file:
 
@@ -161,7 +184,7 @@ Future target:
 
 - `src/question-renderer.js`
 
-### 9. Answer input and checks
+### 10. Answer input and checks
 
 Current file:
 
@@ -177,7 +200,7 @@ Future target:
 
 - `src/answer-input.js`
 
-### 10. Feedback and answer breakdown
+### 11. Feedback and answer breakdown
 
 Current file:
 
@@ -195,7 +218,7 @@ Future target:
 
 - `src/feedback-renderer.js`
 
-### 11. Manual entry
+### 12. Manual entry
 
 Current file:
 
@@ -209,7 +232,7 @@ Future target:
 
 - `src/manual-entry.js`
 
-### 12. Speech input
+### 13. Speech input
 
 Current file:
 
@@ -223,7 +246,7 @@ Future target:
 
 - `src/speech.js`
 
-### 13. Drawing pad
+### 14. Drawing pad
 
 Current file:
 
@@ -238,7 +261,7 @@ Future target:
 
 - `src/drawing-pad.js`
 
-### 14. Small UI controls
+### 15. Small UI controls
 
 Current file:
 
@@ -258,17 +281,20 @@ Future target:
 
 ## Recommended next refactor order
 
-1. Split `styles.css` into labelled CSS files under `styles/`.
-2. Move constants and state to `src/config.js` and `src/state.js`.
-3. Move `els` to `src/dom.js`.
-4. Move data loading into `src/data-loader.js`.
-5. Move command explainers into `src/command-explainers.js`.
-6. Move renderers into `src/question-renderer.js` and `src/feedback-renderer.js`.
-7. Move tools into `src/speech.js`, `src/drawing-pad.js`, and `src/manual-entry.js`.
+1. Move constants and state to `src/config.js` and `src/state.js`.
+2. Move `els` to `src/dom.js`.
+3. Move data loading into `src/data-loader.js`.
+4. Move command explainers into `src/command-explainers.js`.
+5. Move renderers into `src/question-renderer.js` and `src/feedback-renderer.js`.
+6. Move tools into `src/speech.js`, `src/drawing-pad.js`, and `src/manual-entry.js`.
 
 ## Editing guide
 
-- To change colours, layout or visual design: start in `styles.css`.
+- To change colours, shared buttons or common cards: edit `styles/tokens-base.css`.
+- To change the top hero, menu, or command-groove card: edit `styles/header-groove.css`.
+- To change pack filters, command-set selection, question list, or question card: edit `styles/pack-practice.css`.
+- To change answer input, coach feedback, model answers, stamps, or breakdowns: edit `styles/answer-feedback.css`.
+- To change the manual dialog or mobile layout: edit `styles/forms-responsive.css`.
 - To change version or data URLs: use `app-config.js`.
 - To change safe helper behaviour: use `app-helpers.js`.
 - To change command-word learning content: currently use `app.js` built-in explainers or `data/command-explainers.json`; future home should be `src/command-explainers.js`.
