@@ -1,4 +1,4 @@
-const APP_VERSION = 'v0.1.3';
+const APP_VERSION = 'v0.1.26';
 const VERSION_HISTORY_URL = '/ExamQuestions/versions.json';
 const fallbackQuestions = [];
 let allQuestions = [];
@@ -8,12 +8,15 @@ let activePartIndex = null;
 let versionHistory = [];
 let packManifest = [];
 let packFiles = new Map();
+let currentSource = 'starter';
+let currentSelectionMode = 'dropdown';
+const { normalisePackPath, titleCase, firstWord, escapeHtml, sanitizeSimpleHtml, normalizeExplainer, mergeExternalExplainers, download } = window.AppHelpers;
 let commandExplainers = {
   why: {
     title: 'Why questions',
-    descriptor: 'A why question asks for the reason something happens or the purpose behind a writer’s choice.',
+    descriptor: 'A why question asks for the reason something happens or the purpose behind a writer’s choice. A strong answer should not stop at what happened: it should explain because, effect and proof.',
     grooveTitle: 'Why answer groove',
-    groove: ['Answer stem', 'Reason', 'Evidence or effect', 'Link back'],
+    groove: ['What happened?', 'Why did it happen?', 'What proof do I have?'],
     answerPattern: 'Use the question words → because/to → proof/effect → so/this shows',
     steps: ['Start by turning the question into an answer stem.', 'Give the reason using because or to.', 'Add evidence or effect from the text.', 'Link back to the action, reader, purpose or question.'],
     helpfulWords: ['because', 'so', 'this shows', 'this makes', 'this helps']
@@ -35,6 +38,17 @@ let commandExplainers = {
     answerPattern: 'Say what it is like → add precise details → use evidence',
     steps: ['Identify the thing you are describing.', 'Choose precise details.', 'Use evidence from the text where possible.'],
     helpfulWords: ['is', 'has', 'looks', 'sounds', 'feels']
+  },
+  infer: {
+    title: 'Infer questions',
+    descriptor: 'An infer question asks you to work something out from clues in the text, even if it is not stated directly.',
+    grooveTitle: 'Inference answer groove',
+    grooveHeading: 'Clue → Inference → Explain',
+    grooveIntro: 'Use clue words like <strong>suggests</strong>, <strong>implies</strong>, and <strong>this makes me think</strong>.',
+    groove: ['Answer stem', 'Inference', 'Evidence or clue', 'Explanation of the clue'],
+    answerPattern: 'Inference → clue → explain how the clue proves it',
+    steps: ['Say what you infer.', 'Quote or refer to a clue.', 'Explain how the clue supports your inference.', 'Avoid guesses that are not supported.'],
+    helpfulWords: ['suggests', 'implies', 'this makes me think', 'inference', 'clue']
   },
   default: {
     title: 'Command word',
@@ -66,23 +80,46 @@ const els = {
   upload: document.querySelector('#jsonUpload'),
   manualDialog: document.querySelector('#manualDialog'),
   manualForm: document.querySelector('#manualForm'),
+  closeManualBtn: document.querySelector('#closeManualBtn'),
   canvas: document.querySelector('#drawCanvas'),
   commandExplainerTitle: document.querySelector('#commandExplainerTitle'),
   commandExplainerText: document.querySelector('#commandExplainerText'),
   commandExplainerSteps: document.querySelector('#commandExplainerSteps'),
-  commandGroove: document.querySelector('#commandGroove'),
+  commandGroovePill: document.querySelector('#commandGroovePill'),
+  commandGrooveCard: document.querySelector('#commandGrooveCard'),
+  groovePrevBtn: document.querySelector('#groovePrevBtn'),
+  grooveNextBtn: document.querySelector('#grooveNextBtn'),
+  commandGrooveHeading: document.querySelector('#commandGrooveHeading'),
+  commandGrooveIntro: document.querySelector('#commandGrooveIntro'),
+  commandGrooveList: document.querySelector('#commandGrooveList'),
   commandAnswerPattern: document.querySelector('#commandAnswerPattern'),
   versionSelect: document.querySelector('#versionSelect'),
   commandSetSelect: document.querySelector('#commandSetSelect'),
+  selectionMode: document.querySelector('#selectionMode'),
+  packSourceSelect: document.querySelector('#packSourceSelect'),
+  packSearchInput: document.querySelector('#packSearchInput'),
+  packFilterChips: document.querySelector('#packFilterChips'),
+  commandSetTabs: document.querySelector('#commandSetTabs'),
+  commandSetCards: document.querySelector('#commandSetCards'),
+  commandSetChecklist: document.querySelector('#commandSetChecklist'),
+  applyChecklistBtn: document.querySelector('#applyChecklistBtn'),
   packTitle: document.querySelector('#packTitle'),
   packSummary: document.querySelector('#packSummary'),
-  packStatus: document.querySelector('#packStatus')
+  packStatus: document.querySelector('#packStatus'),
+  togglePackPanelBtn: document.querySelector('#togglePackPanelBtn'),
+  packPanelBody: document.querySelector('#packPanelBody')
 };
 
-const allowedSourceTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR']);
-
 async function initialiseApp() {
-  await Promise.all([loadQuestions(), loadExternalExplainers(), loadExternalManifest(), loadVersionHistory()]);
+  await Promise.all([loadExternalExplainers(), loadVersionHistory()]);
+  await loadQuestions();
+  try {
+    await loadBundledPack();
+    els.packStatus.textContent = 'Loaded bundled ZIP pack from command-set/.';
+  } catch (error) {
+    console.info('Bundled ZIP pack could not be loaded. Using built-in data.', error);
+    await loadExternalManifest();
+  }
   renderCommandSetSelect();
 }
 
@@ -100,9 +137,9 @@ async function loadQuestions() {
 
 async function loadExternalExplainers() {
   try {
-    const res = await fetch('./data/command-explainers.json');
+    const res = await fetch('./data/command-explainers.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('No external explainers');
-    commandExplainers = { ...commandExplainers, ...(await res.json()) };
+    commandExplainers = mergeExternalExplainers(commandExplainers, await res.json());
   } catch (error) {
     console.info('Using built-in command explainers.');
   }
@@ -110,7 +147,7 @@ async function loadExternalExplainers() {
 
 async function loadExternalManifest() {
   try {
-    const res = await fetch('./data/manifest.json');
+    const res = await fetch('./data/manifest.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('No manifest');
     packManifest = await res.json();
     els.packStatus.textContent = 'Loaded command-word manifest from data folder.';
@@ -121,7 +158,7 @@ async function loadExternalManifest() {
 
 async function loadVersionHistory() {
   try {
-    const res = await fetch(VERSION_HISTORY_URL);
+    const res = await fetch(VERSION_HISTORY_URL, { cache: 'no-store' });
     versionHistory = await res.json();
   } catch (error) {
     console.warn('Could not load versions.json.', error);
@@ -136,21 +173,66 @@ function buildManifestFromQuestions() {
     commandWord: word,
     title: `${titleCase(word)} questions`,
     count: allQuestions.filter(q => q.commandWord === word).length,
-    path: ''
+    path: '',
+    source: currentSource
   }));
   els.packStatus.textContent = `Using ${allQuestions.length} loaded questions.`;
 }
 
 function renderCommandSetSelect() {
   if (!els.commandSetSelect) return;
-  els.commandSetSelect.innerHTML = `<option value="all">All loaded questions (${allQuestions.length})</option>`;
-  packManifest.forEach(item => {
+  const visibleManifest = getVisibleManifest();
+  els.commandSetSelect.innerHTML = `<optgroup label="All questions"><option value="all">All loaded questions (${allQuestions.length})</option></optgroup><optgroup label="By command word" id="byCommandWord"></optgroup>`;
+  const group = els.commandSetSelect.querySelector('#byCommandWord');
+  visibleManifest.forEach(item => {
     const option = document.createElement('option');
     option.value = item.commandWord;
     option.dataset.path = item.path || '';
     option.textContent = `${item.title || titleCase(item.commandWord)} (${item.count || '?'})`;
-    els.commandSetSelect.appendChild(option);
+    group.appendChild(option);
   });
+  renderSetTabs(visibleManifest);
+  renderSetCards(visibleManifest);
+  renderChecklist(visibleManifest);
+  renderFilterChips(visibleManifest);
+  applySelectionMode();
+}
+
+function getVisibleManifest() {
+  const search = (els.packSearchInput?.value || '').trim().toLowerCase();
+  return packManifest.filter(item => {
+    const sourceOk = els.packSourceSelect?.value === 'all' || !els.packSourceSelect?.value || item.source === els.packSourceSelect.value;
+    const text = `${item.commandWord} ${item.title || ''}`.toLowerCase();
+    const searchOk = !search || text.includes(search);
+    return sourceOk && searchOk;
+  });
+}
+
+function renderSetTabs(items) {
+  if (!els.commandSetTabs) return;
+  els.commandSetTabs.innerHTML = `<button class="chip active" data-value="all">All</button>` + items.map(i => `<button class="chip" data-value="${escapeHtml(i.commandWord)}">${escapeHtml(titleCase(i.commandWord))}</button>`).join('');
+}
+function renderSetCards(items) {
+  if (!els.commandSetCards) return;
+  els.commandSetCards.innerHTML = `<button class="card-btn" data-value="all">All loaded questions</button>` + items.map(i => `<button class="card-btn" data-value="${escapeHtml(i.commandWord)}">${escapeHtml(i.title || titleCase(i.commandWord))}<small>${i.count || '?'} questions</small></button>`).join('');
+}
+function renderChecklist(items) {
+  if (!els.commandSetChecklist) return;
+  els.commandSetChecklist.innerHTML = items.map(i => `<label><input type="checkbox" value="${escapeHtml(i.commandWord)}" /> ${escapeHtml(titleCase(i.commandWord))} (${i.count || '?'})</label>`).join('');
+}
+function renderFilterChips(items) {
+  if (!els.packFilterChips) return;
+  const words = [...new Set(items.map(i => i.commandWord))].slice(0, 8);
+  els.packFilterChips.innerHTML = words.map(word => `<button class="chip" data-chip="${escapeHtml(word)}">${escapeHtml(word)}</button>`).join('');
+}
+function applySelectionMode() {
+  const mode = els.selectionMode?.value || 'dropdown';
+  currentSelectionMode = mode;
+  if (els.commandSetTabs) els.commandSetTabs.hidden = mode !== 'tabs';
+  if (els.commandSetCards) els.commandSetCards.hidden = mode !== 'cards';
+  if (els.commandSetChecklist) els.commandSetChecklist.hidden = mode !== 'checklist';
+  if (els.applyChecklistBtn) els.applyChecklistBtn.hidden = mode !== 'checklist';
+  if (els.commandSetSelect?.closest('label')) els.commandSetSelect.closest('label').hidden = mode !== 'dropdown';
 }
 
 async function selectCommandSet(value) {
@@ -185,7 +267,11 @@ async function selectCommandSet(value) {
 function renderVersionSwitcher() {
   if (!els.versionSelect) return;
   els.versionSelect.innerHTML = '';
-  versionHistory.forEach(item => {
+  const hasCurrent = versionHistory.some(item => item.version === APP_VERSION);
+  const safeHistory = hasCurrent
+    ? versionHistory
+    : [{ version: APP_VERSION, label: APP_VERSION, path: './' }, ...versionHistory];
+  safeHistory.forEach(item => {
     const option = document.createElement('option');
     option.value = item.version;
     option.textContent = item.label || item.version;
@@ -251,9 +337,14 @@ function renderCommandExplainer(q) {
   const explainer = commandExplainers[key] || commandExplainers.default;
   els.commandExplainerTitle.textContent = explainer.title || `${titleCase(key)} questions`;
   els.commandExplainerText.textContent = explainer.descriptor || explainer.text || '';
-  els.commandGroove.innerHTML = explainer.groove ? `<strong>${escapeHtml(explainer.grooveTitle || 'Answer groove')}</strong>${explainer.groove.map(step => `<span>${escapeHtml(step)}</span>`).join('')}` : '';
+  if (els.commandGroovePill) els.commandGroovePill.textContent = explainer.grooveTitle || 'Answer groove';
+  if (els.commandGrooveHeading) els.commandGrooveHeading.textContent = explainer.grooveHeading || 'Reason → Effect → Link';
+  if (els.commandGrooveIntro) els.commandGrooveIntro.innerHTML = sanitizeSimpleHtml(explainer.grooveIntro || 'Use words like <strong>because</strong>, <strong>so</strong>, <strong>this shows</strong>, and <strong>this helps</strong>.');
+  if (els.commandGrooveList) els.commandGrooveList.innerHTML = (explainer.groove || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
   els.commandAnswerPattern.textContent = explainer.answerPattern || '';
-  els.commandExplainerSteps.innerHTML = (explainer.steps || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
+  if (els.commandExplainerSteps) {
+    els.commandExplainerSteps.innerHTML = (explainer.steps || []).map(step => `<li>${escapeHtml(step)}</li>`).join('');
+  }
 }
 
 function selectQuestion(index) {
@@ -323,6 +414,7 @@ function updateChecks() {
 }
 
 async function handleUpload(file) {
+  currentSource = 'uploaded';
   if (/\.zip$/i.test(file.name)) return handleZipUpload(file);
   const data = JSON.parse(await file.text());
   if (Array.isArray(data)) {
@@ -331,7 +423,7 @@ async function handleUpload(file) {
   } else if (data.manifest && data.questions) {
     packManifest = data.manifest;
     allQuestions = data.questions;
-    commandExplainers = { ...commandExplainers, ...(data.commandExplainers || {}) };
+    commandExplainers = mergeExternalExplainers(commandExplainers, (data.commandExplainers || {}));
   } else {
     throw new Error('JSON must be an array of questions or a pack object with manifest and questions.');
   }
@@ -357,9 +449,54 @@ async function handleZipUpload(file) {
     const rel = normalisePackPath(entry.name.split('/command-sets/').pop());
     packFiles.set(`command-sets/${rel}`, JSON.parse(await entry.async('string')));
   }
-  if (explainers) commandExplainers = { ...commandExplainers, ...explainers };
-  if (manifest) packManifest = manifest;
-  allQuestions = all || [...packFiles.values()].flat();
+  if (explainers) commandExplainers = mergeExternalExplainers(commandExplainers, explainers);
+  if (manifest) packManifest = manifest.map(item => ({ ...item, source: currentSource }));
+
+  if (!all && !manifest && packFiles.size === 0) {
+    const jsonEntries = entries.filter(item => item.name.endsWith('.json'));
+    const parsedSets = [];
+    for (const entry of jsonEntries) {
+      const data = JSON.parse(await entry.async('string'));
+      const base = entry.name.split('/').pop().replace(/\.json$/i, '');
+
+      if (Array.isArray(data) && data.length) {
+        const commandWord = (data[0]?.commandWord || base).toLowerCase();
+        parsedSets.push({ commandWord, base, data });
+        packFiles.set(`command-sets/${base}.json`, data);
+        continue;
+      }
+
+      if (data && Array.isArray(data.questions) && data.questions.length) {
+        const commandWord = (data.questions[0]?.commandWord || base).toLowerCase();
+        parsedSets.push({ commandWord, base, data: data.questions });
+        packFiles.set(`command-sets/${base}.json`, data.questions);
+        if (data.commandExplainer) {
+          commandExplainers[commandWord] = normalizeExplainer(data.commandExplainer, commandWord);
+        }
+        continue;
+      }
+
+      if (data && typeof data === 'object' && !Array.isArray(data)) {
+        for (const [word, questionsForWord] of Object.entries(data)) {
+          if (!Array.isArray(questionsForWord) || !questionsForWord.length) continue;
+          const commandWord = (questionsForWord[0]?.commandWord || word).toLowerCase();
+          parsedSets.push({ commandWord, base: commandWord, data: questionsForWord });
+          packFiles.set(`command-sets/${commandWord}.json`, questionsForWord);
+        }
+      }
+    }
+    allQuestions = parsedSets.flatMap(item => item.data);
+    packManifest = parsedSets.map(item => ({
+      commandWord: item.commandWord,
+      title: `${titleCase(item.commandWord)} questions`,
+      count: item.data.length,
+      path: `command-sets/${item.base}.json`,
+      source: currentSource
+    }));
+  } else {
+    allQuestions = all || [...packFiles.values()].flat();
+  }
+
   questions = allQuestions;
   currentIndex = 0;
   els.packStatus.textContent = `Loaded ${allQuestions.length} questions from ${file.name}.`;
@@ -367,6 +504,15 @@ async function handleZipUpload(file) {
   els.packSummary.textContent = `${packManifest.length || packFiles.size} command-word sets are ready.`;
   renderCommandSetSelect();
   render();
+}
+
+async function loadBundledPack() {
+  currentSource = 'bundled';
+  const res = await fetch('./command-set/ks2_command_word_json_files.zip', { cache: 'no-store' });
+  if (!res.ok) throw new Error('Bundled ZIP pack was not found in command-set/.');
+  const blob = await res.blob();
+  const file = new File([blob], 'ks2_command_word_json_files.zip', { type: 'application/zip' });
+  await handleZipUpload(file);
 }
 
 function setupUpload() {
@@ -380,7 +526,14 @@ function setupUpload() {
 
 function setupManualEntry() {
   document.querySelector('#openManualBtn').addEventListener('click', () => els.manualDialog.showModal());
+  if (els.closeManualBtn) {
+    els.closeManualBtn.addEventListener('click', () => els.manualDialog.close('cancel'));
+  }
   els.manualForm.addEventListener('submit', event => {
+    if (event.submitter?.value === 'cancel') {
+      els.manualDialog.close('cancel');
+      return;
+    }
     event.preventDefault();
     const form = new FormData(els.manualForm);
     const breakdown = String(form.get('breakdown') || '').split('\n').map(line => line.trim()).filter(Boolean).map((line, index) => {
@@ -441,23 +594,63 @@ function setupCanvas() {
 }
 
 function setupVersionSwitcher() { if (els.versionSelect) els.versionSelect.addEventListener('change', event => { const path = event.target.selectedOptions[0]?.dataset.path; if (path) window.location.href = path; }); }
-function setupCommandSetSwitcher() { if (els.commandSetSelect) els.commandSetSelect.addEventListener('change', event => selectCommandSet(event.target.value)); }
-function clearCanvas() { const ctx = els.canvas.getContext('2d'); ctx.clearRect(0, 0, els.canvas.width, els.canvas.height); }
-function normalisePackPath(path) { return path.replace(/^.*command-sets\//, 'command-sets/').replace(/^\/+/, ''); }
-function titleCase(value = '') { return value.replace(/[-_]/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); }
-function firstWord(text = '') { return (text.trim().split(/\s+/)[0] || '').replace(/[^a-z]/gi, '') || 'command'; }
-function escapeHtml(value) { return String(value).replace(/[&<>"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char])); }
-function sanitizeSimpleHtml(html) {
-  const template = document.createElement('template');
-  template.innerHTML = html;
-  template.content.querySelectorAll('*').forEach(node => {
-    if (!allowedSourceTags.has(node.tagName)) { node.replaceWith(document.createTextNode(node.textContent || '')); return; }
-    [...node.attributes].forEach(attr => node.removeAttribute(attr.name));
+function setupCommandSetSwitcher() {
+  if (els.commandSetSelect) els.commandSetSelect.addEventListener('change', event => selectCommandSet(event.target.value));
+  if (els.selectionMode) els.selectionMode.addEventListener('change', applySelectionMode);
+  if (els.packSourceSelect) els.packSourceSelect.addEventListener('change', () => renderCommandSetSelect());
+  if (els.packSearchInput) els.packSearchInput.addEventListener('input', () => renderCommandSetSelect());
+  if (els.packFilterChips) els.packFilterChips.addEventListener('click', event => {
+    const chip = event.target.closest('[data-chip]'); if (!chip) return;
+    els.packSearchInput.value = chip.dataset.chip; renderCommandSetSelect();
   });
-  return template.innerHTML;
+  if (els.commandSetTabs) els.commandSetTabs.addEventListener('click', event => {
+    const btn = event.target.closest('[data-value]'); if (!btn) return; selectCommandSet(btn.dataset.value);
+  });
+  if (els.commandSetCards) els.commandSetCards.addEventListener('click', event => {
+    const btn = event.target.closest('[data-value]'); if (!btn) return; selectCommandSet(btn.dataset.value);
+  });
+  if (els.applyChecklistBtn) els.applyChecklistBtn.addEventListener('click', () => {
+    const selected = [...els.commandSetChecklist.querySelectorAll('input:checked')].map(i => i.value);
+    questions = selected.length ? allQuestions.filter(q => selected.includes((q.commandWord || '').toLowerCase())) : allQuestions;
+    currentIndex = 0;
+    els.packTitle.textContent = selected.length ? `${selected.map(titleCase).join(', ')} practice` : 'All command words';
+    els.packSummary.textContent = `${questions.length} questions ready.`;
+    render();
+  });
 }
-function download(filename, text) { const blob = new Blob([text], { type: 'application/json' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = filename; a.click(); URL.revokeObjectURL(url); }
-
+function cycleCommandWord(direction = 1) {
+  const words = packManifest.map(item => item.commandWord);
+  if (!words.length) return;
+  const currentWord = (questions[currentIndex]?.commandWord || '').toLowerCase();
+  let idx = words.indexOf(currentWord);
+  if (idx < 0) idx = 0;
+  const nextWord = words[(idx + direction + words.length) % words.length];
+  selectCommandSet(nextWord);
+  if (els.commandSetSelect) els.commandSetSelect.value = nextWord;
+}
+function setupGrooveCarousel() {
+  if (els.groovePrevBtn) els.groovePrevBtn.addEventListener('click', () => cycleCommandWord(-1));
+  if (els.grooveNextBtn) els.grooveNextBtn.addEventListener('click', () => cycleCommandWord(1));
+  if (els.commandGrooveCard) {
+    let startX = null;
+    els.commandGrooveCard.addEventListener('touchstart', e => { startX = e.touches[0]?.clientX ?? null; }, { passive: true });
+    els.commandGrooveCard.addEventListener('touchend', e => {
+      if (startX == null) return;
+      const endX = e.changedTouches[0]?.clientX ?? startX;
+      const dx = endX - startX;
+      if (Math.abs(dx) > 45) cycleCommandWord(dx > 0 ? -1 : 1);
+      startX = null;
+    }, { passive: true });
+  }
+}
+function setupPackPanelToggle() {
+  if (!els.togglePackPanelBtn || !els.packPanelBody) return;
+  els.togglePackPanelBtn.addEventListener('click', () => {
+    const hidden = els.packPanelBody.classList.toggle('hidden');
+    els.togglePackPanelBtn.setAttribute('aria-expanded', String(!hidden));
+  });
+}
+function clearCanvas() { const ctx = els.canvas.getContext('2d'); ctx.clearRect(0, 0, els.canvas.width, els.canvas.height); }
 els.answer.addEventListener('input', updateChecks);
 document.querySelector('#submitBtn').addEventListener('click', revealFeedback);
 document.querySelector('#tryAgainBtn').addEventListener('click', () => els.feedback.classList.add('hidden'));
@@ -467,4 +660,4 @@ document.querySelector('#prevBtn').addEventListener('click', () => selectQuestio
 document.querySelector('#startBtn').addEventListener('click', () => document.querySelector('#practice').scrollIntoView({ behavior: 'smooth' }));
 document.querySelector('#downloadJsonBtn').addEventListener('click', () => download('command-word-coach-questions.json', JSON.stringify(questions, null, 2)));
 document.querySelector('#clearCanvasBtn').addEventListener('click', clearCanvas);
-setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); initialiseApp();
+setupUpload(); setupManualEntry(); setupSpeech(); setupCanvas(); setupVersionSwitcher(); setupCommandSetSwitcher(); setupGrooveCarousel(); setupPackPanelToggle(); initialiseApp();

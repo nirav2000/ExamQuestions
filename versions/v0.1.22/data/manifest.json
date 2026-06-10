@@ -1,0 +1,32 @@
+[
+  {
+    "commandWord": "describe",
+    "title": "Describe questions",
+    "count": 10,
+    "path": "command-sets/describe.json"
+  },
+  {
+    "commandWord": "explain",
+    "title": "Explain questions",
+    "count": 10,
+    "path": "command-sets/explain.json"
+  },
+  {
+    "commandWord": "infer",
+    "title": "Infer questions",
+    "count": 10,
+    "path": "command-sets/infer.json"
+  },
+  {
+    "commandWord": "retrieve",
+    "title": "Retrieve questions",
+    "count": 10,
+    "path": "command-sets/retrieve.json"
+  },
+  {
+    "commandWord": "why",
+    "title": "Why questions",
+    "count": 10,
+    "path": "command-sets/why.json"
+  }
+]
