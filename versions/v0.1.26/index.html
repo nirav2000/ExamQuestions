@@ -7,24 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css?v=2.0.1" />
-  <style>
-    .command-guide { margin: 1.5rem auto 2rem; max-width: 1180px; padding: 0 1rem; }
-    .guide-card { background: rgba(255,255,255,.92); border: 1px solid rgba(39,47,84,.12); border-radius: 24px; padding: 1.25rem; box-shadow: 0 20px 60px rgba(31,41,55,.12); }
-    .guide-card h2, .guide-card h3 { margin-top: 0; }
-    .guide-intro { max-width: 74ch; color: #475569; }
-    .guide-table-wrap { overflow-x: auto; margin: 1rem 0; }
-    .guide-table { width: 100%; border-collapse: collapse; font-size: .94rem; }
-    .guide-table th, .guide-table td { border-bottom: 1px solid rgba(15,23,42,.12); padding: .7rem .65rem; text-align: left; vertical-align: top; }
-    .guide-table th { background: rgba(99,102,241,.08); color: #1e293b; }
-    .guide-passage { background: #f8fafc; border-left: 5px solid #6366f1; padding: 1rem; border-radius: 16px; }
-    .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .9rem; margin-top: 1rem; }
-    .qa-card { background: #fff; border: 1px solid rgba(15,23,42,.1); border-radius: 18px; padding: 1rem; }
-    .qa-card h4 { margin: 0 0 .5rem; color: #312e81; }
-    .qa-card p { margin: .45rem 0; }
-    .qa-card .reason { color: #475569; font-size: .92rem; }
-    @media print { .command-guide { break-before: page; } .guide-card { box-shadow: none; } }
-  </style>
+  <link rel="stylesheet" href="styles/main.css?v=0.1.24" />
 </head>
 <body>
   <div class="shell">
@@ -48,11 +31,10 @@
           <label class="version-control" for="versionSelect">
             <span>Version</span>
             <select id="versionSelect" aria-label="Switch app version">
-              <option value="v2.0.1">v2.0.1</option>
+              <option value="v0.1.26">v0.1.26</option>
             </select>
           </label>
           <button class="ghost" id="openManualBtn">Add question</button>
-          <a class="ghost" href="#commandWordGuide">Command guide</a>
           <label class="ghost file-label" for="jsonUpload">Upload JSON / ZIP pack</label>
           <input id="jsonUpload" type="file" accept="application/json,.json,.zip,application/zip" hidden />
         </div>
@@ -82,48 +64,6 @@
         <div class="groove-stack-hint" aria-hidden="true"></div>
       </div>
     </header>
-
-    <section class="command-guide" id="commandWordGuide" aria-labelledby="commandGuideTitle">
-      <div class="guide-card">
-        <p class="eyebrow">New in v2.0.1</p>
-        <h2 id="commandGuideTitle">Command word quick guide</h2>
-        <p class="guide-intro">A command word is the instruction hidden inside a question. It tells the student whether to name, describe, explain, prove, judge, compare or work something out from clues.</p>
-        <div class="guide-table-wrap">
-          <table class="guide-table">
-            <thead><tr><th>Command word</th><th>What it asks you to do</th><th>Simple meaning</th></tr></thead>
-            <tbody>
-              <tr><td>Identify / Name / State</td><td>Give the correct answer clearly and briefly.</td><td>Spot it / say it</td></tr>
-              <tr><td>List</td><td>Give several answers, usually as short points.</td><td>Give several</td></tr>
-              <tr><td>Define</td><td>Say exactly what a word or idea means.</td><td>Meaning</td></tr>
-              <tr><td>Describe</td><td>Say what something is like using details.</td><td>Paint a picture in words</td></tr>
-              <tr><td>Outline / Summarise</td><td>Give the main points without every detail.</td><td>Main points</td></tr>
-              <tr><td>Explain</td><td>Say why or how something happens.</td><td>Give reasons</td></tr>
-              <tr><td>Show / Prove / Demonstrate</td><td>Use evidence, examples or working to make something clear.</td><td>Prove it</td></tr>
-              <tr><td>Infer / Deduce</td><td>Work something out from clues.</td><td>Read between the lines</td></tr>
-              <tr><td>Compare / Contrast</td><td>Find similarities and differences, or differences only.</td><td>Same and different</td></tr>
-              <tr><td>Analyse</td><td>Break something into parts and explain the effect.</td><td>Break it down</td></tr>
-              <tr><td>Evaluate / Assess</td><td>Judge how good, successful or true something is.</td><td>Judge it</td></tr>
-              <tr><td>Justify / Argue / Discuss</td><td>Support a view with reasons, evidence or different sides.</td><td>Back it up</td></tr>
-              <tr><td>Suggest / Predict</td><td>Give a sensible possible answer or likely outcome.</td><td>Best idea / what next</td></tr>
-              <tr><td>Calculate / Estimate / Measure</td><td>Work out, approximate or find an amount with units.</td><td>Use numbers</td></tr>
-              <tr><td>Label / Annotate / Complete / Select / Match / Classify / Sequence / Rank</td><td>Add, fill in, choose, pair, group or order information correctly.</td><td>Organise it</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <h3>One topic, many command words</h3>
-        <p class="guide-passage"><strong>Paragraph:</strong> The school playground was empty after the rain. Puddles shone on the ground, and the climbing frame dripped with water. Sam stood by the gate, holding a torn football, while dark clouds gathered again above the school.</p>
-        <div class="guide-grid">
-          <article class="qa-card"><h4>Identify</h4><p><strong>Question:</strong> Identify one object Sam is holding.</p><p><strong>Model answer:</strong> Sam is holding a torn football.</p><p class="reason">This only names the object.</p></article>
-          <article class="qa-card"><h4>Describe</h4><p><strong>Question:</strong> Describe the playground after the rain.</p><p><strong>Model answer:</strong> The playground is empty, wet and gloomy. Puddles shine on the ground and the climbing frame is dripping with rainwater.</p><p class="reason">This gives details about what the place is like.</p></article>
-          <article class="qa-card"><h4>Explain</h4><p><strong>Question:</strong> Explain why the playground might be empty.</p><p><strong>Model answer:</strong> The playground might be empty because it has been raining, so the children may have gone inside to stay dry.</p><p class="reason">This gives a reason using because and so.</p></article>
-          <article class="qa-card"><h4>Outline</h4><p><strong>Question:</strong> Outline what is happening in the paragraph.</p><p><strong>Model answer:</strong> The paragraph shows a wet, empty playground after rain. Sam is standing by the gate with a torn football while more bad weather seems likely.</p><p class="reason">This gives the main points only.</p></article>
-          <article class="qa-card"><h4>Show</h4><p><strong>Question:</strong> Show that the weather is unpleasant.</p><p><strong>Model answer:</strong> The weather is unpleasant because there are puddles, the climbing frame is dripping, and dark clouds are gathering.</p><p class="reason">This proves the point with evidence.</p></article>
-          <article class="qa-card"><h4>Infer</h4><p><strong>Question:</strong> What can you infer about how Sam might feel?</p><p><strong>Model answer:</strong> Sam might feel disappointed or lonely because the playground is empty and he is holding a torn football.</p><p class="reason">This works something out from clues.</p></article>
-          <article class="qa-card"><h4>Analyse</h4><p><strong>Question:</strong> Analyse how the writer creates a gloomy mood.</p><p><strong>Model answer:</strong> The writer creates a gloomy mood through the empty playground, dripping water and dark clouds. These details make the setting feel lonely and miserable.</p><p class="reason">This breaks down methods and explains their effect.</p></article>
-          <article class="qa-card"><h4>Evaluate</h4><p><strong>Question:</strong> Evaluate how effective the paragraph is at creating atmosphere.</p><p><strong>Model answer:</strong> The paragraph is effective because the wet setting, empty playground and dark clouds clearly create a lonely mood. It could be stronger if it included sound or Sam’s thoughts.</p><p class="reason">This makes a judgement and gives strengths and a possible improvement.</p></article>
-        </div>
-      </div>
-    </section>
 
     <aside class="pack-sidebar" aria-label="Pack loader and command-word selection">
       <button class="ghost" id="togglePackPanelBtn" aria-expanded="false">Pack & filters</button>
@@ -239,9 +179,9 @@
   </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-  <script src="app-config.js?v=2.0.1"></script>
-  <script src="app-helpers.js?v=2.0.1"></script>
-  <script src="app.js?v=2.0.1"></script>
-  <script src="app-maintenance.js?v=2.0.1"></script>
+  <script src="app-config.js?v=0.1.24"></script>
+  <script src="app-helpers.js?v=0.1.23"></script>
+  <script src="app.js?v=0.1.25"></script>
+  <script src="app-maintenance.js?v=0.1.23"></script>
 </body>
 </html>

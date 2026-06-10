@@ -1,10 +1,17 @@
 [
   {
-    "version": "v0.1.26",
-    "label": "v0.1.26 - archive/version consistency fixes",
+    "version": "v2.0.1",
+    "label": "v2.0.1 - command-word quick guide upload",
     "path": "/ExamQuestions/",
-    "date": "2026-05-23",
-    "notes": "Fixes archive internal version mismatches and strengthens archive verification checks for embedded version constants and local asset references."
+    "date": "2026-06-10",
+    "notes": "Extracts the uploaded command_word_coach_v0_1_26_upload.zip as the current app, adds the command-word quick guide and same-passage examples, and archives v0.1.26."
+  },
+  {
+    "version": "v0.1.26",
+    "label": "v0.1.26 - maintainability refactor and archive verification",
+    "path": "/ExamQuestions/versions/v0.1.26/",
+    "date": "2026-06-10",
+    "notes": "Archived static snapshot before the v2.0.1 command-word quick guide upload was extracted as the live app."
   },
   {
     "version": "v0.1.25",

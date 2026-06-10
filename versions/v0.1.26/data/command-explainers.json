@@ -1,0 +1,118 @@
+{
+  "describe": {
+    "title": "Describe questions",
+    "descriptor": "What picture should the reader have in their mind?",
+    "grooveTitle": "Describe answer groove",
+    "groove": [
+      "Answer stem",
+      "Detail 1",
+      "Detail 2",
+      "Overall impression"
+    ],
+    "steps": [
+      "Have I used precise details?",
+      "Have I avoided vague words?",
+      "Have I used evidence from the text?",
+      "Have I said the overall impression?"
+    ],
+    "helpfulWords": [
+      "It is described as...",
+      "The text shows...",
+      "This makes it seem...",
+      "Overall, it feels..."
+    ]
+  },
+  "explain": {
+    "title": "Explain questions",
+    "descriptor": "Can you make this idea clear using reasons and evidence from the text?",
+    "grooveTitle": "Explain answer groove",
+    "groove": [
+      "Answer stem",
+      "Point",
+      "Evidence",
+      "Explanation",
+      "Link back"
+    ],
+    "steps": [
+      "Have I made my point clear?",
+      "Have I used evidence?",
+      "Have I explained the evidence?",
+      "Have I linked back to the question?"
+    ],
+    "helpfulWords": [
+      "This means that...",
+      "This is because...",
+      "The text shows this when...",
+      "This proves that..."
+    ]
+  },
+  "infer": {
+    "title": "Infer questions",
+    "descriptor": "What can you work out even though the writer has not said it directly?",
+    "grooveTitle": "Inference answer groove",
+    "groove": [
+      "Answer stem",
+      "Inference",
+      "Evidence or clue",
+      "Explanation of the clue"
+    ],
+    "steps": [
+      "Have I said what I worked out?",
+      "Have I used a clue?",
+      "Have I explained the clue?",
+      "Have I avoided wild guessing?"
+    ],
+    "helpfulWords": [
+      "I can infer that...",
+      "This suggests...",
+      "The clue is...",
+      "This makes me think..."
+    ]
+  },
+  "retrieve": {
+    "title": "Retrieve questions",
+    "descriptor": "Can you find the exact detail and answer accurately?",
+    "grooveTitle": "Retrieve answer groove",
+    "groove": [
+      "Find key words",
+      "Locate exact detail",
+      "Give direct answer",
+      "Check it answers the question"
+    ],
+    "steps": [
+      "Have I found the answer in the text?",
+      "Have I answered exactly what was asked?",
+      "Have I kept it short and accurate?",
+      "Have I avoided adding guesses?"
+    ],
+    "helpfulWords": [
+      "The answer is...",
+      "The text says...",
+      "According to the text...",
+      "The detail is..."
+    ]
+  },
+  "why": {
+    "title": "Why questions",
+    "descriptor": "What made this happen? Why did the character do this? Or why did the writer choose this?",
+    "grooveTitle": "Why answer groove",
+    "groove": [
+      "Answer stem",
+      "Reason",
+      "Evidence or clue",
+      "Effect or link back"
+    ],
+    "steps": [
+      "Have I used because or to?",
+      "Have I given a real reason?",
+      "Have I used a clue from the text?",
+      "Have I linked back to the question?"
+    ],
+    "helpfulWords": [
+      "This happens because...",
+      "The writer does this to...",
+      "This suggests...",
+      "This makes the reader..."
+    ]
+  }
+}

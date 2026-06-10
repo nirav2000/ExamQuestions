@@ -1,0 +1,114 @@
+[
+  {
+    "id": "same-passage-identify-object",
+    "title": "Same passage: identify",
+    "commandWord": "identify",
+    "text": "The school playground was empty after the rain. Puddles shone on the ground, and the climbing frame dripped with water. Sam stood by the gate, holding a torn football, while dark clouds gathered again above the school.",
+    "question": "Identify one object Sam is holding.",
+    "weakAnswer": "Sam is near the gate.",
+    "weakExplanation": "This finds a detail, but it does not answer what Sam is holding.",
+    "exceptionalAnswer": "Sam is holding a torn football.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Sam is holding a torn football."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "torn football",
+        "note": "Identify questions need the exact named detail, not an explanation.",
+        "partIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "same-passage-describe-playground",
+    "title": "Same passage: describe",
+    "commandWord": "describe",
+    "text": "The school playground was empty after the rain. Puddles shone on the ground, and the climbing frame dripped with water. Sam stood by the gate, holding a torn football, while dark clouds gathered again above the school.",
+    "question": "Describe the playground after the rain.",
+    "weakAnswer": "It was after rain.",
+    "weakExplanation": "This is true, but it does not describe what the playground is like.",
+    "exceptionalAnswer": "The playground is empty, wet and gloomy. Puddles are shining on the ground, the climbing frame is dripping with water, and dark clouds make it seem as if more rain is coming.",
+    "answerParts": [
+      {
+        "label": "Overall description",
+        "text": "empty, wet and gloomy"
+      },
+      {
+        "label": "Details",
+        "text": "Puddles are shining on the ground, the climbing frame is dripping with water"
+      },
+      {
+        "label": "Overall impression",
+        "text": "dark clouds make it seem as if more rain is coming"
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Overall description",
+        "text": "empty, wet and gloomy",
+        "note": "Describe answers say what something is like.",
+        "partIndex": 0
+      },
+      {
+        "label": "Precise details",
+        "text": "Puddles are shining on the ground, the climbing frame is dripping",
+        "note": "The answer uses details from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Mood/impression",
+        "text": "more rain is coming",
+        "note": "This adds the overall impression created by the details.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "same-passage-explain-empty",
+    "title": "Same passage: explain",
+    "commandWord": "explain",
+    "text": "The school playground was empty after the rain. Puddles shone on the ground, and the climbing frame dripped with water. Sam stood by the gate, holding a torn football, while dark clouds gathered again above the school.",
+    "question": "Explain why the playground might be empty.",
+    "weakAnswer": "The playground was empty.",
+    "weakExplanation": "This repeats the question but does not give a reason.",
+    "exceptionalAnswer": "The playground might be empty because it has been raining, so the children may have gone inside to stay dry. The dark clouds also suggest that more rain may be coming, which would make people less likely to play outside.",
+    "answerParts": [
+      {
+        "label": "Reason",
+        "text": "because it has been raining"
+      },
+      {
+        "label": "Effect",
+        "text": "so the children may have gone inside to stay dry"
+      },
+      {
+        "label": "Extra evidence",
+        "text": "The dark clouds also suggest that more rain may be coming"
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Reason",
+        "text": "because it has been raining",
+        "note": "Explain answers need why/how reasons.",
+        "partIndex": 0
+      },
+      {
+        "label": "Effect",
+        "text": "gone inside to stay dry",
+        "note": "This connects the reason to the result.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "dark clouds",
+        "note": "This uses another clue from the paragraph.",
+        "partIndex": 2
+      }
+    ]
+  }
+]

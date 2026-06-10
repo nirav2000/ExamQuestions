@@ -6,18 +6,22 @@ Live app: https://nirav2000.github.io/ExamQuestions/
 
 ## Current version
 
-`v2.0.1`
+`v0.1.26`
 
-## v2.0.1 changes
+## v0.1.26 changes
 
-This release extracts the uploaded `command_word_coach_v0_1_26_upload.zip` as the current live app and keeps the previous live app archived at `versions/v0.1.26/`.
+This is a maintainability/refactor-only release. It keeps the existing UI and practice behaviour, while making visual styling easier to edit safely.
 
-- Adds a **Command guide** link in the top actions.
-- Adds a built-in command-word quick guide table with simple meanings for common question instructions.
-- Adds a same-passage model-answer section showing how answers differ for identify, describe, explain, outline, show, infer, analyse and evaluate.
-- Adds `data/command-word-coach-same-passage.json` as a reusable JSON practice set from the uploaded pack.
-- Keeps the modular runtime, split CSS files, bundled command-word packs and archive verification tooling from v0.1.26.
-- Archives the previous live v0.1.26 snapshot under `versions/v0.1.26/` and updates `versions.json` so v2.0.1 is current.
+- Adds `styles/main.css` as the styling entrypoint.
+- Splits the old monolithic CSS into labelled files under `styles/`:
+  - `tokens-base.css` — design tokens, shared base styles, buttons and common utilities.
+  - `header-groove.css` — hero, top navigation, menu and command-groove card.
+  - `pack-practice.css` — pack panel, selectors, question list and question card.
+  - `answer-feedback.css` — answer input, drawing pad, feedback, coach notes and model answer breakdown.
+  - `forms-responsive.css` — manual-entry dialog and mobile responsive rules.
+- Keeps the old root `styles.css` file in place as a compatibility/reference file for now.
+- Updates `index.html` to load `styles/main.css?v=0.1.24`.
+- Updates the central `versions.json` history.
 
 ## Code map
 

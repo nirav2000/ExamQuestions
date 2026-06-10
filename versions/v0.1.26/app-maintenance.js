@@ -2,7 +2,7 @@
 // Owns version display and neutral command-groove fallback behaviour.
 (() => {
   const config = window.AppConfig || {};
-  const VERSION = config.APP_VERSION || 'v2.0.1';
+  const VERSION = config.APP_VERSION || 'v0.1.26';
   const neutralGroove = config.NEUTRAL_GROOVE || {
     title: 'Command word strategy',
     heading: 'Match the command word',

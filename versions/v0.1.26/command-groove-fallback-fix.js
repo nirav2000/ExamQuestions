@@ -1,7 +1,7 @@
 // v0.1.16: keep command-groove defaults neutral and keep the header version on v0.1.16.
 // This patch avoids showing the why-specific "Reason -> Effect -> Link" pattern for every command word.
 (function () {
-  const VERSION = (window.APP_CONFIG && window.APP_CONFIG.APP_VERSION) || 'v2.0.1';
+  const VERSION = (window.APP_CONFIG && window.APP_CONFIG.APP_VERSION) || 'v0.1.26';
   const NEUTRAL_HEADING = 'Match the command word';
   const NEUTRAL_INTRO = 'Look at the command word, then use the answer pattern that fits that type of question.';
   const NEUTRAL_STEPS = [
