@@ -18,7 +18,12 @@
           <span>Command Word Coach</span>
         </a>
         <div class="top-actions">
-          <span class="version-pill">v0.1.1</span>
+          <label class="version-control" for="versionSelect">
+            <span>Version</span>
+            <select id="versionSelect" aria-label="Switch app version">
+              <option value="v0.1.1">v0.1.1</option>
+            </select>
+          </label>
           <button class="ghost" id="openManualBtn">Add question</button>
           <label class="ghost file-label" for="jsonUpload">Upload JSON</label>
           <input id="jsonUpload" type="file" accept="application/json,.json" hidden />

@@ -1,0 +1,2952 @@
+[
+  {
+    "id": "describe-001",
+    "title": "The cave pool",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The cave opened into a round chamber. Drops of water glittered on the walls, and a dark pool lay in the centre like a piece of black glass. Every footstep echoed back twice.",
+    "textHtml": "The cave opened into a round chamber. Drops of water glittered on the walls, and a dark pool lay in the centre like a piece of black glass. Every footstep echoed back twice.",
+    "question": "Describe the cave chamber.",
+    "weakAnswer": "The cave is scary.",
+    "weakExplanation": "This gives a feeling, but it does not describe the chamber using details from the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How might the cave make someone feel?",
+    "exceptionalAnswer": "The cave chamber is dark, wet and echoing. Drops of water glitter on the walls, and a dark pool lies in the centre like black glass. Overall, the chamber seems mysterious and slightly frightening.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The cave chamber is dark, wet and echoing."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Drops of water glitter on the walls,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a dark pool lies in the centre like black glass."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the chamber seems mysterious and slightly frightening."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The cave chamber is dark, wet and echoing.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Drops of water glitter on the walls,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a dark pool lies in the centre like black glass.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the chamber seems mysterious and slightly frightening.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-002",
+    "title": "The winter market",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Lanterns hung above the market stalls, glowing through the cold evening air. Steam curled from pans of roasted chestnuts, and shoppers tucked their hands into their sleeves as they hurried past baskets of oranges.",
+    "textHtml": "Lanterns hung above the market stalls, glowing through the cold evening air. Steam curled from pans of roasted chestnuts, and shoppers tucked their hands into their sleeves as they hurried past baskets of oranges.",
+    "question": "Describe the winter market.",
+    "weakAnswer": "It has food.",
+    "weakExplanation": "This is too vague and only gives one simple detail.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What can be bought at the market?",
+    "exceptionalAnswer": "The winter market is bright, cold and busy. Lanterns glow above the stalls, steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves. Overall, it feels lively but chilly.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The winter market is bright, cold and busy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Lanterns glow above the stalls,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels lively but chilly."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The winter market is bright, cold and busy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Lanterns glow above the stalls,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "steam curls from pans of roasted chestnuts, and shoppers hurry past with their hands tucked into their sleeves.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels lively but chilly.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-003",
+    "title": "The abandoned classroom",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Dust lay thickly across the desks. On the board, yesterday's sums had faded into grey smudges, and a single chair stood upside down beside the teacher's table.",
+    "textHtml": "Dust lay thickly across the desks. On the board, yesterday's sums had faded into grey smudges, and a single chair stood upside down beside the teacher's table.",
+    "question": "Describe the abandoned classroom.",
+    "weakAnswer": "The classroom is old.",
+    "weakExplanation": "This is a general description, but it misses the specific details that create the image.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sort of place is it?",
+    "exceptionalAnswer": "The abandoned classroom is dusty, still and untidy. Dust covers the desks, the sums on the board have faded into grey smudges, and one chair is upside down. Overall, it seems as if the room has been left suddenly and forgotten.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The abandoned classroom is dusty, still and untidy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Dust covers the desks,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "the sums on the board have faded into grey smudges, and one chair is upside down."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems as if the room has been left suddenly and forgotten."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The abandoned classroom is dusty, still and untidy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Dust covers the desks,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "the sums on the board have faded into grey smudges, and one chair is upside down.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems as if the room has been left suddenly and forgotten.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-004",
+    "title": "The rescue dog",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The dog was small, with one folded ear and paws too large for its body. Its fur stuck out in uneven tufts, but its tail wagged whenever anyone came close.",
+    "textHtml": "The dog was small, with one folded ear and paws too large for its body. Its fur stuck out in uneven tufts, but its tail wagged whenever anyone came close.",
+    "question": "Describe the rescue dog.",
+    "weakAnswer": "The dog is cute.",
+    "weakExplanation": "This gives an opinion, but it does not describe the dog clearly.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What do you think of the dog?",
+    "exceptionalAnswer": "The rescue dog is small, scruffy and friendly. It has one folded ear, large paws and uneven tufts of fur. Overall, it seems a little untidy but gentle and eager for attention.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The rescue dog is small, scruffy and friendly."
+      },
+      {
+        "label": "Detail 1",
+        "text": "It has one folded ear, large paws and uneven tufts of fur."
+      },
+      {
+        "label": "Detail 2",
+        "text": "Its tail wagged whenever anyone came close."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems a little untidy but gentle and eager for attention."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The rescue dog is small, scruffy and friendly.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "It has one folded ear, large paws and uneven tufts of fur.",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "Its tail wagged whenever anyone came close.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems a little untidy but gentle and eager for attention.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-005",
+    "title": "The stormy beach",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The beach had almost vanished beneath the waves. Grey water crashed over the stones, and the wind dragged lines of foam across the sand. Gulls hung in the air, barely moving their wings.",
+    "textHtml": "The beach had almost vanished beneath the waves. Grey water crashed over the stones, and the wind dragged lines of foam across the sand. Gulls hung in the air, barely moving their wings.",
+    "question": "Describe the beach during the storm.",
+    "weakAnswer": "The beach has waves.",
+    "weakExplanation": "This gives one detail, but it does not describe the stormy scene fully.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is on the beach?",
+    "exceptionalAnswer": "The beach during the storm is wild and windswept. Grey water crashes over the stones, foam is dragged across the sand, and gulls struggle in the air. Overall, the beach seems powerful and unsafe.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The beach during the storm is wild and windswept."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Grey water crashes over the stones,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "foam is dragged across the sand, and gulls struggle in the air."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the beach seems powerful and unsafe."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The beach during the storm is wild and windswept.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Grey water crashes over the stones,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "foam is dragged across the sand, and gulls struggle in the air.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, the beach seems powerful and unsafe.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-006",
+    "title": "The sweet shop",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Glass jars lined the shelves from floor to ceiling. Stripes of red, yellow and green sweets shone under the lights, and the air smelled of sugar, mint and chocolate.",
+    "textHtml": "Glass jars lined the shelves from floor to ceiling. Stripes of red, yellow and green sweets shone under the lights, and the air smelled of sugar, mint and chocolate.",
+    "question": "Describe the sweet shop.",
+    "weakAnswer": "It is colourful.",
+    "weakExplanation": "This is partly true, but it needs more details from the passage.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is one thing about the sweet shop?",
+    "exceptionalAnswer": "The sweet shop is colourful, crowded and full of sweet smells. Glass jars line the shelves, bright sweets shine under the lights, and the air smells of sugar, mint and chocolate. Overall, it seems exciting and tempting.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The sweet shop is colourful, crowded and full of sweet smells."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Glass jars line the shelves,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "bright sweets shine under the lights, and the air smells of sugar, mint and chocolate."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems exciting and tempting."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The sweet shop is colourful, crowded and full of sweet smells.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Glass jars line the shelves,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "bright sweets shine under the lights, and the air smells of sugar, mint and chocolate.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems exciting and tempting.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-007",
+    "title": "The old oak tree",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The oak tree spread its branches across half the field. Its trunk was twisted and wide, with deep cracks in the bark. Beneath it, the grass was cool and shadowy.",
+    "textHtml": "The oak tree spread its branches across half the field. Its trunk was twisted and wide, with deep cracks in the bark. Beneath it, the grass was cool and shadowy.",
+    "question": "Describe the old oak tree.",
+    "weakAnswer": "It is big.",
+    "weakExplanation": "This is true but too simple; it does not use the rich details in the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How large is the tree?",
+    "exceptionalAnswer": "The old oak tree is huge, twisted and sheltering. Its branches spread across half the field, and its wide trunk has deep cracks in the bark. Overall, it seems ancient and strong.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The old oak tree is huge, twisted and sheltering."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Its branches spread across half the field,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and its wide trunk has deep cracks in the bark."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems ancient and strong."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The old oak tree is huge, twisted and sheltering.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Its branches spread across half the field,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and its wide trunk has deep cracks in the bark.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems ancient and strong.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-008",
+    "title": "The morning kitchen",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The kitchen window was misted with steam. Toast popped from the toaster, milk splashed into bowls, and Mum searched for a missing shoe while the clock ticked loudly.",
+    "textHtml": "The kitchen window was misted with steam. Toast popped from the toaster, milk splashed into bowls, and Mum searched for a missing shoe while the clock ticked loudly.",
+    "question": "Describe the kitchen in the morning.",
+    "weakAnswer": "The kitchen is messy.",
+    "weakExplanation": "This gives one possible idea, but it does not describe the busy morning atmosphere.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is wrong with the kitchen?",
+    "exceptionalAnswer": "The kitchen in the morning is warm, noisy and busy. The window is misted with steam, toast pops up, milk splashes into bowls and Mum searches for a missing shoe. Overall, it feels rushed but ordinary and lively.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The kitchen in the morning is warm, noisy and busy."
+      },
+      {
+        "label": "Detail 1",
+        "text": "The window is misted with steam, toast pops up,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "milk splashes into bowls and Mum searches for a missing shoe."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels rushed but ordinary and lively."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The kitchen in the morning is warm, noisy and busy.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "The window is misted with steam, toast pops up,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "milk splashes into bowls and Mum searches for a missing shoe.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it feels rushed but ordinary and lively.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-009",
+    "title": "The toy workshop",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "Tiny wheels, wooden arms and painted buttons covered the workbench. A half-finished puppet lay under a lamp, its face smiling although it had no strings yet.",
+    "textHtml": "Tiny wheels, wooden arms and painted buttons covered the workbench. A half-finished puppet lay under a lamp, its face smiling although it had no strings yet.",
+    "question": "Describe the toy workshop.",
+    "weakAnswer": "There is a puppet.",
+    "weakExplanation": "This identifies one object, but it does not describe the workshop as a whole.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What object is on the bench?",
+    "exceptionalAnswer": "The toy workshop is cluttered, creative and full of small parts. Tiny wheels, wooden arms and painted buttons cover the workbench, and a half-finished puppet lies under a lamp. Overall, it seems like a place where careful, imaginative work happens.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The toy workshop is cluttered, creative and full of small parts."
+      },
+      {
+        "label": "Detail 1",
+        "text": "Tiny wheels, wooden arms and painted buttons cover the workbench,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a half-finished puppet lies under a lamp."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems like a place where careful, imaginative work happens."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The toy workshop is cluttered, creative and full of small parts.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "Tiny wheels, wooden arms and painted buttons cover the workbench,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "and a half-finished puppet lies under a lamp.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems like a place where careful, imaginative work happens.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "describe-010",
+    "title": "The mountain path",
+    "commandWord": "describe",
+    "commandDescriptor": "Say what something is like using precise details from the text.",
+    "skillFocus": "Building a clear picture using details",
+    "answerPattern": "Answer stem \u2192 detail 1 \u2192 detail 2 \u2192 overall impression",
+    "teachingTip": "Use more than one detail and finish by saying the overall impression created.",
+    "text": "The path curled along the mountain like a thin ribbon. Loose stones slid underfoot, and far below, the river flashed silver between the trees.",
+    "textHtml": "The path curled along the mountain like a thin ribbon. Loose stones slid underfoot, and far below, the river flashed silver between the trees.",
+    "question": "Describe the mountain path.",
+    "weakAnswer": "It is on a mountain.",
+    "weakExplanation": "This tells us where the path is, but it does not describe what it is like.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is the path?",
+    "exceptionalAnswer": "The mountain path is narrow, high and difficult to walk on. It curls along the mountain like a thin ribbon, loose stones slide underfoot, and the river is far below. Overall, it seems beautiful but dangerous.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The mountain path is narrow, high and difficult to walk on."
+      },
+      {
+        "label": "Detail 1",
+        "text": "It curls along the mountain like a thin ribbon,"
+      },
+      {
+        "label": "Detail 2",
+        "text": "loose stones slide underfoot, and the river is far below."
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems beautiful but dangerous."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The mountain path is narrow, high and difficult to walk on.",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Detail 1",
+        "text": "It curls along the mountain like a thin ribbon,",
+        "note": "This gives the first precise descriptive detail.",
+        "partIndex": 1
+      },
+      {
+        "label": "Detail 2",
+        "text": "loose stones slide underfoot, and the river is far below.",
+        "note": "This gives another precise descriptive detail.",
+        "partIndex": 2
+      },
+      {
+        "label": "Overall impression",
+        "text": "Overall, it seems beautiful but dangerous.",
+        "note": "This explains the overall picture or feeling created by the details.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-001",
+    "title": "The missing lunchbox",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Hassan opened his tray and stared at the empty space where his lunchbox should have been. He checked under his coat, then inside his bag for the third time. When the bell rang for lunch, he stayed at his desk and pressed his lips together.",
+    "textHtml": "Hassan opened his tray and stared at the empty space where his lunchbox should have been. He checked under his coat, then inside his bag for the third time. When the bell rang for lunch, he stayed at his desk and pressed his lips together.",
+    "question": "Explain how you know Hassan is worried.",
+    "weakAnswer": "Hassan is worried because his lunchbox is gone.",
+    "weakExplanation": "This gives a basic reason, but it does not explain how the reader knows Hassan is worried from the details in the text.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Why might Hassan be worried?",
+    "exceptionalAnswer": "Hassan is worried because he keeps searching for his lunchbox and does not go to lunch when the bell rings. The text says he checks under his coat and inside his bag for the third time, which shows he is anxious and trying hard to find it. Pressing his lips together also suggests he is upset but trying not to show it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Hassan is worried"
+      },
+      {
+        "label": "Point",
+        "text": "because he keeps searching for his lunchbox and does not go to lunch when the bell rings."
+      },
+      {
+        "label": "Evidence",
+        "text": "The text says he checks under his coat and inside his bag for the third time,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which shows he is anxious and trying hard to find it."
+      },
+      {
+        "label": "Link back",
+        "text": "Pressing his lips together also suggests he is upset but trying not to show it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Hassan is worried",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because he keeps searching for his lunchbox and does not go to lunch when the bell rings.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The text says he checks under his coat and inside his bag for the third time,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which shows he is anxious and trying hard to find it.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "Pressing his lips together also suggests he is upset but trying not to show it.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-002",
+    "title": "The playground bench",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "At the start of break, Nia sat alone on the bench and watched the football game from a distance. Then Ruby waved her over and shouted, \"You can be on our team!\" Nia jumped up so quickly that her water bottle rolled onto the grass.",
+    "textHtml": "At the start of break, Nia sat alone on the bench and watched the football game from a distance. Then Ruby waved her over and shouted, \"You can be on our team!\" Nia jumped up so quickly that her water bottle rolled onto the grass.",
+    "question": "Explain how Ruby's invitation changes Nia's mood.",
+    "weakAnswer": "Ruby lets Nia play football.",
+    "weakExplanation": "This says what Ruby does, but it does not explain how Nia's mood changes or which details show the change.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Ruby invite Nia to do?",
+    "exceptionalAnswer": "Ruby's invitation changes Nia's mood from lonely to excited. At first, Nia sits alone and watches the game from a distance, which suggests she feels left out. When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby's invitation changes Nia's mood"
+      },
+      {
+        "label": "Point",
+        "text": "from lonely to excited."
+      },
+      {
+        "label": "Evidence",
+        "text": "At first, Nia sits alone and watches the game from a distance,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she feels left out."
+      },
+      {
+        "label": "Link back",
+        "text": "When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby's invitation changes Nia's mood",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "from lonely to excited.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "At first, Nia sits alone and watches the game from a distance,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she feels left out.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "When Ruby invites her to join, Nia jumps up so quickly that her bottle rolls away, showing that she is suddenly eager and happy to be included.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-003",
+    "title": "Grandad's watch",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Grandad placed the watch in Lily's palm as carefully as if it were made of glass. \"This kept ticking all through my first job at the railway,\" he said. The leather strap was cracked, and the face was scratched, but Lily closed her fingers around it and smiled.",
+    "textHtml": "Grandad placed the watch in Lily's palm as carefully as if it were made of glass. \"This kept ticking all through my first job at the railway,\" he said. The leather strap was cracked, and the face was scratched, but Lily closed her fingers around it and smiled.",
+    "question": "Explain why the watch is important to Grandad.",
+    "weakAnswer": "The watch is old and scratched.",
+    "weakExplanation": "This describes the watch, but it does not explain why it matters to Grandad.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does the watch look like?",
+    "exceptionalAnswer": "The watch is important to Grandad because it is connected to a special memory from his past. He says it kept ticking all through his first job at the railway, so it reminds him of an important time in his life. The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The watch is important to Grandad"
+      },
+      {
+        "label": "Point",
+        "text": "because it is connected to a special memory from his past."
+      },
+      {
+        "label": "Evidence",
+        "text": "He says it kept ticking all through his first job at the railway,"
+      },
+      {
+        "label": "Explanation",
+        "text": "so it reminds him of an important time in his life."
+      },
+      {
+        "label": "Link back",
+        "text": "The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The watch is important to Grandad",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because it is connected to a special memory from his past.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "He says it kept ticking all through his first job at the railway,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "so it reminds him of an important time in his life.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "The careful way he places it in Lily's palm also shows that he values it, even though it is old and scratched.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-004",
+    "title": "The river clean-up",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Before the clean-up, plastic bags clung to the reeds and no one sat near the riverbank. By the end of Saturday, the volunteers had filled twelve sacks with rubbish. On Monday, two ducks returned to the water, and families spread picnic blankets under the willow trees.",
+    "textHtml": "Before the clean-up, plastic bags clung to the reeds and no one sat near the riverbank. By the end of Saturday, the volunteers had filled twelve sacks with rubbish. On Monday, two ducks returned to the water, and families spread picnic blankets under the willow trees.",
+    "question": "Explain how the clean-up improves the riverbank.",
+    "weakAnswer": "The volunteers filled twelve sacks.",
+    "weakExplanation": "This gives one detail from the text, but it does not explain how the riverbank improves.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How much rubbish did the volunteers collect?",
+    "exceptionalAnswer": "The clean-up improves the riverbank by making it cleaner, safer and more pleasant for people and wildlife. Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there. This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The clean-up improves the riverbank"
+      },
+      {
+        "label": "Point",
+        "text": "by making it cleaner, safer and more pleasant for people and wildlife."
+      },
+      {
+        "label": "Evidence",
+        "text": "Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there."
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The clean-up improves the riverbank",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by making it cleaner, safer and more pleasant for people and wildlife.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "Before the clean-up, plastic bags clung to the reeds and no one sat nearby, but afterwards ducks return to the water and families have picnics there.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows that removing the rubbish makes the riverbank a place that living things can use and enjoy again.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-005",
+    "title": "The lighthouse",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The lighthouse beam swept across the black water again and again. Below it, waves smashed against the rocks with a sound like breaking plates. Mara gripped the rail and waited for the tiny fishing boat to reappear.",
+    "textHtml": "The lighthouse beam swept across the black water again and again. Below it, waves smashed against the rocks with a sound like breaking plates. Mara gripped the rail and waited for the tiny fishing boat to reappear.",
+    "question": "Explain how the writer creates a sense of danger.",
+    "weakAnswer": "The sea is dangerous.",
+    "weakExplanation": "This gives a general idea, but it does not explain how the writer creates the sense of danger.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the sea like in this passage?",
+    "exceptionalAnswer": "The writer creates a sense of danger by describing the sea as violent and the boat as vulnerable. The waves smash against the rocks with a sound like breaking plates, which makes the setting seem harsh and threatening. The fishing boat is described as tiny, so it seems weak compared with the powerful sea.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The writer creates a sense of danger"
+      },
+      {
+        "label": "Point",
+        "text": "by describing the sea as violent and the boat as vulnerable."
+      },
+      {
+        "label": "Evidence",
+        "text": "The waves smash against the rocks with a sound like breaking plates,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which makes the setting seem harsh and threatening."
+      },
+      {
+        "label": "Link back",
+        "text": "The fishing boat is described as tiny, so it seems weak compared with the powerful sea."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The writer creates a sense of danger",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by describing the sea as violent and the boat as vulnerable.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The waves smash against the rocks with a sound like breaking plates,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which makes the setting seem harsh and threatening.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "The fishing boat is described as tiny, so it seems weak compared with the powerful sea.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-006",
+    "title": "The broken greenhouse",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "A crack ran across the greenhouse window. Beneath it, soil had spilled from a plant pot, and a tennis ball lay half-hidden under the bench. Max stood at the gate with his racket behind his back.",
+    "textHtml": "A crack ran across the greenhouse window. Beneath it, soil had spilled from a plant pot, and a tennis ball lay half-hidden under the bench. Max stood at the gate with his racket behind his back.",
+    "question": "Explain why Max probably knows what happened to the greenhouse window.",
+    "weakAnswer": "The greenhouse window is cracked.",
+    "weakExplanation": "This notices the damage, but it does not explain why Max probably knows what happened.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What has happened to the greenhouse window?",
+    "exceptionalAnswer": "Max probably knows what happened to the greenhouse window because the clues suggest he has been playing tennis nearby. A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back. This suggests he may have hit the ball through the window and is trying to hide his involvement.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Max probably knows what happened to the greenhouse window"
+      },
+      {
+        "label": "Point",
+        "text": "because the clues suggest he has been playing tennis nearby."
+      },
+      {
+        "label": "Evidence",
+        "text": "A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back."
+      },
+      {
+        "label": "Explanation",
+        "text": "This suggests he may have hit the ball through the window and is trying to hide his involvement."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Max probably knows what happened to the greenhouse window",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because the clues suggest he has been playing tennis nearby.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "A tennis ball is half-hidden under the bench, and Max is standing with his racket behind his back.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This suggests he may have hit the ball through the window and is trying to hide his involvement.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-007",
+    "title": "The class plant",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The class plant drooped over the edge of its pot. Its soil was pale and cracked, and two leaves had turned yellow. Mrs Grant asked the children to move it away from the radiator and give it water.",
+    "textHtml": "The class plant drooped over the edge of its pot. Its soil was pale and cracked, and two leaves had turned yellow. Mrs Grant asked the children to move it away from the radiator and give it water.",
+    "question": "Explain why Mrs Grant wants the plant moved and watered.",
+    "weakAnswer": "The plant has yellow leaves.",
+    "weakExplanation": "This gives one clue, but it does not fully explain what the plant needs or why.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour are two leaves?",
+    "exceptionalAnswer": "Mrs Grant wants the plant moved and watered because it looks dry and overheated. The soil is pale and cracked, and the plant is near the radiator, which suggests it has not had enough water and may be too warm. Moving it and watering it should help it recover.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Grant wants the plant moved and watered"
+      },
+      {
+        "label": "Point",
+        "text": "because it looks dry and overheated."
+      },
+      {
+        "label": "Evidence",
+        "text": "The soil is pale and cracked, and the plant is near the radiator,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests it has not had enough water and may be too warm."
+      },
+      {
+        "label": "Link back",
+        "text": "Moving it and watering it should help it recover."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Grant wants the plant moved and watered",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "because it looks dry and overheated.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "The soil is pale and cracked, and the plant is near the radiator,",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests it has not had enough water and may be too warm.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      },
+      {
+        "label": "Link back",
+        "text": "Moving it and watering it should help it recover.",
+        "note": "This links the answer back to the question.",
+        "partIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "explain-008",
+    "title": "The new captain",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "Before the match, Asha checked that everyone had boots, reminded the goalkeeper to warm up and gave the nervous new player a smile. When the whistle blew, her team ran onto the pitch together.",
+    "textHtml": "Before the match, Asha checked that everyone had boots, reminded the goalkeeper to warm up and gave the nervous new player a smile. When the whistle blew, her team ran onto the pitch together.",
+    "question": "Explain how Asha shows she is a good captain.",
+    "weakAnswer": "Asha plays football.",
+    "weakExplanation": "This is true, but it does not explain the qualities that make her a good captain.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sport does Asha play?",
+    "exceptionalAnswer": "Asha shows she is a good captain by looking after the team before the match. She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile. These actions show that she is organised, responsible and caring.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Asha shows she is a good captain"
+      },
+      {
+        "label": "Point",
+        "text": "by looking after the team before the match."
+      },
+      {
+        "label": "Evidence",
+        "text": "She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile."
+      },
+      {
+        "label": "Explanation",
+        "text": "These actions show that she is organised, responsible and caring."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Asha shows she is a good captain",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by looking after the team before the match.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "She checks that everyone has boots, reminds the goalkeeper to warm up and encourages the nervous new player with a smile.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "These actions show that she is organised, responsible and caring.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-009",
+    "title": "The blackout",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The lights clicked off just as the class began reading. For a moment, everyone froze. Then Mr Lee opened the curtains, handed out torches and told the pupils to continue in pairs near the windows.",
+    "textHtml": "The lights clicked off just as the class began reading. For a moment, everyone froze. Then Mr Lee opened the curtains, handed out torches and told the pupils to continue in pairs near the windows.",
+    "question": "Explain how Mr Lee helps the class stay calm.",
+    "weakAnswer": "Mr Lee opens the curtains.",
+    "weakExplanation": "This gives one action, but it does not explain how his actions help the class stay calm.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Mr Lee open?",
+    "exceptionalAnswer": "Mr Lee helps the class stay calm by acting quickly and giving the pupils a clear plan. He opens the curtains, hands out torches and tells them to read in pairs near the windows. Because he stays practical and organised, the blackout seems less frightening.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mr Lee helps the class stay calm"
+      },
+      {
+        "label": "Point",
+        "text": "by acting quickly and giving the pupils a clear plan."
+      },
+      {
+        "label": "Evidence",
+        "text": "He opens the curtains, hands out torches and tells them to read in pairs near the windows."
+      },
+      {
+        "label": "Explanation",
+        "text": "Because he stays practical and organised, the blackout seems less frightening."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mr Lee helps the class stay calm",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "by acting quickly and giving the pupils a clear plan.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "He opens the curtains, hands out torches and tells them to read in pairs near the windows.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "Because he stays practical and organised, the blackout seems less frightening.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "explain-010",
+    "title": "The crowded platform",
+    "commandWord": "explain",
+    "commandDescriptor": "Make an idea clear by giving a point, evidence and explanation.",
+    "skillFocus": "Explaining using evidence from the text",
+    "answerPattern": "Answer stem \u2192 point \u2192 evidence \u2192 explanation \u2192 link back",
+    "teachingTip": "After giving evidence, add a sentence that explains what the evidence proves.",
+    "text": "The train was late, and the platform filled with people. A toddler began to cry as the crowd pressed closer. Without being asked, Freya stepped back and offered the child's mother her seat.",
+    "textHtml": "The train was late, and the platform filled with people. A toddler began to cry as the crowd pressed closer. Without being asked, Freya stepped back and offered the child's mother her seat.",
+    "question": "Explain what Freya's actions show about her character.",
+    "weakAnswer": "Freya gives someone a seat.",
+    "weakExplanation": "This says what Freya does, but it does not explain what that action shows about her character.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Freya do?",
+    "exceptionalAnswer": "Freya's actions show that she is thoughtful and considerate. She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked. This shows she thinks about other people's needs rather than only her own comfort.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Freya's actions show"
+      },
+      {
+        "label": "Point",
+        "text": "that she is thoughtful and considerate."
+      },
+      {
+        "label": "Evidence",
+        "text": "She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked."
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows she thinks about other people's needs rather than only her own comfort."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Freya's actions show",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Point",
+        "text": "that she is thoughtful and considerate.",
+        "note": "This gives the clear idea that the answer will explain.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence",
+        "text": "She notices that the platform is crowded and that the toddler is upset, then offers her seat without being asked.",
+        "note": "This uses a specific detail from the text.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "This shows she thinks about other people's needs rather than only her own comfort.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-001",
+    "title": "The unopened letter",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "A white envelope lay on the kitchen table. Mum walked past it twice without touching it. When Dad asked if she had opened it, she shook her head and began wiping an already clean worktop.",
+    "textHtml": "A white envelope lay on the kitchen table. Mum walked past it twice without touching it. When Dad asked if she had opened it, she shook her head and began wiping an already clean worktop.",
+    "question": "What can you infer about Mum's feelings towards the letter?",
+    "weakAnswer": "Mum has a letter.",
+    "weakExplanation": "This only states what is directly in the text; it does not infer her feelings.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is on the kitchen table?",
+    "exceptionalAnswer": "I can infer that Mum feels nervous about the letter. She walks past it twice without touching it and wipes an already clean worktop, which suggests she is avoiding the letter and trying to distract herself.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Mum feels nervous about the letter."
+      },
+      {
+        "label": "Clue",
+        "text": "She walks past it twice without touching it and wipes an already clean worktop,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is avoiding the letter and trying to distract herself."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Mum feels nervous about the letter.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She walks past it twice without touching it and wipes an already clean worktop,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is avoiding the letter and trying to distract herself.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-002",
+    "title": "The muddy trainers",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Noah crept through the back door carrying his trainers in one hand. Mud dripped from the laces onto the tiles. \"Were you playing near the pond?\" asked Grandma. Noah looked down at his socks.",
+    "textHtml": "Noah crept through the back door carrying his trainers in one hand. Mud dripped from the laces onto the tiles. \"Were you playing near the pond?\" asked Grandma. Noah looked down at his socks.",
+    "question": "What can you infer about where Noah has been?",
+    "weakAnswer": "Noah has muddy trainers.",
+    "weakExplanation": "This gives a clue, but it does not say what you can work out from it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is Noah carrying?",
+    "exceptionalAnswer": "I can infer that Noah has probably been playing near the pond or somewhere very muddy. His trainers are dripping mud, and Grandma asks if he was near the pond, which suggests the mud gives away where he has been.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Noah has probably been playing near the pond or somewhere very muddy."
+      },
+      {
+        "label": "Clue",
+        "text": "His trainers are dripping mud, and Grandma asks if he was near the pond,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests the mud gives away where he has been."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Noah has probably been playing near the pond or somewhere very muddy.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "His trainers are dripping mud, and Grandma asks if he was near the pond,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests the mud gives away where he has been.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-003",
+    "title": "The spelling test",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Amelia folded the test paper and slid it under her book. When her friend asked her score, Amelia shrugged and said, \"It doesn't matter.\" Her eyes stayed fixed on the desk.",
+    "textHtml": "Amelia folded the test paper and slid it under her book. When her friend asked her score, Amelia shrugged and said, \"It doesn't matter.\" Her eyes stayed fixed on the desk.",
+    "question": "What can you infer about Amelia's test result?",
+    "weakAnswer": "Amelia says it doesn't matter.",
+    "weakExplanation": "This repeats what Amelia says, but it does not infer what her behaviour suggests.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does Amelia say?",
+    "exceptionalAnswer": "I can infer that Amelia is disappointed with her test result. She hides the paper, avoids looking at her friend and says it does not matter, which suggests she may be embarrassed or upset about her score.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Amelia is disappointed with her test result."
+      },
+      {
+        "label": "Clue",
+        "text": "She hides the paper, avoids looking at her friend and says it does not matter,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she may be embarrassed or upset about her score."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Amelia is disappointed with her test result.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She hides the paper, avoids looking at her friend and says it does not matter,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she may be embarrassed or upset about her score.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-004",
+    "title": "The empty stage",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The curtains were still closed, but Malik could hear chairs scraping and programmes rustling beyond them. He rubbed his hands on his trousers and took three slow breaths.",
+    "textHtml": "The curtains were still closed, but Malik could hear chairs scraping and programmes rustling beyond them. He rubbed his hands on his trousers and took three slow breaths.",
+    "question": "What can you infer about Malik?",
+    "weakAnswer": "Malik is behind curtains.",
+    "weakExplanation": "This says where Malik is, but it does not work out how he feels.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Malik?",
+    "exceptionalAnswer": "I can infer that Malik is about to perform and feels nervous. He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths, which suggests he is trying to calm himself.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Malik is about to perform and feels nervous."
+      },
+      {
+        "label": "Clue",
+        "text": "He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is trying to calm himself."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Malik is about to perform and feels nervous.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "He hears the audience beyond the curtains, rubs his hands on his trousers and takes slow breaths,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is trying to calm himself.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-005",
+    "title": "The broken vase",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The vase lay in pieces beside the sofa. The cat slept peacefully upstairs, but a foam football rested under the coffee table. Daniel stood with his hands behind his back.",
+    "textHtml": "The vase lay in pieces beside the sofa. The cat slept peacefully upstairs, but a foam football rested under the coffee table. Daniel stood with his hands behind his back.",
+    "question": "What can you infer about how the vase broke?",
+    "weakAnswer": "The vase is in pieces.",
+    "weakExplanation": "This notices the result, but it does not infer the likely cause.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What happened to the vase?",
+    "exceptionalAnswer": "I can infer that the vase was probably broken by the football, not by the cat. The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands, which suggests he may have kicked or thrown it indoors.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "the vase was probably broken by the football, not by the cat."
+      },
+      {
+        "label": "Clue",
+        "text": "The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he may have kicked or thrown it indoors."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "the vase was probably broken by the football, not by the cat.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "The cat is asleep upstairs, but the foam football is under the coffee table and Daniel is hiding his hands,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he may have kicked or thrown it indoors.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-006",
+    "title": "The secret recipe",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Auntie Priya closed the notebook as soon as Sam entered the kitchen. Flour dusted her sleeves, and the smell of cinnamon filled the room. \"Nothing to see yet,\" she said, smiling.",
+    "textHtml": "Auntie Priya closed the notebook as soon as Sam entered the kitchen. Flour dusted her sleeves, and the smell of cinnamon filled the room. \"Nothing to see yet,\" she said, smiling.",
+    "question": "What can you infer Auntie Priya is doing?",
+    "weakAnswer": "She is in the kitchen.",
+    "weakExplanation": "This is directly stated, but it does not infer her activity from the clues.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Auntie Priya?",
+    "exceptionalAnswer": "I can infer that Auntie Priya is baking something as a surprise. Flour is on her sleeves, the room smells of cinnamon and she hides the notebook, which suggests she is using a recipe and does not want Sam to know yet.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Auntie Priya is baking something as a surprise."
+      },
+      {
+        "label": "Clue",
+        "text": "Flour is on her sleeves, the room smells of cinnamon and she hides the notebook,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is using a recipe and does not want Sam to know yet."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Auntie Priya is baking something as a surprise.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "Flour is on her sleeves, the room smells of cinnamon and she hides the notebook,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she is using a recipe and does not want Sam to know yet.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-007",
+    "title": "The late bus",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Ellie stood at the bus stop long after the other pupils had left. She kept checking the road, then the timetable, then her phone. Her shoulders dropped when another red car turned the corner instead of the bus.",
+    "textHtml": "Ellie stood at the bus stop long after the other pupils had left. She kept checking the road, then the timetable, then her phone. Her shoulders dropped when another red car turned the corner instead of the bus.",
+    "question": "What can you infer about Ellie's journey?",
+    "weakAnswer": "Ellie is at a bus stop.",
+    "weakExplanation": "This gives the setting, but it does not infer what is happening with her journey.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ellie?",
+    "exceptionalAnswer": "I can infer that Ellie's bus is late and she is becoming disappointed. She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive, which suggests she has been waiting anxiously.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Ellie's bus is late and she is becoming disappointed."
+      },
+      {
+        "label": "Clue",
+        "text": "She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she has been waiting anxiously."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Ellie's bus is late and she is becoming disappointed.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "She keeps checking the road, timetable and phone, and her shoulders drop when the bus does not arrive,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests she has been waiting anxiously.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-008",
+    "title": "The new shoes",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "Ravi walked across the playground without running, even when his friends called him to join the game. He looked down every few steps at his bright white trainers and stepped around the muddy puddles.",
+    "textHtml": "Ravi walked across the playground without running, even when his friends called him to join the game. He looked down every few steps at his bright white trainers and stepped around the muddy puddles.",
+    "question": "What can you infer about Ravi's new trainers?",
+    "weakAnswer": "Ravi has white trainers.",
+    "weakExplanation": "This gives a detail, but it does not explain what Ravi's behaviour suggests about them.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour are Ravi's trainers?",
+    "exceptionalAnswer": "I can infer that Ravi wants to keep his new trainers clean. He keeps looking at them and steps around the muddy puddles, which suggests he is proud of them and does not want them to get dirty.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Ravi wants to keep his new trainers clean."
+      },
+      {
+        "label": "Clue",
+        "text": "He keeps looking at them and steps around the muddy puddles,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is proud of them and does not want them to get dirty."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Ravi wants to keep his new trainers clean.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "He keeps looking at them and steps around the muddy puddles,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests he is proud of them and does not want them to get dirty.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-009",
+    "title": "The quiet birthday",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "There were no balloons in the hallway and no cake on the table. Still, Leila noticed Dad whispering into his phone and her brother carrying a large box upstairs under his jumper.",
+    "textHtml": "There were no balloons in the hallway and no cake on the table. Still, Leila noticed Dad whispering into his phone and her brother carrying a large box upstairs under his jumper.",
+    "question": "What can you infer is happening?",
+    "weakAnswer": "There are no balloons.",
+    "weakExplanation": "This notices one detail, but it misses the clues that something is being hidden.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is not in the hallway?",
+    "exceptionalAnswer": "I can infer that Leila's family is secretly preparing a birthday surprise. Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box, which suggests they are keeping the preparations hidden.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "Leila's family is secretly preparing a birthday surprise."
+      },
+      {
+        "label": "Clue",
+        "text": "Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are keeping the preparations hidden."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "Leila's family is secretly preparing a birthday surprise.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "Although there are no balloons or cake visible, Dad is whispering and her brother hides a large box,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are keeping the preparations hidden.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "infer-010",
+    "title": "The match report",
+    "commandWord": "infer",
+    "commandDescriptor": "Work out what is suggested by clues, even when it is not directly stated.",
+    "skillFocus": "Using clues to make a sensible inference",
+    "answerPattern": "Answer stem \u2192 inference \u2192 clue \u2192 explanation of clue",
+    "teachingTip": "Do not guess wildly. Use a clue and explain what it suggests.",
+    "text": "The classroom door opened and the football team came in silently. Their shirts were splashed with rain, and the captain placed the silver runners-up medal on the teacher's desk without speaking.",
+    "textHtml": "The classroom door opened and the football team came in silently. Their shirts were splashed with rain, and the captain placed the silver runners-up medal on the teacher's desk without speaking.",
+    "question": "What can you infer about the football match?",
+    "weakAnswer": "The team played football.",
+    "weakExplanation": "This is obvious from the passage, but it does not infer the result or mood.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What sport did the team play?",
+    "exceptionalAnswer": "I can infer that the team lost the final or came second and feels disappointed. The captain places a runners-up medal on the desk without speaking, and the team enters silently, which suggests they are unhappy with the result.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that"
+      },
+      {
+        "label": "Inference",
+        "text": "the team lost the final or came second and feels disappointed."
+      },
+      {
+        "label": "Clue",
+        "text": "The captain places a runners-up medal on the desk without speaking, and the team enters silently,"
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are unhappy with the result."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "I can infer that",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Inference",
+        "text": "the team lost the final or came second and feels disappointed.",
+        "note": "This states what can be worked out from clues.",
+        "partIndex": 1
+      },
+      {
+        "label": "Clue",
+        "text": "The captain places a runners-up medal on the desk without speaking, and the team enters silently,",
+        "note": "This gives the clue from the text that supports the inference.",
+        "partIndex": 2
+      },
+      {
+        "label": "Explanation",
+        "text": "which suggests they are unhappy with the result.",
+        "note": "This explains how the evidence proves the point.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "retrieve-001",
+    "title": "The school trip note",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "The Year 5 trip will take place on Thursday 14 March. Pupils should bring a packed lunch, a waterproof coat and a pencil. The coach will leave school at 9:15 a.m.",
+    "textHtml": "The Year 5 trip will take place on Thursday 14 March. Pupils should bring a packed lunch, a waterproof coat and a pencil. The coach will leave school at 9:15 a.m.",
+    "question": "What time will the coach leave school?",
+    "weakAnswer": "On Thursday.",
+    "weakExplanation": "This answers when the trip takes place, not what time the coach leaves.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What day is the trip?",
+    "exceptionalAnswer": "The coach will leave school at 9:15 a.m. This is the exact time given in the text, so it answers the question directly.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The coach will leave school at 9:15 a.m."
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact time given in the text,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers the question directly."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The coach will leave school at 9:15 a.m.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact time given in the text,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers the question directly.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-002",
+    "title": "The lost poster",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Lost: grey rabbit called Pepper. Last seen near Oak Lane playground on Monday afternoon. Pepper has one white paw and a blue collar. Please call 07900 111222 if found.",
+    "textHtml": "Lost: grey rabbit called Pepper. Last seen near Oak Lane playground on Monday afternoon. Pepper has one white paw and a blue collar. Please call 07900 111222 if found.",
+    "question": "What is the rabbit called?",
+    "weakAnswer": "It has a blue collar.",
+    "weakExplanation": "This gives a detail about the rabbit, but not its name.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the rabbit wearing?",
+    "exceptionalAnswer": "The rabbit is called Pepper. The poster says, \"grey rabbit called Pepper,\" so Pepper is the exact name asked for.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The rabbit is called Pepper."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The poster says, \"grey rabbit called Pepper,\""
+      },
+      {
+        "label": "Check",
+        "text": "so Pepper is the exact name asked for."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The rabbit is called Pepper.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The poster says, \"grey rabbit called Pepper,\"",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so Pepper is the exact name asked for.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-003",
+    "title": "The museum label",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Roman coin, about 1,800 years old. Found in a field near Bath by a metal detectorist in 2019. The coin is made of bronze and shows the head of an emperor.",
+    "textHtml": "Roman coin, about 1,800 years old. Found in a field near Bath by a metal detectorist in 2019. The coin is made of bronze and shows the head of an emperor.",
+    "question": "What is the coin made of?",
+    "weakAnswer": "It is Roman.",
+    "weakExplanation": "This tells us what type of coin it is, not the material.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What type of coin is it?",
+    "exceptionalAnswer": "The coin is made of bronze. The museum label states that the coin is made of bronze, which directly answers the question.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The coin is made of bronze."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The museum label states that the coin is made of bronze,"
+      },
+      {
+        "label": "Check",
+        "text": "which directly answers the question."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The coin is made of bronze.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The museum label states that the coin is made of bronze,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "which directly answers the question.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-004",
+    "title": "The swimming notice",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Swimming club meets every Tuesday after school in the small pool. Beginners should bring goggles and a towel. The session finishes at 4:30 p.m.",
+    "textHtml": "Swimming club meets every Tuesday after school in the small pool. Beginners should bring goggles and a towel. The session finishes at 4:30 p.m.",
+    "question": "Where does swimming club meet?",
+    "weakAnswer": "After school.",
+    "weakExplanation": "This gives the time, but the question asks for the place.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does swimming club meet?",
+    "exceptionalAnswer": "Swimming club meets in the small pool. The notice says it meets every Tuesday after school in the small pool, so that is the place.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Swimming club meets in the small pool."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The notice says it meets every Tuesday after school in the small pool,"
+      },
+      {
+        "label": "Check",
+        "text": "so that is the place."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Swimming club meets in the small pool.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The notice says it meets every Tuesday after school in the small pool,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that is the place.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-005",
+    "title": "The recipe card",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Apple crumble: slice four apples and place them in a dish. Mix flour, butter and sugar until crumbly. Bake for 25 minutes until the top is golden.",
+    "textHtml": "Apple crumble: slice four apples and place them in a dish. Mix flour, butter and sugar until crumbly. Bake for 25 minutes until the top is golden.",
+    "question": "How many apples are needed?",
+    "weakAnswer": "You bake it for 25 minutes.",
+    "weakExplanation": "This gives the baking time, but the question asks for the number of apples.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How long do you bake it for?",
+    "exceptionalAnswer": "Four apples are needed. The recipe says to slice four apples, so the exact number is four.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Four apples are needed."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The recipe says to slice four apples,"
+      },
+      {
+        "label": "Check",
+        "text": "so the exact number is four."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Four apples are needed.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The recipe says to slice four apples,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so the exact number is four.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-006",
+    "title": "The park sign",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Welcome to Greenhill Park. The playground closes at 6 p.m. Dogs must be kept on leads near the pond. The cafe is beside the rose garden.",
+    "textHtml": "Welcome to Greenhill Park. The playground closes at 6 p.m. Dogs must be kept on leads near the pond. The cafe is beside the rose garden.",
+    "question": "What must dogs do near the pond?",
+    "weakAnswer": "The playground closes at 6 p.m.",
+    "weakExplanation": "This gives a rule about the playground, but the question asks about dogs near the pond.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does the playground close?",
+    "exceptionalAnswer": "Dogs must be kept on leads near the pond. This is the exact rule stated on the park sign, so it answers what dogs must do.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Dogs must be kept on leads near the pond."
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact rule stated on the park sign,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers what dogs must do."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Dogs must be kept on leads near the pond.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "This is the exact rule stated on the park sign,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers what dogs must do.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-007",
+    "title": "The weather report",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Tomorrow will begin cloudy, with light rain before lunch. The afternoon should be brighter, but strong winds are expected by evening. Temperatures will reach 12\u00b0C.",
+    "textHtml": "Tomorrow will begin cloudy, with light rain before lunch. The afternoon should be brighter, but strong winds are expected by evening. Temperatures will reach 12\u00b0C.",
+    "question": "What weather is expected before lunch?",
+    "weakAnswer": "Strong winds.",
+    "weakExplanation": "This is expected by evening, not before lunch.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What weather is expected by evening?",
+    "exceptionalAnswer": "Light rain is expected before lunch. The report says there will be light rain before lunch, so that is the correct detail.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Light rain is expected before lunch."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The report says there will be light rain before lunch,"
+      },
+      {
+        "label": "Check",
+        "text": "so that is the correct detail."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Light rain is expected before lunch.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The report says there will be light rain before lunch,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that is the correct detail.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-008",
+    "title": "The club email",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Chess club starts next Monday in Room 8. It is open to Years 4, 5 and 6. Please bring a pencil so you can record your moves.",
+    "textHtml": "Chess club starts next Monday in Room 8. It is open to Years 4, 5 and 6. Please bring a pencil so you can record your moves.",
+    "question": "Which room will chess club be in?",
+    "weakAnswer": "It starts next Monday.",
+    "weakExplanation": "This gives the start date, but the question asks for the room.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When does chess club start?",
+    "exceptionalAnswer": "Chess club will be in Room 8. The email says it starts next Monday in Room 8, so Room 8 is the exact answer.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "Chess club will be in Room 8."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The email says it starts next Monday in Room 8,"
+      },
+      {
+        "label": "Check",
+        "text": "so Room 8 is the exact answer."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "Chess club will be in Room 8.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The email says it starts next Monday in Room 8,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so Room 8 is the exact answer.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-009",
+    "title": "The animal fact file",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "A red fox usually hunts at night. It eats insects, birds, small mammals and fruit. Foxes use their bushy tails to help them balance and keep warm.",
+    "textHtml": "A red fox usually hunts at night. It eats insects, birds, small mammals and fruit. Foxes use their bushy tails to help them balance and keep warm.",
+    "question": "When does a red fox usually hunt?",
+    "weakAnswer": "It eats fruit.",
+    "weakExplanation": "This gives something the fox eats, not when it hunts.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What does a red fox eat?",
+    "exceptionalAnswer": "A red fox usually hunts at night. The fact file states this directly in the first sentence, so it answers when the fox hunts.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "A red fox usually hunts at night."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The fact file states this directly in the first sentence,"
+      },
+      {
+        "label": "Check",
+        "text": "so it answers when the fox hunts."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "A red fox usually hunts at night.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The fact file states this directly in the first sentence,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so it answers when the fox hunts.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "retrieve-010",
+    "title": "The library message",
+    "commandWord": "retrieve",
+    "commandDescriptor": "Find information that is directly stated in the text.",
+    "skillFocus": "Finding exact details accurately",
+    "answerPattern": "Direct answer \u2192 exact detail \u2192 check",
+    "teachingTip": "Scan for key words from the question and answer only what is asked.",
+    "text": "Please return all borrowed books by Friday 7 June. The library will be closed for painting the following week. New books can be borrowed again from Monday 17 June.",
+    "textHtml": "Please return all borrowed books by Friday 7 June. The library will be closed for painting the following week. New books can be borrowed again from Monday 17 June.",
+    "question": "Why will the library be closed the following week?",
+    "weakAnswer": "Books can be borrowed on Monday 17 June.",
+    "weakExplanation": "This gives when books can be borrowed again, but not why the library is closed.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "When can new books be borrowed again?",
+    "exceptionalAnswer": "The library will be closed for painting. The message says it will be closed for painting the following week, so that gives the reason.",
+    "answerParts": [
+      {
+        "label": "Direct answer",
+        "text": "The library will be closed for painting."
+      },
+      {
+        "label": "Exact detail",
+        "text": "The message says it will be closed for painting the following week,"
+      },
+      {
+        "label": "Check",
+        "text": "so that gives the reason."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Direct answer",
+        "text": "The library will be closed for painting.",
+        "note": "This gives the exact information asked for.",
+        "partIndex": 0
+      },
+      {
+        "label": "Exact detail",
+        "text": "The message says it will be closed for painting the following week,",
+        "note": "This uses the precise information from the text.",
+        "partIndex": 1
+      },
+      {
+        "label": "Check",
+        "text": "so that gives the reason.",
+        "note": "This shows the answer stays focused on the question.",
+        "partIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "why-001",
+    "title": "The locked gate",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Mara stopped at the playground gate and frowned. A bright notice had been tied to the bars: Wet Paint. She slipped the football back under her arm and walked towards the field instead.",
+    "textHtml": "Mara stopped at the playground gate and frowned. A bright notice had been tied to the bars: Wet Paint. She slipped the football back under her arm and walked towards the field instead.",
+    "question": "Why does Mara walk towards the field instead of going into the playground?",
+    "weakAnswer": "Mara goes to the field.",
+    "weakExplanation": "This says what Mara does, but it does not explain why she chooses the field.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where does Mara go next?",
+    "exceptionalAnswer": "Mara walks towards the field because the playground gate has a Wet Paint notice on it. The sign tells her that the playground equipment may have fresh paint on it, so she avoids going in and chooses somewhere else to play.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mara walks towards the field"
+      },
+      {
+        "label": "Reason",
+        "text": "because the playground gate has a Wet Paint notice on it."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign tells her that the playground equipment may have fresh paint on it,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she avoids going in and chooses somewhere else to play."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mara walks towards the field",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the playground gate has a Wet Paint notice on it.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign tells her that the playground equipment may have fresh paint on it,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she avoids going in and chooses somewhere else to play.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-002",
+    "title": "The careful tray",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Ben carried the tray with both hands and moved slowly down the corridor. On the tray was a model volcano made from card, glue and carefully painted paper. His class had spent all week building it for the science display.",
+    "textHtml": "Ben carried the tray with both hands and moved slowly down the corridor. On the tray was a model volcano made from card, glue and carefully painted paper. His class had spent all week building it for the science display.",
+    "question": "Why does Ben carry the tray slowly?",
+    "weakAnswer": "Because he is in the corridor.",
+    "weakExplanation": "This gives the place, but it does not explain the reason for his careful movement.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ben carrying the tray?",
+    "exceptionalAnswer": "Ben carries the tray slowly because the model volcano is fragile and important to his class. The text says it is made from card, glue and carefully painted paper, so moving too quickly might damage something they have worked hard to make.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ben carries the tray slowly"
+      },
+      {
+        "label": "Reason",
+        "text": "because the model volcano is fragile and important to his class."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says it is made from card, glue and carefully painted paper,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so moving too quickly might damage something they have worked hard to make."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ben carries the tray slowly",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the model volcano is fragile and important to his class.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says it is made from card, glue and carefully painted paper,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so moving too quickly might damage something they have worked hard to make.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-003",
+    "title": "The red envelope",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "When the post arrived, Dad picked up a red envelope and smiled before he even opened it. Every birthday, Auntie Jo sent the same bright envelope with a tiny star drawn beside the stamp.",
+    "textHtml": "When the post arrived, Dad picked up a red envelope and smiled before he even opened it. Every birthday, Auntie Jo sent the same bright envelope with a tiny star drawn beside the stamp.",
+    "question": "Why does Dad think the envelope is from Auntie Jo?",
+    "weakAnswer": "Because he smiled at it.",
+    "weakExplanation": "This notices Dad's reaction, but it does not explain the clue that tells him who sent it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "How does Dad react to the envelope?",
+    "exceptionalAnswer": "Dad thinks the envelope is from Auntie Jo because he recognises her usual birthday envelope. The text says she sends the same bright envelope with a tiny star beside the stamp, so those details help him identify it before opening it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Dad thinks the envelope is from Auntie Jo"
+      },
+      {
+        "label": "Reason",
+        "text": "because he recognises her usual birthday envelope."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says she sends the same bright envelope with a tiny star beside the stamp,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so those details help him identify it before opening it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Dad thinks the envelope is from Auntie Jo",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because he recognises her usual birthday envelope.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The text says she sends the same bright envelope with a tiny star beside the stamp,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so those details help him identify it before opening it.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-004",
+    "title": "The empty bird table",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Lina filled the bird table every morning. Today, she found the seeds untouched and the garden strangely still. Then she spotted a neighbour's cat crouching beneath the hedge, its tail flicking.",
+    "textHtml": "Lina filled the bird table every morning. Today, she found the seeds untouched and the garden strangely still. Then she spotted a neighbour's cat crouching beneath the hedge, its tail flicking.",
+    "question": "Why are the seeds on the bird table untouched?",
+    "weakAnswer": "The garden is still.",
+    "weakExplanation": "This is a detail from the passage, but it does not explain why the birds have not eaten the seeds.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is the garden like today?",
+    "exceptionalAnswer": "The seeds are untouched because the birds are probably staying away from the cat. Lina sees the neighbour's cat crouching beneath the hedge, so the birds may feel unsafe and avoid the bird table.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The seeds are untouched"
+      },
+      {
+        "label": "Reason",
+        "text": "because the birds are probably staying away from the cat."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Lina sees the neighbour's cat crouching beneath the hedge,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so the birds may feel unsafe and avoid the bird table."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The seeds are untouched",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the birds are probably staying away from the cat.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Lina sees the neighbour's cat crouching beneath the hedge,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so the birds may feel unsafe and avoid the bird table.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-005",
+    "title": "The library card",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Owen patted his pockets and tipped his school bag onto the carpet. Books, pencils and a crushed cereal bar fell out, but not his library card. He glanced at the clock and groaned.",
+    "textHtml": "Owen patted his pockets and tipped his school bag onto the carpet. Books, pencils and a crushed cereal bar fell out, but not his library card. He glanced at the clock and groaned.",
+    "question": "Why does Owen groan?",
+    "weakAnswer": "He has lots of things in his bag.",
+    "weakExplanation": "This describes what falls out of the bag, but it does not explain Owen's groan.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is in Owen's bag?",
+    "exceptionalAnswer": "Owen groans because he cannot find his library card and he is running out of time. He searches his pockets and bag, but the card is missing, and glancing at the clock suggests he needs it soon.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Owen groans"
+      },
+      {
+        "label": "Reason",
+        "text": "because he cannot find his library card and he is running out of time."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "He searches his pockets and bag, but the card is missing,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "and glancing at the clock suggests he needs it soon."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Owen groans",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because he cannot find his library card and he is running out of time.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "He searches his pockets and bag, but the card is missing,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "and glancing at the clock suggests he needs it soon.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-006",
+    "title": "The leaking roof",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Drops of water landed in a bucket beside the whiteboard. Mrs Iqbal moved the reading corner to the other side of the room and put a towel over the damp carpet.",
+    "textHtml": "Drops of water landed in a bucket beside the whiteboard. Mrs Iqbal moved the reading corner to the other side of the room and put a towel over the damp carpet.",
+    "question": "Why does Mrs Iqbal move the reading corner?",
+    "weakAnswer": "There is a bucket in the classroom.",
+    "weakExplanation": "This spots an object, but it does not explain why the reading corner is moved.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What object is beside the whiteboard?",
+    "exceptionalAnswer": "Mrs Iqbal moves the reading corner because part of the classroom is wet from a leak. Drops of water are landing in a bucket and the carpet is damp, so she moves the children away from that uncomfortable area.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Iqbal moves the reading corner"
+      },
+      {
+        "label": "Reason",
+        "text": "because part of the classroom is wet from a leak."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Drops of water are landing in a bucket and the carpet is damp,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she moves the children away from that uncomfortable area."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Mrs Iqbal moves the reading corner",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because part of the classroom is wet from a leak.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Drops of water are landing in a bucket and the carpet is damp,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she moves the children away from that uncomfortable area.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-007",
+    "title": "The missing medal",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "At the finish line, Ruby checked the ribbon around her neck and then searched the grass beside her trainers. The medal had been there a moment ago. She asked everyone nearby to stand still.",
+    "textHtml": "At the finish line, Ruby checked the ribbon around her neck and then searched the grass beside her trainers. The medal had been there a moment ago. She asked everyone nearby to stand still.",
+    "question": "Why does Ruby ask everyone nearby to stand still?",
+    "weakAnswer": "Ruby is at the finish line.",
+    "weakExplanation": "This tells us where Ruby is, but it does not explain why she wants everyone to stop moving.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Where is Ruby?",
+    "exceptionalAnswer": "Ruby asks everyone to stand still because her medal is missing and she does not want it to be kicked or trodden on. She searches the grass beside her trainers, so keeping people still gives her a better chance of finding it.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby asks everyone to stand still"
+      },
+      {
+        "label": "Reason",
+        "text": "because her medal is missing and she does not want it to be kicked or trodden on."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "She searches the grass beside her trainers,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so keeping people still gives her a better chance of finding it."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Ruby asks everyone to stand still",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because her medal is missing and she does not want it to be kicked or trodden on.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "She searches the grass beside her trainers,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so keeping people still gives her a better chance of finding it.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-008",
+    "title": "The cracked mug",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "A tiny crack ran down the side of Mum's favourite mug. Leo placed it at the back of the shelf and chose a different cup for her tea. He knew the blue mug had belonged to Grandma.",
+    "textHtml": "A tiny crack ran down the side of Mum's favourite mug. Leo placed it at the back of the shelf and chose a different cup for her tea. He knew the blue mug had belonged to Grandma.",
+    "question": "Why does Leo choose a different cup for Mum's tea?",
+    "weakAnswer": "Because the mug is blue.",
+    "weakExplanation": "This gives a detail about the mug, but it does not explain why Leo avoids using it.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What colour is the mug?",
+    "exceptionalAnswer": "Leo chooses a different cup because Mum's favourite mug has a crack in it. Since the mug belonged to Grandma, it is special, so Leo probably wants to stop it breaking further.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Leo chooses a different cup"
+      },
+      {
+        "label": "Reason",
+        "text": "because Mum's favourite mug has a crack in it."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Since the mug belonged to Grandma, it is special,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so Leo probably wants to stop it breaking further."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Leo chooses a different cup",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because Mum's favourite mug has a crack in it.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "Since the mug belonged to Grandma, it is special,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so Leo probably wants to stop it breaking further.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-009",
+    "title": "The dark bakery",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "The bakery window was dark, although it was usually glowing by seven o'clock. A handwritten sign said: Oven broken. Fresh bread tomorrow. The queue outside slowly disappeared.",
+    "textHtml": "The bakery window was dark, although it was usually glowing by seven o'clock. A handwritten sign said: Oven broken. Fresh bread tomorrow. The queue outside slowly disappeared.",
+    "question": "Why does the queue outside the bakery disappear?",
+    "weakAnswer": "The bakery has a sign.",
+    "weakExplanation": "This says there is a sign, but it does not explain why the people leave.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "What is in the bakery window?",
+    "exceptionalAnswer": "The queue disappears because the bakery cannot sell fresh bread today. The sign says the oven is broken and fresh bread will be available tomorrow, so customers realise there is no point waiting.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "The queue disappears"
+      },
+      {
+        "label": "Reason",
+        "text": "because the bakery cannot sell fresh bread today."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign says the oven is broken and fresh bread will be available tomorrow,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so customers realise there is no point waiting."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "The queue disappears",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because the bakery cannot sell fresh bread today.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The sign says the oven is broken and fresh bread will be available tomorrow,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so customers realise there is no point waiting.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "why-010",
+    "title": "The whispered plan",
+    "commandWord": "why",
+    "commandDescriptor": "Give the reason, cause or purpose using evidence from the text.",
+    "skillFocus": "Answering why with reason and proof",
+    "answerPattern": "Answer stem \u2192 reason \u2192 evidence or clue \u2192 effect or link back",
+    "teachingTip": "Use because or to and then prove the reason with a clue from the passage.",
+    "text": "Sofia lowered her voice when she saw her brother coming down the stairs. On the table were balloons, wrapping paper and a chocolate cake with candles hidden behind a cereal box.",
+    "textHtml": "Sofia lowered her voice when she saw her brother coming down the stairs. On the table were balloons, wrapping paper and a chocolate cake with candles hidden behind a cereal box.",
+    "question": "Why does Sofia lower her voice?",
+    "weakAnswer": "Her brother is coming downstairs.",
+    "weakExplanation": "This is partly relevant, but it does not explain why his arrival makes her speak quietly.",
+    "whatQuestionTheWeakAnswerWouldAnswer": "Who is coming downstairs?",
+    "exceptionalAnswer": "Sofia lowers her voice because she is trying to keep a birthday surprise secret from her brother. The balloons, wrapping paper and hidden cake show that a celebration is being prepared, so she does not want him to hear the plan.",
+    "answerParts": [
+      {
+        "label": "Answer stem",
+        "text": "Sofia lowers her voice"
+      },
+      {
+        "label": "Reason",
+        "text": "because she is trying to keep a birthday surprise secret from her brother."
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The balloons, wrapping paper and hidden cake show that a celebration is being prepared,"
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she does not want him to hear the plan."
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "Answer stem",
+        "text": "Sofia lowers her voice",
+        "note": "This turns the question into the beginning of a clear full-sentence answer.",
+        "partIndex": 0
+      },
+      {
+        "label": "Reason",
+        "text": "because she is trying to keep a birthday surprise secret from her brother.",
+        "note": "This gives the reason, cause or purpose.",
+        "partIndex": 1
+      },
+      {
+        "label": "Evidence or clue",
+        "text": "The balloons, wrapping paper and hidden cake show that a celebration is being prepared,",
+        "note": "This points to the clue that supports the answer.",
+        "partIndex": 2
+      },
+      {
+        "label": "Effect or link back",
+        "text": "so she does not want him to hear the plan.",
+        "note": "This explains why the reason matters and links back to the question.",
+        "partIndex": 3
+      }
+    ]
+  }
+]

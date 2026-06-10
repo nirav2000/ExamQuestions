@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Command Word Coach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="#">
+          <span class="brand-mark">✓</span>
+          <span>Command Word Coach</span>
+        </a>
+        <div class="top-actions">
+          <label class="version-control" for="versionSelect">
+            <span>Version</span>
+            <select id="versionSelect" aria-label="Switch app version">
+              <option value="v0.1.16">v0.1.16</option>
+            </select>
+          </label>
+          <button class="ghost" id="openManualBtn">Add question</button>
+          <label class="ghost file-label" for="jsonUpload">Upload JSON / ZIP pack</label>
+          <input id="jsonUpload" type="file" accept="application/json,.json,.zip,application/zip" hidden />
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <section>
+          <p class="eyebrow">Reading comprehension practice</p>
+          <h1>Train students to answer the command word, not just spot the detail.</h1>
+          <p class="hero-copy">Students read a short text, answer in their own words, then compare against an exceptional model answer and its command-specific breakdown.</p>
+          <div class="hero-ctas">
+            <button class="primary" id="startBtn">Start practice</button>
+            <button class="secondary" id="downloadJsonBtn">Download current questions</button>
+          </div>
+        </section>
+        <aside class="coach-card" aria-label="Command answer groove">
+          <span class="pill" id="commandGroovePill">Command word strategy</span>
+          <h2 id="commandGrooveHeading">Match the command word</h2>
+          <p id="commandGrooveIntro">Look at the command word, then use the answer pattern that fits that type of question.</p>
+          <ol id="commandGrooveList">
+            <li>Spot the command word.</li>
+            <li>Use the matching answer pattern.</li>
+            <li>Check your answer does what the question asks.</li>
+          </ol>
+        </aside>
+      </div>
+    </header>
+
+    <section class="pack-panel" aria-label="Pack loader and command-word selection">
+      <h2 id="packTitle">Choose a command word</h2>
+      <p id="packSummary">Load a JSON pack, then practise one command word at a time or all questions together.</p>
+      <p class="mini-copy" id="packStatus">Loading bundled command-word ZIP pack…</p>
+      <label class="select-card" for="commandSetSelect">
+        <span>Practice set</span>
+        <select id="commandSetSelect" aria-label="Choose command word practice set">
+          <option value="all">All loaded questions</option>
+        </select>
+      </label>
+    </section>
+
+    <main class="app" id="practice">
+      <aside class="side-panel">
+        <div class="panel-header">
+          <span class="small-label">Questions</span>
+          <strong id="progressLabel">1 of 10</strong>
+        </div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <div class="question-list" id="questionList"></div>
+      </aside>
+
+      <section class="workspace">
+        <div class="question-card">
+          <div class="question-meta">
+            <span class="command-badge" id="commandBadge">WHY</span>
+            <span id="questionTitle">Bold title</span>
+          </div>
+          <div class="source-text" id="sourceText"></div>
+          <h2 id="questionText"></h2>
+          <div class="question-enrichment" id="questionEnrichment"></div>
+        </div>
+
+        <div class="answer-card">
+          <div class="answer-toolbar">
+            <label for="studentAnswer">Your answer</label>
+            <div class="toolbar-actions">
+              <button class="tool" id="micBtn" title="Voice input">🎙️ Say</button>
+              <button class="tool" id="clearBtn">Clear</button>
+            </div>
+          </div>
+          <textarea id="studentAnswer" rows="9" placeholder="Try turning the question into an answer stem, then follow the command-word pattern."></textarea>
+          <div class="mini-checks" id="miniChecks" aria-live="polite"></div>
+          <details class="draw-box">
+            <summary>Write or sketch your answer instead</summary>
+            <canvas id="drawCanvas" width="900" height="260" aria-label="Writing pad"></canvas>
+            <button class="tool" id="clearCanvasBtn">Clear writing pad</button>
+          </details>
+          <button class="primary wide" id="submitBtn">Submit and reveal coach feedback</button>
+        </div>
+
+        <section class="feedback-card hidden" id="feedbackCard" aria-live="polite">
+          <div class="feedback-top">
+            <span class="pill success">Coach feedback</span>
+            <button class="ghost" id="tryAgainBtn">Hide feedback</button>
+          </div>
+
+          <div class="feedback-grid">
+            <article class="weak stamped" data-stamp="Low mark">
+              <h3>Weak answer</h3>
+              <p id="weakAnswer"></p>
+              <p class="coach-note" id="weakExplanation"></p>
+            </article>
+
+            <article class="command-explainer">
+              <span class="small-label">Command word explainer</span>
+              <h3 id="commandExplainerTitle">Command word</h3>
+              <p id="commandExplainerText"></p>
+              <div class="groove" id="commandGroove"></div>
+              <p class="answer-pattern" id="commandAnswerPattern"></p>
+              <ul id="commandExplainerSteps"></ul>
+            </article>
+          </div>
+
+          <article class="excellent stamped full-width" data-stamp="Full marks">
+            <h3>Exceptional answer</h3>
+            <p id="exceptionalAnswer"></p>
+            <div class="coach-breakdown">
+              <h3>Why it works</h3>
+              <p class="coach-note compact">Hover over or tap a coach note below to highlight the matching part of the exceptional answer.</p>
+              <div class="breakdown" id="breakdown"></div>
+            </div>
+          </article>
+
+          <div class="next-row">
+            <button class="secondary" id="prevBtn">Previous</button>
+            <button class="primary" id="nextBtn">Next question</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="manualDialog">
+    <form method="dialog" class="manual-form" id="manualForm">
+      <button class="close" type="button" id="closeManualBtn" aria-label="Close">×</button>
+      <h2>Add a question manually</h2>
+      <p>Create a new item for this session. Use the breakdown rows for the model answer parts.</p>
+      <label>Title <input name="title" required placeholder="e.g. Repeated word" /></label>
+      <label>Command word <input name="commandWord" required placeholder="why / explain / describe" /></label>
+      <label>Short text <textarea name="text" rows="4" required></textarea></label>
+      <label>Question <input name="question" required /></label>
+      <label>Weak answer <input name="weakAnswer" required /></label>
+      <label>Why weak? <input name="weakExplanation" required /></label>
+      <label>Exceptional answer <textarea name="exceptionalAnswer" rows="3" required></textarea></label>
+      <label>Breakdown, one per line: label | phrase | note<textarea name="breakdown" rows="4" placeholder="Reason | because... | This answers why."></textarea></label>
+      <button class="primary wide" value="default">Add question</button>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="app.js"></script>
+  <script src="command-groove-fallback-fix.js"></script>
+</body>
+</html>
